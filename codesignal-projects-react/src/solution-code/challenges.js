@@ -7,6 +7,19 @@ const challenges = {
         }`,
         code: function candies(n, m) {
             return Math.floor(m / n) * n;
+        },
+        arguments: {
+            count: 2,
+            descriptions: [
+                {
+                    text: "Number of Children (Whole Number)",
+                    type: "Number"
+                },
+                {
+                    text: "Number of Pieces of Candy (Whole Number)",
+                    type: "Number"
+                }
+            ]
         }
     },
     absvaluesumminimization: {
@@ -60,6 +73,15 @@ const challenges = {
             }
             //Return the element at the index that represents the best 'subtractor' 
             return a[smallestSubtract];
+        },
+        arguments: {
+            count: 1,
+            descriptions: [
+                {
+                    text: "Sorted Array of Integers (In the form 1,2,3,...(No Square Brackets [])",
+                    type: "NumberArray"
+                }
+            ]
         }
     }
 };
