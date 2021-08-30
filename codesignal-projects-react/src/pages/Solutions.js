@@ -31,6 +31,7 @@ const Solutions = () => {
                 <option value="appleBoxes">Apple Boxes</option>
                 <option value="areEquallyStrong">Are Equally Strong</option>
                 <option value="areIsomorphic">Are Isomorphic</option>
+                <option value="areSimilar">Are Similar</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
