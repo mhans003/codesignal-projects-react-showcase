@@ -24,6 +24,7 @@ const Solutions = () => {
                 <option value="adjacentElementsProduct">Adjacent Elements Product</option>
                 <option value="allLongestStrings">All Longest Strings</option>
                 <option value="almostIncreasingSequence">Almost Increasing Sequence</option>
+                <option value="alphabeticShift">Alphabetic Shift</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
