@@ -30,6 +30,7 @@ const Solutions = () => {
                 <option value="alternatingSums">Alternating Sums</option>
                 <option value="appleBoxes">Apple Boxes</option>
                 <option value="areEquallyStrong">Are Equally Strong</option>
+                <option value="areIsomorphic">Are Isomorphic</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
