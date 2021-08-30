@@ -28,6 +28,7 @@ const Solutions = () => {
                 <option value="alphabetSubsequence">Alphabet Subsequence</option>
                 <option value="alphanumericLess">Alphanumeric Less</option>
                 <option value="alternatingSums">Alternating Sums</option>
+                <option value="appleBoxes">Apple Boxes</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
