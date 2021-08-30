@@ -1,29 +1,3 @@
-/*
-Template:
-
-name: {
-    instructions: ``,
-    codeOutput: 
-    ``,
-    code: ,
-    arguments: {
-        descriptions: [
-            {
-                text: "",
-                type: ""
-            }
-        ]
-    }
-}
-
-Type List:
-Number
-String
-Number Array 
-String Array
-
-*/
-
 const challenges = {
     candies: {
         instructions: `n children have got m pieces of candy. They want to eat as much candy as they can, but each child must eat exactly the same amount of candy as any other child. Determine how many pieces of candy will be eaten by all the children together. Individual pieces of candy cannot be split.`,
@@ -319,7 +293,77 @@ const challenges = {
                 }
             ]
         }
+    },
+    almostIncreasingSequence: {
+        instructions: `Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.
+
+        Note: sequence a0, a1, ..., an is considered to be a strictly increasing if a0 < a1 < ... < an. Sequence containing only one element is also considered to be strictly increasing.`,
+        codeOutput: 
+        `function almostIncreasingSequence(sequence) {
+            let removed = 0; 
+              for(let i = 1; i < sequence.length; i++) {
+                  if(sequence[i] <= sequence[i - 1]) {
+                      removed++; 
+                      if(removed > 1) {
+                          return false; 
+                      }
+                      if(sequence[i] <= sequence[i - 2] && sequence[i + 1] <= sequence[i - 1]) {
+                          return false; 
+                      }
+                  }
+              }
+            return true; 
+        }`,
+        code: function almostIncreasingSequence(sequence) {
+            let removed = 0; 
+              for(let i = 1; i < sequence.length; i++) {
+                  if(sequence[i] <= sequence[i - 1]) {
+                      removed++; 
+                      if(removed > 1) {
+                          return false; 
+                      }
+                      if(sequence[i] <= sequence[i - 2] && sequence[i + 1] <= sequence[i - 1]) {
+                          return false; 
+                      }
+                  }
+              }
+            return true; 
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "",
+                    type: "NumberArray"
+                }
+            ]
+        }
     }
 };
 
 export default challenges;
+
+/*
+Template:
+
+name: {
+    instructions: ``,
+    codeOutput: 
+    ``,
+    code: ,
+    arguments: {
+        descriptions: [
+            {
+                text: "",
+                type: ""
+            }
+        ]
+    }
+}
+
+Type List:
+Number
+String
+Number Array 
+String Array
+
+*/

@@ -23,6 +23,7 @@ const Solutions = () => {
                 <option value="additionWithoutCarrying">Addition Without Carrying</option>
                 <option value="adjacentElementsProduct">Adjacent Elements Product</option>
                 <option value="allLongestStrings">All Longest Strings</option>
+                <option value="almostIncreasingSequence">Almost Increasing Sequence</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
