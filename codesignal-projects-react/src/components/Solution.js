@@ -46,6 +46,9 @@ const Solution = props => {
             if(thisRef.getAttribute("inputtype") === "NumberArray") {
                 return convertToNumberArray(thisRef.value);
             }
+            if(thisRef.getAttribute("inputtype") === "StringArray") {
+                return convertToStringArray(thisRef.value);
+            }
             //HERE, put other input conversion code (inlcuding arrays, etc.).
             //Otherwise, keep this as a string.
             return thisRef.value;

@@ -19,6 +19,7 @@ const Solutions = () => {
                 <option value="candies">Candies</option>
                 <option value="absvaluesumminimization">Abs Value Sum Minimization</option>
                 <option value="adanumber">Ada Number</option>
+                <option value="addborder">Add Border</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>

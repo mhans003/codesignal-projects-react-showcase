@@ -169,7 +169,45 @@ const challenges = {
             descriptions: [
                 {
                     text: "Integer Number (Programming Language Ada)",
-                    type: "string"
+                    type: "String"
+                }
+            ]
+        }
+    },
+    addborder: {
+        instructions: `Given a rectangular matrix of characters, add a border of asterisks(*) to it.`,
+        codeOutput: 
+        `function addBorder(picture) {
+            picture.forEach((string, index) => {
+                picture[index] = "*" + string + "*";
+            });
+            let frame = "";
+            for(let i = 0; i < picture[0].length; i++) {
+                frame += "*";
+            }
+            picture.unshift(frame);
+            picture.push(frame);
+            
+            return picture;
+        }`,
+        code: function addBorder(picture) {
+            picture.forEach((string, index) => {
+                picture[index] = "*" + string + "*";
+            });
+            let frame = "";
+            for(let i = 0; i < picture[0].length; i++) {
+                frame += "*";
+            }
+            picture.unshift(frame);
+            picture.push(frame);
+            
+            return picture;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Equal-Length Strings (No Brackets []; Quotes Not Needed)",
+                    type: "StringArray"
                 }
             ]
         }
