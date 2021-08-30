@@ -18,6 +18,7 @@ const Solutions = () => {
             <select onChange={e => handleChallengeChange(e)} ref={challengeDropdown}>
                 <option value="candies">Candies</option>
                 <option value="absvaluesumminimization">Abs Value Sum Minimization</option>
+                <option value="adanumber">Ada Number</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
