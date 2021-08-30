@@ -16,6 +16,12 @@ name: {
         }
     }
 
+Type List:
+Number
+String
+Number Array 
+String Array
+
 */
 
 const challenges = {
@@ -260,6 +266,36 @@ const challenges = {
                 {
                     text: "Enter a Second Integer",
                     type: "Number"
+                }
+            ]
+        }
+    },
+    adjacentElementsProduct: {
+        instructions: `Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.`,
+        codeOutput: 
+        `function adjacentElementsProduct(inputArray) {
+            let product; 
+            for(let thisFactor = 0; thisFactor < inputArray.length - 1; thisFactor++) {
+                if(!product || inputArray[thisFactor] * inputArray[thisFactor + 1] > product) {
+                    product = inputArray[thisFactor] * inputArray[thisFactor + 1]; 
+                }
+            }
+            return product; 
+        }`,
+        code: function adjacentElementsProduct(inputArray) {
+            let product; 
+            for(let thisFactor = 0; thisFactor < inputArray.length - 1; thisFactor++) {
+                if(!product || inputArray[thisFactor] * inputArray[thisFactor + 1] > product) {
+                    product = inputArray[thisFactor] * inputArray[thisFactor + 1]; 
+                }
+            }
+            return product; 
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (No Brackets [])",
+                    type: "NumberArray"
                 }
             ]
         }
