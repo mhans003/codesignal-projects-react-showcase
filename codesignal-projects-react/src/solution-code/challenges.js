@@ -2,19 +2,19 @@
 Template:
 
 name: {
-        instructions: ``,
-        codeOutput: 
-        ``,
-        code: ,
-        arguments: {
-            descriptions: [
-                {
-                    text: "",
-                    type: ""
-                }
-            ]
-        }
+    instructions: ``,
+    codeOutput: 
+    ``,
+    code: ,
+    arguments: {
+        descriptions: [
+            {
+                text: "",
+                type: ""
+            }
+        ]
     }
+}
 
 Type List:
 Number
@@ -296,6 +296,26 @@ const challenges = {
                 {
                     text: "Array of Integers (No Brackets [])",
                     type: "NumberArray"
+                }
+            ]
+        }
+    },
+    allLongestStrings: {
+        instructions: `Given an array of strings, return another array containing all of its longest strings.`,
+        codeOutput: 
+        `function allLongestStrings(inputArray) {
+            const longestLength = Math.max(...inputArray.map(element => element.length));
+            return inputArray.filter(element => element.length === longestLength);
+        }`,
+        code: function allLongestStrings(inputArray) {
+            const longestLength = Math.max(...inputArray.map(element => element.length));
+            return inputArray.filter(element => element.length === longestLength);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Strings (Quotes and Spaces Not Needed)",
+                    type: "StringArray"
                 }
             ]
         }

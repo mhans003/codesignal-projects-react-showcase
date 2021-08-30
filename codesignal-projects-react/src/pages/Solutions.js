@@ -22,6 +22,7 @@ const Solutions = () => {
                 <option value="addborder">Add Border</option>
                 <option value="additionWithoutCarrying">Addition Without Carrying</option>
                 <option value="adjacentElementsProduct">Adjacent Elements Product</option>
+                <option value="allLongestStrings">All Longest Strings</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
