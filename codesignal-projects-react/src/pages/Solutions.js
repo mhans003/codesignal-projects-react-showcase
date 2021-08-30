@@ -27,6 +27,7 @@ const Solutions = () => {
                 <option value="alphabeticShift">Alphabetic Shift</option>
                 <option value="alphabetSubsequence">Alphabet Subsequence</option>
                 <option value="alphanumericLess">Alphanumeric Less</option>
+                <option value="alternatingSums">Alternating Sums</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
