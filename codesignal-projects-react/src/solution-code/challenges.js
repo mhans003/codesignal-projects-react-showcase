@@ -637,6 +637,42 @@ const challenges = {
                 }
             ]
         }
+    },
+    areEquallyStrong: {
+        instructions: `Call two arms equally strong if the heaviest weights they each are able to lift are equal.
+
+        Call two people equally strong if their strongest arms are equally strong (the strongest arm can be both the right and the left), and so are their weakest arms.
+        
+        Given your and your friend's arms' lifting capabilities find out if you two are equally strong.`,
+        codeOutput: 
+        `function areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) {
+            return yourLeft + yourRight === friendsLeft + friendsRight &&
+            (yourLeft === friendsLeft || yourRight === friendsRight || yourLeft === friendsRight || yourRight === friendsLeft);
+        }`,
+        code: function areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) {
+            return yourLeft + yourRight === friendsLeft + friendsRight &&
+            (yourLeft === friendsLeft || yourRight === friendsRight || yourLeft === friendsRight || yourRight === friendsLeft);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Non-Negative Number (Left Arm)",
+                    type: "Number"
+                },
+                {
+                    text: "Non-Negative Number (Right Arm)",
+                    type: "Number"
+                },
+                {
+                    text: "Non-Negative Number (Friend's Left Arm)",
+                    type: "Number"
+                },
+                {
+                    text: "Non-Negative Number (Friend's Right Arm)",
+                    type: "Number"
+                }
+            ]
+        }
     }
 };
 
