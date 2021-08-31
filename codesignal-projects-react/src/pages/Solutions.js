@@ -35,6 +35,8 @@ const Solutions = () => {
                 <option value="areSimilar2">Are Similar - Version 2</option>
                 <option value="arithmeticExpression">Arithmetic Expression</option>
                 <option value="arrayChange">Array Change</option>
+                <option value="concatenateArrays">Concatenate Arrays</option>
+                <option value="arrayConversion">Array Conversion</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
