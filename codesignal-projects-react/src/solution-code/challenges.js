@@ -855,6 +855,48 @@ const challenges = {
                 }
             ]
         }
+    },
+    arithmeticExpression: {
+        instructions: `Consider an arithmetic expression of the form a#b=c. Check whether it is possible to replace # with one of the four signs: +, -, * or / to obtain a correct expression.`,
+        codeOutput: 
+        `function arithmeticExpression(a, b, c) {
+            return a + b === c ? 
+            true : 
+            a - b === c ? 
+            true : 
+            a * b === c ? 
+            true : 
+            a / b === c ? 
+            true : 
+            false;
+        }`,
+        code: function arithmeticExpression(a, b, c) {
+            return a + b === c ? 
+            true : 
+            a - b === c ? 
+            true : 
+            a * b === c ? 
+            true : 
+            a / b === c ? 
+            true : 
+            false;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Number to Represent 'a'",
+                    type: "Number"
+                },
+                {
+                    text: "Number to Represent 'b'",
+                    type: "Number"
+                },
+                {
+                    text: "Number to Represent 'c'",
+                    type: "Number"
+                }
+            ]
+        }
     }
 };
 

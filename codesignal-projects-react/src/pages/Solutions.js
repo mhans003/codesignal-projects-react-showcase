@@ -33,6 +33,7 @@ const Solutions = () => {
                 <option value="areIsomorphic">Are Isomorphic</option>
                 <option value="areSimilar">Are Similar</option>
                 <option value="areSimilar2">Are Similar - Version 2</option>
+                <option value="arithmeticExpression">Arithmetic Expression</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
