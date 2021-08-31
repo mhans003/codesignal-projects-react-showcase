@@ -37,6 +37,7 @@ const Solutions = () => {
                 <option value="arrayChange">Array Change</option>
                 <option value="concatenateArrays">Concatenate Arrays</option>
                 <option value="arrayConversion">Array Conversion</option>
+                <option value="arrayMaximalAdjacentDifference">Array Maximal Adjacent Difference</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
