@@ -40,6 +40,7 @@ const Solutions = () => {
                 <option value="arrayMaximalAdjacentDifference">Array Maximal Adjacent Difference</option>
                 <option value="arrayPacking">Array Packing</option>
                 <option value="arrayPreviousLess">Array Previous Less</option>
+                <option value="arrayReplace">Array Replace</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
