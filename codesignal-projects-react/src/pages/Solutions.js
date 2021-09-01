@@ -43,6 +43,7 @@ const Solutions = () => {
                 <option value="arrayReplace">Array Replace</option>
                 <option value="avoidObstacles">Avoid Obstacles</option>
                 <option value="beautifulText">Beautiful Text</option>
+                <option value="bishopAndPawn">Bishop and Pawn</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
