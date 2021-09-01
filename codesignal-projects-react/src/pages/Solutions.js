@@ -42,6 +42,7 @@ const Solutions = () => {
                 <option value="arrayPreviousLess">Array Previous Less</option>
                 <option value="arrayReplace">Array Replace</option>
                 <option value="avoidObstacles">Avoid Obstacles</option>
+                <option value="beautifulText">Beautiful Text</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
