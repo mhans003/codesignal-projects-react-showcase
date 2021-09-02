@@ -46,6 +46,7 @@ const Solutions = () => {
                 <option value="bishopAndPawn">Bishop and Pawn</option>
                 <option value="bishopDiagonal">Bishop Diagonal</option>
                 <option value="boxBlur">Box Blur</option>
+                <option value="boxesPacking">Boxes Packing</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
