@@ -49,6 +49,7 @@ const Solutions = () => {
                 <option value="boxesPacking">Boxes Packing</option>
                 <option value="buildPalindrome">Build Palindrome</option>
                 <option value="candles">Candles</option>
+                <option value="characterParity">Character Parity</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
