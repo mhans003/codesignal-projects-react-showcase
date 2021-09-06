@@ -1872,6 +1872,24 @@ const challenges = {
                 }
             ]
         }
+    },
+    checkPalindrome: {
+        instructions: `Given a string, check if it is a palindrome`,
+        codeOutput: 
+        `function checkPalindrome(inputString) {
+            return inputString.split("").reverse().join("") === inputString;
+        }`,
+        code: function checkPalindrome(inputString) {
+            return inputString.split("").reverse().join("") === inputString;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String to Check",
+                    type: "String"
+                }
+            ]
+        }
     }
 };
 

@@ -50,6 +50,7 @@ const Solutions = () => {
                 <option value="buildPalindrome">Build Palindrome</option>
                 <option value="candles">Candles</option>
                 <option value="characterParity">Character Parity</option>
+                <option value="checkPalindrome">Check Palindrome</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
