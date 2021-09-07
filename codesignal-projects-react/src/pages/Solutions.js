@@ -53,6 +53,7 @@ const Solutions = () => {
                 <option value="checkPalindrome">Check Palindrome</option>
                 <option value="chessBishopDream">Chess Bishop Dream</option>
                 <option value="chessBoardCellColor">Chess Board Cell Color</option>
+                <option value="chessKnight">Chess Knight</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
