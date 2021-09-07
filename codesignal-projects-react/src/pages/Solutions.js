@@ -67,6 +67,7 @@ const Solutions = () => {
                 <option value="countSumOfTwoRepresentations2">Count Sum of Two Representations 2</option>
                 <option value="createAnagram">Create Anagram</option>
                 <option value="crossingSum">Crossing Sum</option>
+                <option value="crosswordFormation">Crossword Formation</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
