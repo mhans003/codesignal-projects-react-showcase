@@ -56,6 +56,7 @@ const Solutions = () => {
                 <option value="chessKnight">Chess Knight</option>
                 <option value="chessTriangle">Chess Triangle</option>
                 <option value="christmasTree">Christmas Tree</option>
+                <option value="cipher26">Cipher 26</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
