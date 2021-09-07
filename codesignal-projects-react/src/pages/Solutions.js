@@ -65,6 +65,7 @@ const Solutions = () => {
                 <option value="contoursShifting">Contours Shifting</option>
                 <option value="correctNonogram">Correct Nonogram</option>
                 <option value="countSumOfTwoRepresentations2">Count Sum of Two Representations 2</option>
+                <option value="createAnagram">Create Anagram</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
