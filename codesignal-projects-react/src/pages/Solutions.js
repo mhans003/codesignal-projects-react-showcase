@@ -63,6 +63,7 @@ const Solutions = () => {
                 <option value="commonCharacterCount">Common Character Count</option>
                 <option value="constructSquare">Construct Square</option>
                 <option value="contoursShifting">Contours Shifting</option>
+                <option value="correctNonogram">Correct Nonogram</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
