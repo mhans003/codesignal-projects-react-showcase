@@ -70,6 +70,7 @@ const Solutions = () => {
                 <option value="crosswordFormation">Crossword Formation</option>
                 <option value="curiousClock">Curious Clock</option>
                 <option value="cyclicString">Cyclic String</option>
+                <option value="dayOfWeek">Day of Week</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>

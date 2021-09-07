@@ -10,6 +10,9 @@ import { useRef } from 'react';
 
 //Test solution(s) with an example
 import challenges from '../solution-code/challenges';
+import challenges_d_f from '../solution-code/challenges_d_f';
+
+let allChallenges = {...challenges, ...challenges_d_f}
 
 const Solution = props => {
     //Create an empty array to hold references to dynamic inputs (created when a challenge is selected).
@@ -86,7 +89,7 @@ const Solution = props => {
         console.log(args);
 
         //Run function with user's input (converted to correct types).
-        let output = challenges[`${props.challengeName}`].code(...args);
+        let output = allChallenges[`${props.challengeName}`].code(...args);
 
         //Output the solution to the page.
         console.log(output);
@@ -100,9 +103,9 @@ const Solution = props => {
             {
                 props.challengeName ? 
                 <div>
-                    <code>{challenges[`${props.challengeName}`].codeOutput}</code>
-                    <p>{challenges[`${props.challengeName}`].instructions}</p>
-                    {challenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {
+                    <code>{allChallenges[`${props.challengeName}`].codeOutput}</code>
+                    <p>{allChallenges[`${props.challengeName}`].instructions}</p>
+                    {allChallenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {
                         return (
                             //Dynamically create input fields for the number of inputs for this challenge.
                             //This will create a reference to that input element so that we can capture a user's input test value.
