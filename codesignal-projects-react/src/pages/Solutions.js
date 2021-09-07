@@ -68,6 +68,7 @@ const Solutions = () => {
                 <option value="createAnagram">Create Anagram</option>
                 <option value="crossingSum">Crossing Sum</option>
                 <option value="crosswordFormation">Crossword Formation</option>
+                <option value="curiousClock">Curious Clock</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
