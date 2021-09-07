@@ -69,6 +69,7 @@ const Solutions = () => {
                 <option value="crossingSum">Crossing Sum</option>
                 <option value="crosswordFormation">Crossword Formation</option>
                 <option value="curiousClock">Curious Clock</option>
+                <option value="cyclicString">Cyclic String</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
