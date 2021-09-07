@@ -60,6 +60,7 @@ const Solutions = () => {
                 <option value="circleOfNumbers">Circle of Numbers</option>
                 <option value="combs">Combs</option>
                 <option value="comfortableNumbers">Comfortable Numbers</option>
+                <option value="commonCharacterCount">Common Character Count</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
