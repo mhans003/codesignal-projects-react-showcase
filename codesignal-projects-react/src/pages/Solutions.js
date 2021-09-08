@@ -72,6 +72,7 @@ const Solutions = () => {
                 <option value="cyclicString">Cyclic String</option>
                 <option value="dayOfWeek">Day of Week</option>
                 <option value="deleteDigit">Delete Digit</option>
+                <option value="depositProfit">Deposit Profit</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
