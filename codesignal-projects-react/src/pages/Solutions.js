@@ -84,6 +84,7 @@ const Solutions = () => {
                 <option value="equalPairOfBits">Equal Pair of Bits</option>
                 <option value="evenDigitsOnly">Even Digits Only</option>
                 <option value="extractEachKth">Extract Each Kth</option>
+                <option value="extractMatrixColumn">Extract Matrix Column</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>

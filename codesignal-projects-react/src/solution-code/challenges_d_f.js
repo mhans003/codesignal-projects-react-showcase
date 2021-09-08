@@ -894,6 +894,30 @@ const challenges_d_f = {
                 }
             ]
         }
+    },
+    extractMatrixColumn: {
+        instructions: `Given a rectangular matrix and an integer column, return an array containing the elements of the columnth column of the given matrix (the leftmost column is the 0th one).`,
+        codeOutput: 
+        `function extractMatrixColumn(matrix, column) {
+            //Take out each 'row' (array element) and return the element at position [column]
+            return matrix.map(row => row[column]);
+        }`,
+        code: function extractMatrixColumn(matrix, column) {
+            //Take out each 'row' (array element) and return the element at position [column]
+            return matrix.map(row => row[column]);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integer Arrays (Form of [1,2,3], [4,5,6]...)",
+                    type: "NumberArrayArray"
+                },
+                {
+                    text: "Column Number (Integer)",
+                    type: "Number"
+                }
+            ]
+        }
     }
 };
 
