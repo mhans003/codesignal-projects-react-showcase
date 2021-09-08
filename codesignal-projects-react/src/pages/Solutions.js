@@ -83,6 +83,7 @@ const Solutions = () => {
                 <option value="electionsWinners">Elections Winners</option>
                 <option value="equalPairOfBits">Equal Pair of Bits</option>
                 <option value="evenDigitsOnly">Even Digits Only</option>
+                <option value="extractEachKth">Extract Each Kth</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
