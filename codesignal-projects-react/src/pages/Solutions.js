@@ -77,6 +77,7 @@ const Solutions = () => {
                 <option value="differentSquares">Different Squares</option>
                 <option value="differentSymbolsNaive">Different Symbols Naive</option>
                 <option value="digitDegree">Digit Degree</option>
+                <option value="digitDifferenceSort">Digit Difference Sort</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
