@@ -11,8 +11,9 @@ import { useRef } from 'react';
 //Test solution(s) with an example
 import challenges from '../solution-code/challenges';
 import challenges_d_f from '../solution-code/challenges_d_f';
+import challenges_e_h from '../solution-code/challenges_e_h';
 
-let allChallenges = {...challenges, ...challenges_d_f}
+let allChallenges = {...challenges, ...challenges_d_f, ...challenges_e_h};
 
 const Solution = props => {
     //Create an empty array to hold references to dynamic inputs (created when a challenge is selected).
