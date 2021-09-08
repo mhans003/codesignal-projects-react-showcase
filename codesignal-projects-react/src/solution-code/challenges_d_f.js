@@ -820,6 +820,40 @@ const challenges_d_f = {
                 }
             ]
         }
+    },
+    evenDigitsOnly: {
+        instructions: `Check if all digits of the given integer are even.`,
+        codeOutput: 
+        `function evenDigitsOnly(n) {
+            let numberString = String(n);
+            //Loop through every 'character' in the stringified number.
+            for(let i = 0; i < numberString.length; i++) {
+                //If any digit is odd, return early.
+                if(Number(numberString[i]) % 2 !== 0) {
+                    return false;
+                }
+            }
+            return true;
+        }`,
+        code: function evenDigitsOnly(n) {
+            let numberString = String(n);
+            //Loop through every 'character' in the stringified number.
+            for(let i = 0; i < numberString.length; i++) {
+                //If any digit is odd, return early.
+                if(Number(numberString[i]) % 2 !== 0) {
+                    return false;
+                }
+            }
+            return true;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Integer to Check",
+                    type: "Number"
+                }
+            ]
+        }
     }
 };
 
