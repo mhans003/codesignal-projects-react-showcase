@@ -80,6 +80,7 @@ const Solutions = () => {
                 <option value="digitDifferenceSort">Digit Difference Sort</option>
                 <option value="digitsProduct">Digits Product</option>
                 <option value="drawRectangle">Draw Rectangle</option>
+                <option value="electionsWinners">Elections Winners</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
