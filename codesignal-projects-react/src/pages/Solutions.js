@@ -81,6 +81,7 @@ const Solutions = () => {
                 <option value="digitsProduct">Digits Product</option>
                 <option value="drawRectangle">Draw Rectangle</option>
                 <option value="electionsWinners">Elections Winners</option>
+                <option value="equalPairOfBits">Equal Pair of Bits</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
