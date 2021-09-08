@@ -918,6 +918,32 @@ const challenges_d_f = {
                 }
             ]
         }
+    },
+    extraNumber: {
+        instructions: `You're given three integers, a, b and c. It is guaranteed that two of these integers are equal to each other. What is the value of the third integer?`,
+        codeOutput: 
+        `function extraNumber(a, b, c) {
+            return a === b ? c : a === c ? b : a;
+        }`,
+        code: function extraNumber(a, b, c) {
+            return a === b ? c : a === c ? b : a;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Integer a",
+                    type: "Number"
+                },
+                {
+                    text: "Integer b",
+                    type: "Number"
+                },
+                {
+                    text: "Integer c",
+                    type: "Number"
+                }
+            ]
+        }
     }
 };
 

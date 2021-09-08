@@ -85,6 +85,7 @@ const Solutions = () => {
                 <option value="evenDigitsOnly">Even Digits Only</option>
                 <option value="extractEachKth">Extract Each Kth</option>
                 <option value="extractMatrixColumn">Extract Matrix Column</option>
+                <option value="extraNumber">Extra Number</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
