@@ -78,6 +78,7 @@ const Solutions = () => {
                 <option value="differentSymbolsNaive">Different Symbols Naive</option>
                 <option value="digitDegree">Digit Degree</option>
                 <option value="digitDifferenceSort">Digit Difference Sort</option>
+                <option value="digitsProduct">Digits Product</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
