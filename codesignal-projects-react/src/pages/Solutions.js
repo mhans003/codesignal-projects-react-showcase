@@ -74,6 +74,7 @@ const Solutions = () => {
                 <option value="deleteDigit">Delete Digit</option>
                 <option value="depositProfit">Deposit Profit</option>
                 <option value="differentRightmostBit">Different Right-Most Bit</option>
+                <option value="differentSquares">Different Squares</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
