@@ -86,6 +86,7 @@ const Solutions = () => {
                 <option value="extractEachKth">Extract Each Kth</option>
                 <option value="extractMatrixColumn">Extract Matrix Column</option>
                 <option value="extraNumber">Extra Number</option>
+                <option value="eyeRhyme">Eye Rhyme</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
