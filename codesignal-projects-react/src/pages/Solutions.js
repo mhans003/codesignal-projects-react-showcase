@@ -73,6 +73,7 @@ const Solutions = () => {
                 <option value="dayOfWeek">Day of Week</option>
                 <option value="deleteDigit">Delete Digit</option>
                 <option value="depositProfit">Deposit Profit</option>
+                <option value="differentRightmostBit">Different Right-Most Bit</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
