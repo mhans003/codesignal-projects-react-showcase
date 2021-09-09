@@ -88,6 +88,7 @@ const Solutions = () => {
                 <option value="extraNumber">Extra Number</option>
                 <option value="eyeRhyme">Eye Rhyme</option>
                 <option value="fileNaming">File Naming</option>
+                <option value="findEmailDomain">Find Email Domain</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
