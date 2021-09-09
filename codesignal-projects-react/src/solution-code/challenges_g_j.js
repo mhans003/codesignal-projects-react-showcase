@@ -1,11 +1,24 @@
 //Include global BigInt (as comment) in order to prevent no-undef in this environment.
 /* global BigInt */
 
-const challenges_e_h = {
-    
+const challenges_g_j = {
+    name: {
+        instructions: ``,
+        codeOutput: 
+        ``,
+        code: ,
+        arguments: {
+            descriptions: [
+                {
+                    text: "",
+                    type: ""
+                }
+            ]
+        }
+    }
 };
 
-export default challenges_e_h;
+export default challenges_g_j;
 
 /*
 
