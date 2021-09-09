@@ -91,6 +91,7 @@ const Solutions = () => {
                 <option value="findEmailDomain">Find Email Domain</option>
                 <option value="firstDigit">First Digit</option>
                 <option value="firstReverseTry">First Reverse Try</option>
+                <option value="gravitation">Gravitation</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
