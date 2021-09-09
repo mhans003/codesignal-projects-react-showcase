@@ -1111,6 +1111,58 @@ const challenges_d_f = {
                 }
             ]
         }
+    },
+    firstDigit: {
+        instructions: `Find the leftmost digit that occurs in a given string.`,
+        codeOutput: 
+        `function firstDigit(inputString) {
+            let index = 0;
+            while(index < inputString.length) {
+                switch(inputString[index]) {
+                    case "0":
+                    case "1":
+                    case "2":
+                    case "3":
+                    case "4":
+                    case "5":
+                    case "6":
+                    case "7":
+                    case "8":
+                    case "9":
+                        return inputString[index];
+                    default:
+                        index++;
+                }
+            }
+        }`,
+        code: function firstDigit(inputString) {
+            let index = 0;
+            while(index < inputString.length) {
+                switch(inputString[index]) {
+                    case "0":
+                    case "1":
+                    case "2":
+                    case "3":
+                    case "4":
+                    case "5":
+                    case "6":
+                    case "7":
+                    case "8":
+                    case "9":
+                        return inputString[index];
+                    default:
+                        index++;
+                }
+            }
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Input String (One or More Digits)",
+                    type: "String"
+                }
+            ]
+        }
     }
 };
 
