@@ -96,6 +96,7 @@ const Solutions = () => {
                 <option value="holiday">Holiday</option>
                 <option value="houseNumbersSum">House Numbers Sum</option>
                 <option value="houseOfCats">House of Cats</option>
+                <option value="htmlEndTagByStartTag">HTML End Tag By Start Tag</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
