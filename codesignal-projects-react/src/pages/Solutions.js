@@ -93,6 +93,7 @@ const Solutions = () => {
                 <option value="firstReverseTry">First Reverse Try</option>
                 <option value="gravitation">Gravitation</option>
                 <option value="growingPlant">Growing Plant</option>
+                <option value="holiday">Holiday</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
