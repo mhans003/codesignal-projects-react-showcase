@@ -101,6 +101,7 @@ const Solutions = () => {
                 <option value="integerToStringOfFixedWidth">Integer to String of Fixed Width</option>
                 <option value="isBeautifulString">Is Beautiful String</option>
                 <option value="isCaseInsensitivePalindrome">Is Case Insensitive Palindrome</option>
+                <option value="isDigit">Is Digit</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>

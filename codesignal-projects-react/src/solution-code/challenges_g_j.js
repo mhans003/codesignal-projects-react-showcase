@@ -519,6 +519,26 @@ const challenges_g_j = {
                 }
             ]
         }
+    },
+    isDigit: {
+        instructions: `Determine if symbol is a digit`,
+        codeOutput: 
+        `function isDigit(symbol) {
+            if(!(symbol.charCodeAt(0) > 47 && symbol.charCodeAt(0) < 58)) return false;
+            return true;
+        }`,
+        code: function isDigit(symbol) {
+            if(!(symbol.charCodeAt(0) > 47 && symbol.charCodeAt(0) < 58)) return false;
+            return true;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Single Character",
+                    type: "String"
+                }
+            ]
+        }
     }
 };
 
