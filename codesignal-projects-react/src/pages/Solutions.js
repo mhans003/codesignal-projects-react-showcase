@@ -102,6 +102,7 @@ const Solutions = () => {
                 <option value="isBeautifulString">Is Beautiful String</option>
                 <option value="isCaseInsensitivePalindrome">Is Case Insensitive Palindrome</option>
                 <option value="isDigit">Is Digit</option>
+                <option value="isInfiniteProcess">Is Infinite Process</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
