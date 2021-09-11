@@ -97,6 +97,7 @@ const Solutions = () => {
                 <option value="houseNumbersSum">House Numbers Sum</option>
                 <option value="houseOfCats">House of Cats</option>
                 <option value="htmlEndTagByStartTag">HTML End Tag By Start Tag</option>
+                <option value="increaseNumberRoundness">Increase Number Roundness</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
