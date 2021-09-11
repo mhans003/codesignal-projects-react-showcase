@@ -105,6 +105,7 @@ const Solutions = () => {
                 <option value="isInfiniteProcess">Is Infinite Process</option>
                 <option value="isInformationConsistent">Is Information Consistent</option>
                 <option value="isIPv4Address">Is IPv4 Address</option>
+                <option value="isLucky">Is Lucky</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
