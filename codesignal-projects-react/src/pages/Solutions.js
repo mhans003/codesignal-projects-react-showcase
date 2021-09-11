@@ -104,6 +104,7 @@ const Solutions = () => {
                 <option value="isDigit">Is Digit</option>
                 <option value="isInfiniteProcess">Is Infinite Process</option>
                 <option value="isInformationConsistent">Is Information Consistent</option>
+                <option value="isIPv4Address">Is IPv4 Address</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
