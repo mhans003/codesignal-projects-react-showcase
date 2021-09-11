@@ -92,6 +92,7 @@ const Solutions = () => {
                 <option value="firstDigit">First Digit</option>
                 <option value="firstReverseTry">First Reverse Try</option>
                 <option value="gravitation">Gravitation</option>
+                <option value="growingPlant">Growing Plant</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
