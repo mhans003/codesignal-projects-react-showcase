@@ -108,6 +108,7 @@ const Solutions = () => {
                 <option value="isLucky">Is Lucky</option>
                 <option value="isMAC48Address">Is MAC48 Address</option>
                 <option value="isPower">Is Power</option>
+                <option value="isSentenceCorrect">Is Sentence Correct</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
