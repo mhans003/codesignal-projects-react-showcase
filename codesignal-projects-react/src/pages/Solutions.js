@@ -99,6 +99,7 @@ const Solutions = () => {
                 <option value="htmlEndTagByStartTag">HTML End Tag By Start Tag</option>
                 <option value="increaseNumberRoundness">Increase Number Roundness</option>
                 <option value="integerToStringOfFixedWidth">Integer to String of Fixed Width</option>
+                <option value="isBeautifulString">Is Beautiful String</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
