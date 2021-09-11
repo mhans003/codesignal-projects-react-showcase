@@ -94,6 +94,7 @@ const Solutions = () => {
                 <option value="gravitation">Gravitation</option>
                 <option value="growingPlant">Growing Plant</option>
                 <option value="holiday">Holiday</option>
+                <option value="houseNumbersSum">House Numbers Sum</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
