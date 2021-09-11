@@ -103,6 +103,7 @@ const Solutions = () => {
                 <option value="isCaseInsensitivePalindrome">Is Case Insensitive Palindrome</option>
                 <option value="isDigit">Is Digit</option>
                 <option value="isInfiniteProcess">Is Infinite Process</option>
+                <option value="isInformationConsistent">Is Information Consistent</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
