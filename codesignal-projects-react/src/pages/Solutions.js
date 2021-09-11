@@ -100,6 +100,7 @@ const Solutions = () => {
                 <option value="increaseNumberRoundness">Increase Number Roundness</option>
                 <option value="integerToStringOfFixedWidth">Integer to String of Fixed Width</option>
                 <option value="isBeautifulString">Is Beautiful String</option>
+                <option value="isCaseInsensitivePalindrome">Is Case Insensitive Palindrome</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
