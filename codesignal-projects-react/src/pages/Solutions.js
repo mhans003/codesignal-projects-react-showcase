@@ -112,6 +112,7 @@ const Solutions = () => {
                 <option value="isSmooth">Is Smooth</option>
                 <option value="isSubsequence">Is Subsequence</option>
                 <option value="isSubstitutionCipher">Is Substitution Cipher</option>
+                <option value="isSumOfConsecutive2">Is Sum of Consecutive 2</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
