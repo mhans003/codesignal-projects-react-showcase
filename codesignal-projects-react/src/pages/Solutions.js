@@ -115,6 +115,7 @@ const Solutions = () => {
                 <option value="isSumOfConsecutive2">Is Sum of Consecutive 2</option>
                 <option value="isUnstablePair">Is Unstable Pair</option>
                 <option value="killKthBit">Kill Kth Bit</option>
+                <option value="knapsackLight">Knapsack Light</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
