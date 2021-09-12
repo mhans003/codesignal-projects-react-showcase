@@ -110,6 +110,7 @@ const Solutions = () => {
                 <option value="isPower">Is Power</option>
                 <option value="isSentenceCorrect">Is Sentence Correct</option>
                 <option value="isSmooth">Is Smooth</option>
+                <option value="isSubsequence">Is Subsequence</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
