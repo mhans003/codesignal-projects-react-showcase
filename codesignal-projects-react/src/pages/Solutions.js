@@ -111,6 +111,7 @@ const Solutions = () => {
                 <option value="isSentenceCorrect">Is Sentence Correct</option>
                 <option value="isSmooth">Is Smooth</option>
                 <option value="isSubsequence">Is Subsequence</option>
+                <option value="isSubstitutionCipher">Is Substitution Cipher</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
