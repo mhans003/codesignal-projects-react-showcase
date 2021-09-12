@@ -119,6 +119,7 @@ const Solutions = () => {
                 <option value="largestNumber">Largest Number</option>
                 <option value="lateRide">Late Ride</option>
                 <option value="leastFactorial">Least Factorial</option>
+                <option value="lineEncoding">Line Encoding</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
