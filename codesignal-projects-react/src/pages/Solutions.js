@@ -124,6 +124,7 @@ const Solutions = () => {
                 <option value="longestDigitsPrefix">Longest Digits Prefix</option>
                 <option value="longestWord">Longest Word</option>
                 <option value="magicalWell">Magical Well</option>
+                <option value="makeArrayConsecutive2">Make Array Consecutive 2</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
