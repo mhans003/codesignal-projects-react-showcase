@@ -120,6 +120,7 @@ const Solutions = () => {
                 <option value="lateRide">Late Ride</option>
                 <option value="leastFactorial">Least Factorial</option>
                 <option value="lineEncoding">Line Encoding</option>
+                <option value="lineUp">Line Up</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
