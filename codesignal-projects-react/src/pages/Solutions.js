@@ -123,6 +123,7 @@ const Solutions = () => {
                 <option value="lineUp">Line Up</option>
                 <option value="longestDigitsPrefix">Longest Digits Prefix</option>
                 <option value="longestWord">Longest Word</option>
+                <option value="magicalWell">Magical Well</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
