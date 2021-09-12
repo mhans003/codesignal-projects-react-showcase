@@ -399,6 +399,40 @@ const challenges_k_n = {
                 }
             ]
         }
+    },
+    longestDigitsPrefix: {
+        instructions: `Given a string, output its longest prefix which contains only digits.`,
+        codeOutput: 
+        `function longestDigitsPrefix(inputString) {
+            //Start with a blank prefix and starting index.
+            let prefix = "";
+            let currentIndex = 0;
+            //Loop through every character until we are no longer finding a digit, and add to the prefix.
+            while(inputString.charCodeAt(currentIndex) > 47 && inputString.charCodeAt(currentIndex) < 58 && currentIndex < inputString.length) {
+                prefix += inputString[currentIndex];
+                currentIndex++;
+            }
+            return prefix;
+        }`,
+        code: function longestDigitsPrefix(inputString) {
+            //Start with a blank prefix and starting index.
+            let prefix = "";
+            let currentIndex = 0;
+            //Loop through every character until we are no longer finding a digit, and add to the prefix.
+            while(inputString.charCodeAt(currentIndex) > 47 && inputString.charCodeAt(currentIndex) < 58 && currentIndex < inputString.length) {
+                prefix += inputString[currentIndex];
+                currentIndex++;
+            }
+            return prefix;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String of Characters (Beginning With 1+ Digits)",
+                    type: "String"
+                }
+            ]
+        }
     }
 };
 

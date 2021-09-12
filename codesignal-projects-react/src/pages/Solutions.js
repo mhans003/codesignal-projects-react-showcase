@@ -121,6 +121,7 @@ const Solutions = () => {
                 <option value="leastFactorial">Least Factorial</option>
                 <option value="lineEncoding">Line Encoding</option>
                 <option value="lineUp">Line Up</option>
+                <option value="longestDigitsPrefix">Longest Digits Prefix</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
