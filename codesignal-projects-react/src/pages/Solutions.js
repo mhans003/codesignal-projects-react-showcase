@@ -116,6 +116,7 @@ const Solutions = () => {
                 <option value="isUnstablePair">Is Unstable Pair</option>
                 <option value="killKthBit">Kill Kth Bit</option>
                 <option value="knapsackLight">Knapsack Light</option>
+                <option value="largestNumber">Largest Number</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
