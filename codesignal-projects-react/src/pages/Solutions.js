@@ -127,6 +127,7 @@ const Solutions = () => {
                 <option value="makeArrayConsecutive2">Make Array Consecutive 2</option>
                 <option value="matrixElementsSum">Matrix Elements Sum</option>
                 <option value="arrayMaxConsecutiveSum">Array Max Consecutive Sum</option>
+                <option value="maximumSum">Maximum Sum</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
