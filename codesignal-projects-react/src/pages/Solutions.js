@@ -129,6 +129,7 @@ const Solutions = () => {
                 <option value="arrayMaxConsecutiveSum">Array Max Consecutive Sum</option>
                 <option value="maximumSum">Maximum Sum</option>
                 <option value="maxMultiple">Max Multiple</option>
+                <option value="messageFromBinaryCode">Message From Binary Code</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
