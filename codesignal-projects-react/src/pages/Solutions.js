@@ -140,6 +140,7 @@ const Solutions = () => {
                 <option value="newYearCelebrations">New Year Celebrations</option>
                 <option value="noIfsNoButs">No Ifs No Buts</option>
                 <option value="nthNumber">Nth Number</option>
+                <option value="numberOfClans">Number of Clans</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
