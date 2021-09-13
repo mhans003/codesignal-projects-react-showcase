@@ -131,6 +131,7 @@ const Solutions = () => {
                 <option value="maxMultiple">Max Multiple</option>
                 <option value="messageFromBinaryCode">Message From Binary Code</option>
                 <option value="metroCard">Metro Card</option>
+                <option value="minesweeper">Minesweeper</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>

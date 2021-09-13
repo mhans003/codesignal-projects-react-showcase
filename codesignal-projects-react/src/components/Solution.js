@@ -67,6 +67,19 @@ const Solution = props => {
         });
     }
 
+    //Convert user input into an array of boolean arrays.
+    const convertToArrayOfBooleanArrays = stringInput => {
+        return stringInput.split(", ").map(arrayString => {
+            //Eliminate beginning and ending brackets.
+            let strippedArrayString = arrayString.substr(1, arrayString.length - 2);
+            //Extract the elements from this sub-array.
+            return strippedArrayString.split(",").map(arrayStringElement => {
+                if(arrayStringElement === "true") return true;
+                return false;
+            })
+        })
+    }
+
     //Generate output based on user test input.
     const generateOutput = () => {
         console.log("refs: " + refs.current.map(thisRef => thisRef.value))
@@ -88,6 +101,9 @@ const Solution = props => {
             }
             if(thisRef.getAttribute('inputtype') === "ArrayArray") {
                 return convertToArrayOfArrays(thisRef.value);
+            }
+            if(thisRef.getAttribute('inputtype') === "BooleanArrayArray") {
+                return convertToArrayOfBooleanArrays(thisRef.value);
             }
             //HERE, put other input conversion code (inlcuding arrays, etc.).
             //Otherwise, keep this as a string.
