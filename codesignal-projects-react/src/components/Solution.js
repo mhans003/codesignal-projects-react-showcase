@@ -13,12 +13,14 @@ import challenges from '../solution-code/challenges';
 import challenges_d_f from '../solution-code/challenges_d_f';
 import challenges_g_j from '../solution-code/challenges_g_j';
 import challenges_k_n from '../solution-code/challenges_k_n';
+import challenges_o_r from '../solution-code/challenges_o_r';
 
 let allChallenges = {
     ...challenges, 
     ...challenges_d_f, 
     ...challenges_g_j, 
-    ...challenges_k_n
+    ...challenges_k_n,
+    ...challenges_o_r
 };
 
 const Solution = props => {
