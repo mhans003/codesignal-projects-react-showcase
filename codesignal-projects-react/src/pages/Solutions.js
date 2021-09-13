@@ -134,6 +134,7 @@ const Solutions = () => {
                 <option value="minesweeper">Minesweeper</option>
                 <option value="minimalNumberOfCoins">Minimal Number of Coins</option>
                 <option value="mirrorBits">Mirror Bits</option>
+                <option value="missedClasses">Missed Classes</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
