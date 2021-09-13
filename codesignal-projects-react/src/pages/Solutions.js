@@ -141,6 +141,7 @@ const Solutions = () => {
                 <option value="noIfsNoButs">No Ifs No Buts</option>
                 <option value="nthNumber">Nth Number</option>
                 <option value="numberOfClans">Number of Clans</option>
+                <option value="numbersGrouping">Numbers Grouping</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
