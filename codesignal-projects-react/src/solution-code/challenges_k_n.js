@@ -871,6 +871,33 @@ const challenges_k_n = {
                 }
             ]
         }
+    },
+    maxMultiple: {
+        instructions: `Given a divisor and a bound, find the largest integer N such that:
+
+        N is divisible by divisor.
+        N is less than or equal to bound.
+        N is greater than 0.
+        It is guaranteed that such a number exists.`,
+        codeOutput: 
+        `function maxMultiple(divisor, bound) {
+            return Math.floor(bound / divisor) * divisor;
+        }`,
+        code: function maxMultiple(divisor, bound) {
+            return Math.floor(bound / divisor) * divisor;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Integer (Divisor)",
+                    type: "Number"
+                },
+                {
+                    text: "Integer (Bound)",
+                    type: "Number"
+                }
+            ]
+        }
     }
 };
 
