@@ -136,6 +136,7 @@ const Solutions = () => {
                 <option value="mirrorBits">Mirror Bits</option>
                 <option value="missedClasses">Missed Classes</option>
                 <option value="mostFrequentDigitSum">Most Frequent Digit Sum</option>
+                <option value="newNumeralSystem">New Numeral System</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
