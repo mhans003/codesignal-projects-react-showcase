@@ -132,6 +132,7 @@ const Solutions = () => {
                 <option value="messageFromBinaryCode">Message From Binary Code</option>
                 <option value="metroCard">Metro Card</option>
                 <option value="minesweeper">Minesweeper</option>
+                <option value="minimalNumberOfCoins">Minimal Number of Coins</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
