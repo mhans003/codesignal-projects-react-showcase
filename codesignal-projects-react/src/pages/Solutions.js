@@ -137,6 +137,7 @@ const Solutions = () => {
                 <option value="missedClasses">Missed Classes</option>
                 <option value="mostFrequentDigitSum">Most Frequent Digit Sum</option>
                 <option value="newNumeralSystem">New Numeral System</option>
+                <option value="newYearCelebrations">New Year Celebrations</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
