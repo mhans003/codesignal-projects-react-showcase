@@ -133,6 +133,7 @@ const Solutions = () => {
                 <option value="metroCard">Metro Card</option>
                 <option value="minesweeper">Minesweeper</option>
                 <option value="minimalNumberOfCoins">Minimal Number of Coins</option>
+                <option value="mirrorBits">Mirror Bits</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>

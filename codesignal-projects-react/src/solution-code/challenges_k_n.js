@@ -1128,6 +1128,32 @@ const challenges_k_n = {
                 }
             ]
         }
+    },
+    mirrorBits: {
+        instructions: `Reverse the order of the bits in a given integer.`,
+        codeOutput: 
+        `function mirrorBits(a) {
+            //Convert this integer into binary.
+            let binary = a.toString(2).split("").reverse().join("");
+            //Convert the reversed binary back into an integer.
+            let output = parseInt(binary, 2);
+            return output;
+        }`,
+        code: function mirrorBits(a) {
+            //Convert this integer into binary.
+            let binary = a.toString(2).split("").reverse().join("");
+            //Convert the reversed binary back into an integer.
+            let output = parseInt(binary, 2);
+            return output;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Integer Input",
+                    type: "Number"
+                }
+            ]
+        }
     }
 };
 
