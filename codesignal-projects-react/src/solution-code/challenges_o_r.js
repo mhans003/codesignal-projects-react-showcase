@@ -625,6 +625,52 @@ const challenges_o_r = {
                 }
             ]
         }
+    },
+    removeArrayPart: {
+        instructions: `Remove a part of a given array between given 0-based indexes l and r (inclusive).`,
+        codeOutput: 
+        `function removeArrayPart(inputArray, l, r) {
+            return inputArray.slice(0, l).concat(inputArray.slice(r + 1));
+        }`,
+        code: function removeArrayPart(inputArray, l, r) {
+            return inputArray.slice(0, l).concat(inputArray.slice(r + 1));
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (No Brackets []; Form of 1,2,3...)",
+                    type: "NumberArray"
+                },
+                {
+                    text: "Integer l",
+                    type: "Number"
+                },
+                {
+                    text: "Integer r",
+                    type: "Number"
+                }
+            ]
+        }
+    },
+    replaceAllDigitsRegExp: {
+        instructions: `Implement a function that replaces each digit in the given string with a '#' character.`,
+        codeOutput: 
+        `function replaceAllDigitsRegExp(input) {
+            //Perform a global replace on all digits between 0-9.
+            return input.replaceAll(/[0-9]/g, "#");
+        }`,
+        code: function replaceAllDigitsRegExp(input) {
+            //Perform a global replace on all digits between 0-9.
+            return input.replaceAll(/[0-9]/g, "#");
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String Input",
+                    type: "String"
+                }
+            ]
+        }
     }
 };
 
