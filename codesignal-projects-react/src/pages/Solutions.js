@@ -150,6 +150,7 @@ const Solutions = () => {
                 <option value="properNounCorrection">Proper Noun Correction</option>
                 <option value="rangeBitCount">Range Bit Count</option>
                 <option value="reachNextLevel">Reach Next Level</option>
+                <option value="rectangleRotation">Rectangle Rotation</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
