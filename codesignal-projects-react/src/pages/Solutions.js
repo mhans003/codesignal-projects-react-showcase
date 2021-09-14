@@ -148,6 +148,7 @@ const Solutions = () => {
                 <option value="phoneCall">Phone Call</option>
                 <option value="polygonPerimeter">Polygon Perimeter</option>
                 <option value="properNounCorrection">Proper Noun Correction</option>
+                <option value="rangeBitCount">Range Bit Count</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
