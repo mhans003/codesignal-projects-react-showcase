@@ -144,6 +144,7 @@ const Solutions = () => {
                 <option value="numbersGrouping">Numbers Grouping</option>
                 <option value="pagesNumberingWithInk">Pages Numbering With Ink</option>
                 <option value="pairOfShoes">Pair of Shoes</option>
+                <option value="palindromeRearranging">Palindrome Rearranging</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
