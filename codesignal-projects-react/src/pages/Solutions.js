@@ -149,6 +149,7 @@ const Solutions = () => {
                 <option value="polygonPerimeter">Polygon Perimeter</option>
                 <option value="properNounCorrection">Proper Noun Correction</option>
                 <option value="rangeBitCount">Range Bit Count</option>
+                <option value="reachNextLevel">Reach Next Level</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
