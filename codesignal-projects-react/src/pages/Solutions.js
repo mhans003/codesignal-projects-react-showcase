@@ -156,6 +156,7 @@ const Solutions = () => {
                 <option value="removeArrayPart">Remove Array Part</option>
                 <option value="replaceAllDigitsRegExp">Replace All Digits RegExp</option>
                 <option value="replaceMiddle">Replace Middle</option>
+                <option value="reverseInParentheses">Reverse In Parentheses</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
