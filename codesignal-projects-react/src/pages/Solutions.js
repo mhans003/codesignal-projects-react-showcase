@@ -152,6 +152,7 @@ const Solutions = () => {
                 <option value="reachNextLevel">Reach Next Level</option>
                 <option value="rectangleRotation">Rectangle Rotation</option>
                 <option value="reflectString">Reflect String</option>
+                <option value="regularMonths">Regular Months</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
