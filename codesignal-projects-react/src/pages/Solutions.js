@@ -151,6 +151,7 @@ const Solutions = () => {
                 <option value="rangeBitCount">Range Bit Count</option>
                 <option value="reachNextLevel">Reach Next Level</option>
                 <option value="rectangleRotation">Rectangle Rotation</option>
+                <option value="reflectString">Reflect String</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
