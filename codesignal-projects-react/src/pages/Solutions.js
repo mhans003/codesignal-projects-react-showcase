@@ -145,6 +145,7 @@ const Solutions = () => {
                 <option value="pagesNumberingWithInk">Pages Numbering With Ink</option>
                 <option value="pairOfShoes">Pair of Shoes</option>
                 <option value="palindromeRearranging">Palindrome Rearranging</option>
+                <option value="phoneCall">Phone Call</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
