@@ -159,6 +159,7 @@ const Solutions = () => {
                 <option value="reverseInParentheses">Reverse In Parentheses</option>
                 <option value="reverseOnDiagonals">Reverse on Diagonals</option>
                 <option value="rounders">Rounders</option>
+                <option value="rowsRearranging">Rows Rearranging</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
