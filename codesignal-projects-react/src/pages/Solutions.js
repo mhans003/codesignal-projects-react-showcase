@@ -160,6 +160,7 @@ const Solutions = () => {
                 <option value="reverseOnDiagonals">Reverse on Diagonals</option>
                 <option value="rounders">Rounders</option>
                 <option value="rowsRearranging">Rows Rearranging</option>
+                <option value="runnersMeetings">Runners Meetings</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
