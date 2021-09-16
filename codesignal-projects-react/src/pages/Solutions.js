@@ -157,6 +157,7 @@ const Solutions = () => {
                 <option value="replaceAllDigitsRegExp">Replace All Digits RegExp</option>
                 <option value="replaceMiddle">Replace Middle</option>
                 <option value="reverseInParentheses">Reverse In Parentheses</option>
+                <option value="reverseOnDiagonals">Reverse on Diagonals</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
