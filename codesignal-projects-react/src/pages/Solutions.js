@@ -161,6 +161,7 @@ const Solutions = () => {
                 <option value="rounders">Rounders</option>
                 <option value="rowsRearranging">Rows Rearranging</option>
                 <option value="runnersMeetings">Runners Meetings</option>
+                <option value="seatsInTheater">Seats in Theater</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
