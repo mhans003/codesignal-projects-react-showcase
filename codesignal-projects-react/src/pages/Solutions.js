@@ -162,6 +162,7 @@ const Solutions = () => {
                 <option value="rowsRearranging">Rows Rearranging</option>
                 <option value="runnersMeetings">Runners Meetings</option>
                 <option value="seatsInTheater">Seats in Theater</option>
+                <option value="secondRightmostZeroBit">Second Right-Most Zero Bit</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
