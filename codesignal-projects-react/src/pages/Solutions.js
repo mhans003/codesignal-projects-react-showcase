@@ -164,6 +164,7 @@ const Solutions = () => {
                 <option value="seatsInTheater">Seats in Theater</option>
                 <option value="secondRightmostZeroBit">Second Right-Most Zero Bit</option>
                 <option value="shapeArea">Shape Area</option>
+                <option value="shuffledArray">Shuffled Array</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
