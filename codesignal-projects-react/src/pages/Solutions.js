@@ -165,6 +165,7 @@ const Solutions = () => {
                 <option value="secondRightmostZeroBit">Second Right-Most Zero Bit</option>
                 <option value="shapeArea">Shape Area</option>
                 <option value="shuffledArray">Shuffled Array</option>
+                <option value="sortByHeight">Sort by Height</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>

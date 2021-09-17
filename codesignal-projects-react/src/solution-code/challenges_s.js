@@ -170,6 +170,38 @@ const challenges_s = {
                 }
             ]
         }
+    },
+    sortByHeight: {
+        instructions: `Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!`,
+        codeOutput: 
+        `function sortByHeight(a) {
+            //Extract non -1 values
+            let values = a.filter(value => value !== -1).sort((a, b) => a - b);
+            //Loop through array, placing sorted values into place.
+            return a.map(value => {
+                //If this value is not -1, insert the next value in the sorted portions of the array.
+                if(value !== -1) return values.shift();
+                return value;
+            });
+        }`,
+        code: function sortByHeight(a) {
+            //Extract non -1 values
+            let values = a.filter(value => value !== -1).sort((a, b) => a - b);
+            //Loop through array, placing sorted values into place.
+            return a.map(value => {
+                //If this value is not -1, insert the next value in the sorted portions of the array.
+                if(value !== -1) return values.shift();
+                return value;
+            });
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers Mixed With -1 Values (No Brackets; Example: -1,150,190,170,-1,-1,160,180)",
+                    type: "NumberArray"
+                }
+            ]
+        }
     }
 };
 
