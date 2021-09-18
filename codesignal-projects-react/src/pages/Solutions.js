@@ -168,6 +168,7 @@ const Solutions = () => {
                 <option value="sortByHeight">Sort by Height</option>
                 <option value="sortByLength">Sort by Length</option>
                 <option value="spiralNumbers">Spiral Numbers</option>
+                <option value="squareDigitsSequence">Square Digits Sequence</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
