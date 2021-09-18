@@ -170,6 +170,7 @@ const Solutions = () => {
                 <option value="spiralNumbers">Spiral Numbers</option>
                 <option value="squareDigitsSequence">Square Digits Sequence</option>
                 <option value="starRotation">Star Rotation</option>
+                <option value="stringsConstruction">Strings Construction</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
