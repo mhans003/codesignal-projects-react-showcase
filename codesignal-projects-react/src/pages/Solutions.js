@@ -167,6 +167,7 @@ const Solutions = () => {
                 <option value="shuffledArray">Shuffled Array</option>
                 <option value="sortByHeight">Sort by Height</option>
                 <option value="sortByLength">Sort by Length</option>
+                <option value="spiralNumbers">Spiral Numbers</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
