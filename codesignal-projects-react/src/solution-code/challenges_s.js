@@ -870,6 +870,106 @@ const challenges_s = {
                 }
             ]
         }
+    },
+    sudoku: {
+        instructions: `Sudoku is a number-placement puzzle. The objective is to fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 sub-grids that compose the grid contains all of the digits from 1 to 9.
+
+        This algorithm should check if the given grid of numbers represents a correct solution to Sudoku.`,
+        codeOutput: 
+        `function sudoku(grid) {
+            let valid = true;
+            //Test the rows.
+            for(let i = 0; i < grid.length; i++) {
+                let existingNums = {};
+                for(let j = 0; j < grid[i].length; j++) {
+                    //If we find a repeating number in this row, return false.
+                    if(existingNums[grid[i][j]]) {
+                        valid = false;
+                    }
+                    existingNums[grid[i][j]] = true;
+                }
+            }
+            //Test the columns
+            for(let j = 0; j < grid.length; j++) {
+                let existingNums = {};
+                for(let i = 0; i < grid.length; i++) {
+                    //If we find a repeating number in this column, return false;
+                    if(existingNums[grid[i][j]]) {
+                        valid = false;
+                    }
+                    existingNums[grid[i][j]] = true;
+                }
+            }
+            //Test the squares
+            for(let i = 0; i < grid.length; i += 3) {
+                for(let j = 0; j < grid[i].length; j += 3) {
+                    let existingNums = {};
+                    //For each square, start iteration through the individual numbers
+                    for(let i_prime = i; i_prime < i + 3; i_prime++) {
+                        for(let j_prime = j; j_prime < j + 3; j_prime++) {
+                            //If we find a repeating number in this column, return false;
+                            if(existingNums[grid[i_prime][j_prime]]) {
+                                valid = false;
+                            }
+                            existingNums[grid[i_prime][j_prime]] = true;
+                        }
+                    }
+                }
+            }
+            
+            return valid;
+        }`,
+        code: function sudoku(grid) {
+            let valid = true;
+            //Test the rows.
+            for(let i = 0; i < grid.length; i++) {
+                let existingNums = {};
+                for(let j = 0; j < grid[i].length; j++) {
+                    //If we find a repeating number in this row, return false.
+                    if(existingNums[grid[i][j]]) {
+                        valid = false;
+                    }
+                    existingNums[grid[i][j]] = true;
+                }
+            }
+            //Test the columns
+            for(let j = 0; j < grid.length; j++) {
+                let existingNums = {};
+                for(let i = 0; i < grid.length; i++) {
+                    //If we find a repeating number in this column, return false;
+                    if(existingNums[grid[i][j]]) {
+                        valid = false;
+                    }
+                    existingNums[grid[i][j]] = true;
+                }
+            }
+            //Test the squares
+            for(let i = 0; i < grid.length; i += 3) {
+                for(let j = 0; j < grid[i].length; j += 3) {
+                    let existingNums = {};
+                    //For each square, start iteration through the individual numbers
+                    for(let i_prime = i; i_prime < i + 3; i_prime++) {
+                        for(let j_prime = j; j_prime < j + 3; j_prime++) {
+                            //If we find a repeating number in this column, return false;
+                            if(existingNums[grid[i_prime][j_prime]]) {
+                                valid = false;
+                            }
+                            existingNums[grid[i_prime][j_prime]] = true;
+                        }
+                    }
+                }
+            }
+            
+            return valid;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Sudoku Board Represented by Array of Integer Arrays (Example: [1,3,2,5,4,6,9,8,7], [4,6,5,8,7,9,3,2,1], [7,9,8,2,1,3,6,5,4], [9,2,1,4,3,5,8,7,6], [3,5,4,7,6,8,2,1,9], [6,8,7,1,9,2,5,4,3], [5,7,6,9,8,1,4,3,2], [2,4,3,6,5,7,1,9,8], [8,1,9,3,2,4,7,6,5])",
+                    type: "NumberArrayArray"
+                }
+            ]
+        }
     }
 };
 

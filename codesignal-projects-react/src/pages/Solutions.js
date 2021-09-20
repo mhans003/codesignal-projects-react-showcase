@@ -173,6 +173,7 @@ const Solutions = () => {
                 <option value="stringsConstruction">Strings Construction</option>
                 <option value="stringsCrossover">Strings Crossover</option>
                 <option value="stringsRearrangement">Strings Rearrangement</option>
+                <option value="sudoku">Sudoku</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
