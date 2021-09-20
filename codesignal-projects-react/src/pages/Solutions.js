@@ -172,6 +172,7 @@ const Solutions = () => {
                 <option value="starRotation">Star Rotation</option>
                 <option value="stringsConstruction">Strings Construction</option>
                 <option value="stringsCrossover">Strings Crossover</option>
+                <option value="stringsRearrangement">Strings Rearrangement</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
