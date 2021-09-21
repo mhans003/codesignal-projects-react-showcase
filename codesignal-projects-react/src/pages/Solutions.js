@@ -177,6 +177,7 @@ const Solutions = () => {
                 <option value="sumUpNumbers">Sum Up Numbers</option>
                 <option value="swapAdjacentBits">Swap Adjacent Bits</option>
                 <option value="swapAdjacentWords">Swap Adjacent Words</option>
+                <option value="swapDiagonals">Swap Diagonals</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
