@@ -178,6 +178,7 @@ const Solutions = () => {
                 <option value="swapAdjacentBits">Swap Adjacent Bits</option>
                 <option value="swapAdjacentWords">Swap Adjacent Words</option>
                 <option value="swapDiagonals">Swap Diagonals</option>
+                <option value="switchLights">Switch Lights</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
