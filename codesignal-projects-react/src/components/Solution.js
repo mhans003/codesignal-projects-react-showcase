@@ -15,6 +15,7 @@ import challenges_g_j from '../solution-code/challenges_g_j';
 import challenges_k_n from '../solution-code/challenges_k_n';
 import challenges_o_r from '../solution-code/challenges_o_r';
 import challenges_s from '../solution-code/challenges_s';
+import challenges_t_z from '../solution-code/challenges_t_z';
 
 let allChallenges = {
     ...challenges, 
@@ -22,7 +23,8 @@ let allChallenges = {
     ...challenges_g_j, 
     ...challenges_k_n,
     ...challenges_o_r,
-    ...challenges_s
+    ...challenges_s,
+    ...challenges_t_z
 };
 
 const Solution = props => {
