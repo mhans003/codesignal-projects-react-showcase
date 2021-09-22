@@ -180,6 +180,7 @@ const Solutions = () => {
                 <option value="swapDiagonals">Swap Diagonals</option>
                 <option value="switchLights">Switch Lights</option>
                 <option value="isTandemRepeat">Is Tandem Repeat</option>
+                <option value="tennisSet">Tennis Set</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
