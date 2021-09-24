@@ -185,6 +185,7 @@ const Solutions = () => {
                 <option value="timedReading">Timed Reading</option>
                 <option value="uniqueDigitProducts">Unique Digit Products</option>
                 <option value="validTime">Valid Time</option>
+                <option value="variableName">Variable Name</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
