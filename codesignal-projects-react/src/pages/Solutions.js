@@ -183,6 +183,7 @@ const Solutions = () => {
                 <option value="tennisSet">Tennis Set</option>
                 <option value="threeSplit">Three Split</option>
                 <option value="timedReading">Timed Reading</option>
+                <option value="uniqueDigitProducts">Unique Digit Products</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
