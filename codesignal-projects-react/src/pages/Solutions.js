@@ -189,6 +189,7 @@ const Solutions = () => {
                 <option value="videoPart">Video Part</option>
                 <option value="volleyballPositions">Volleyball Positions</option>
                 <option value="weakNumbers">Weak Numbers</option>
+                <option value="whoseTurn">Whose Turn</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
