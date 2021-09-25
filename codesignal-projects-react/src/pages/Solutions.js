@@ -190,6 +190,7 @@ const Solutions = () => {
                 <option value="volleyballPositions">Volleyball Positions</option>
                 <option value="weakNumbers">Weak Numbers</option>
                 <option value="whoseTurn">Whose Turn</option>
+                <option value="willYou">Will You</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>

@@ -39,6 +39,11 @@ const Solution = props => {
         return Number(stringInput);
     }
 
+    //Convert input to boolean.
+    const convertToBoolean = stringInput => {
+        return stringInput === "true" ? true : false;
+    }
+
     //Convert user input into an array of strings.
     const convertToStringArray = stringInput => {
         return stringInput.split(",");
@@ -110,6 +115,9 @@ const Solution = props => {
             }
             if(thisRef.getAttribute('inputtype') === "BooleanArrayArray") {
                 return convertToArrayOfBooleanArrays(thisRef.value);
+            }
+            if(thisRef.getAttribute('inputtype') === "Boolean") {
+                return convertToBoolean(thisRef.value);
             }
             //HERE, put other input conversion code (inlcuding arrays, etc.).
             //Otherwise, keep this as a string.
