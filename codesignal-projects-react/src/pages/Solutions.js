@@ -187,6 +187,7 @@ const Solutions = () => {
                 <option value="validTime">Valid Time</option>
                 <option value="variableName">Variable Name</option>
                 <option value="videoPart">Video Part</option>
+                <option value="volleyballPositions">Volleyball Positions</option>
             </select>
             <Solution challengeName={challengeName}/>
         </>
