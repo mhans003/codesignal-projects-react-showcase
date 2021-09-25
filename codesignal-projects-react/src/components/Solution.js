@@ -140,23 +140,42 @@ const Solution = props => {
             {
                 props.challengeName ? 
                 <div>
-                    <code>{allChallenges[`${props.challengeName}`].codeOutput}</code>
-                    <p>{allChallenges[`${props.challengeName}`].instructions}</p>
-                    {allChallenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {
-                        return (
-                            //Dynamically create input fields for the number of inputs for this challenge.
-                            //This will create a reference to that input element so that we can capture a user's input test value.
-                            <div key={index}>
-                                <label>{description.text}</label>
-                                <input 
-                                    type="text" 
-                                    inputtype={description.type}
-                                    ref={el => (refs.current[index] = el)}
-                                />        
-                            </div>
-                        );
-                    })}
-                    <button onClick={generateOutput}>Test</button>
+                    <div className="mt-2">
+                        <p>Solution Code:</p>
+                        <div className="bg-light p-4">
+                            <code>{allChallenges[`${props.challengeName}`].codeOutput}</code>
+                        </div>  
+                    </div>
+                    
+                    <div className="my-4">
+                        <p>Instructions:</p>
+                        <div className="bg-light p-4">
+                            <p>{allChallenges[`${props.challengeName}`].instructions}</p>
+                        </div> 
+                    </div>
+                    
+
+                    <fieldset className="form-group">
+                        <legend>User Input</legend>
+                        {allChallenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {
+                            return (
+                                //Dynamically create input fields for the number of inputs for this challenge.
+                                //This will create a reference to that input element so that we can capture a user's input test value.
+                                <div className="form-group" key={index}>
+                                    <label for={`input-${index}`}>{description.text}</label>
+                                    <input 
+                                        id={`input-${index}`}
+                                        className="form-control"
+                                        type="text" 
+                                        inputtype={description.type}
+                                        ref={el => (refs.current[index] = el)}
+                                    />        
+                                </div>
+                            );
+                        })}
+                    </fieldset>
+
+                    <button type="button" className="btn btn-primary" onClick={generateOutput}>Test</button>
                     <p ref={solutionOutput}></p>
                 </div>
                 : null
