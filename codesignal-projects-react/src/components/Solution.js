@@ -138,7 +138,11 @@ const Solution = props => {
             //Get output from running function. If the function returns null or undefined, we know something was wrong with the inputs.
             try {
                 output = allChallenges[`${props.challengeName}`].code(...args) ?? "Something went wrong with the inputs.";
-                if(isNaN(output)) throw("Output was not a number. Try another input.");
+                if(output === isNaN) throw("Output was not a number. Try another input.");
+                //If the output was in array form, see if any value was NaN.
+                if(Array.isArray(output)) {
+                    if(output.includes(NaN)) throw("Output was not a number. Try another input.");
+                }
             } catch(error) {
                 output = `Error running code: ${error}`;
             }
