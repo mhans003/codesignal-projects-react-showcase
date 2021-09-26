@@ -93,46 +93,59 @@ const Solution = props => {
 
     //Generate output based on user test input.
     const generateOutput = () => {
-        console.log("refs: " + refs.current.map(thisRef => thisRef.value))
-        console.log("refs: " + refs.current.map(thisRef => thisRef.getAttribute("inputtype")))
         //Convert inputs to correct types.
         const args = refs.current.map(thisRef => {
             //Convert input to number.
-            if(thisRef.getAttribute("inputtype") === "Number") {
-                return convertToNumber(thisRef.value);
+            try {
+                if(thisRef.getAttribute("inputtype") === "Number") {
+                    return convertToNumber(thisRef.value);
+                }
+                if(thisRef.getAttribute("inputtype") === "NumberArray") {
+                    return convertToNumberArray(thisRef.value);
+                }
+                if(thisRef.getAttribute("inputtype") === "StringArray") {
+                    return convertToStringArray(thisRef.value);
+                }
+                if(thisRef.getAttribute('inputtype') === "NumberArrayArray") {
+                    return convertToArrayOfNumberArrays(thisRef.value);
+                }
+                if(thisRef.getAttribute('inputtype') === "ArrayArray") {
+                    return convertToArrayOfArrays(thisRef.value);
+                }
+                if(thisRef.getAttribute('inputtype') === "BooleanArrayArray") {
+                    return convertToArrayOfBooleanArrays(thisRef.value);
+                }
+                if(thisRef.getAttribute('inputtype') === "Boolean") {
+                    return convertToBoolean(thisRef.value);
+                }
+            } catch(error) {
+                //Something went wrong when trying to access or convert user input. Return 0 instead for this input.
+                console.log("IN ERROR BLOCK")
+                return 0;
             }
-            if(thisRef.getAttribute("inputtype") === "NumberArray") {
-                return convertToNumberArray(thisRef.value);
-            }
-            if(thisRef.getAttribute("inputtype") === "StringArray") {
-                return convertToStringArray(thisRef.value);
-            }
-            if(thisRef.getAttribute('inputtype') === "NumberArrayArray") {
-                return convertToArrayOfNumberArrays(thisRef.value);
-            }
-            if(thisRef.getAttribute('inputtype') === "ArrayArray") {
-                return convertToArrayOfArrays(thisRef.value);
-            }
-            if(thisRef.getAttribute('inputtype') === "BooleanArrayArray") {
-                return convertToArrayOfBooleanArrays(thisRef.value);
-            }
-            if(thisRef.getAttribute('inputtype') === "Boolean") {
-                return convertToBoolean(thisRef.value);
-            }
+            
             //HERE, put other input conversion code (inlcuding arrays, etc.).
             //Otherwise, keep this as a string.
             return thisRef.value;
         });
-        console.log(args);
 
         //Run function with user's input (converted to correct types).
-        let output = allChallenges[`${props.challengeName}`].code(...args);
+        let output;
+
+        if(!args) {
+            output = `Error with Inputs`;
+        } else {
+            //Get output from running function. If the function returns null or undefined, we know something was wrong with the inputs.
+            try {
+                output = allChallenges[`${props.challengeName}`].code(...args) ?? "Something went wrong with the inputs.";
+            } catch(error) {
+                output = `Error running code: ${error}`;
+            }
+        }
 
         //Output the solution to the page.
-        console.log(output);
         solutionOutput.current.value = output;
         solutionOutput.current.innerHTML = output;
-        console.log(solutionOutput.current);
     };
 
     return (
