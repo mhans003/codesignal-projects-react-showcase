@@ -6,7 +6,7 @@
 //SolutionTest - A form which passes a user's input to the function 
     //SolutionTest - Contains SolutionOutput
 
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 //Test solution(s) with an example
 import challenges from '../solution-code/challenges';
@@ -30,6 +30,16 @@ let allChallenges = {
 const Solution = props => {
     //Create an empty array to hold references to dynamic inputs (created when a challenge is selected).
     const refs = useRef([]);
+
+    //Each time the challenge changes, remove null values from the dynamic ref array.
+    //This occurs when a challenge is selected that has multiple inputs, then is changed to a challenge with fewer inputs.
+    //Those remaining inputs become null.
+    useEffect(() => {
+        //*Is there a more dynamic React-based or less vanilla approach to this?
+        while(refs.current[refs.current.length - 1] === null && refs.current.length) {
+            refs.current.pop();
+        }
+    }, [props.challengeName])
 
     //Create a reference to the output where a solution will be placed.
     const solutionOutput = useRef("");
