@@ -121,7 +121,7 @@ const Solution = props => {
             } catch(error) {
                 //Something went wrong when trying to access or convert user input. Return 0 instead for this input.
                 console.log("IN ERROR BLOCK")
-                return 0;
+                return "error";
             }
             
             //HERE, put other input conversion code (inlcuding arrays, etc.).
@@ -132,7 +132,7 @@ const Solution = props => {
         //Run function with user's input (converted to correct types).
         let output;
 
-        if(!args) {
+        if(args.includes("error")) {
             output = `Error with Inputs`;
         } else {
             //Get output from running function. If the function returns null or undefined, we know something was wrong with the inputs.
