@@ -3,8 +3,8 @@ import Landing from '../pages/Landing';
 
 const Nav = () => {
     return (
-        <nav className="navbar navbar-expand-sm navbar-light bg-light">
-            <a className="navbar-brand" href="#">CodeSignal Solutions</a>
+        <nav className="navbar navbar-expand-sm navbar-light bg-light py-4">
+            <a className="navbar-brand ml-3" href="#">CodeSignal Solutions</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
