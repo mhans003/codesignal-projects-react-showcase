@@ -28,6 +28,7 @@ let allChallenges = {
 };
 
 const Solution = props => {
+    //console.log(allChallenges[`${props.challengeName}`].code ?? "undefined")
     //Create an empty array to hold references to dynamic inputs (created when a challenge is selected).
     const refs = useRef([]);
 
@@ -171,6 +172,7 @@ const Solution = props => {
                     <div className="mt-2">
                         <p>Solution Code:</p>
                         <div className="bg-light p-4">
+                            <p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].code.name}.js`}>Click Here to See Code in Repo</a></p>
                             <code>{allChallenges[`${props.challengeName}`].codeOutput}</code>
                         </div>  
                     </div>

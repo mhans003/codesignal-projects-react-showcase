@@ -3,6 +3,7 @@
 
 const challenges = {
     candies: {
+        name: "candies",
         instructions: `n children have got m pieces of candy. They want to eat as much candy as they can, but each child must eat exactly the same amount of candy as any other child. Determine how many pieces of candy will be eaten by all the children together. Individual pieces of candy cannot be split.`,
         codeOutput: 
         `function candies(n, m) { 
@@ -25,6 +26,7 @@ const challenges = {
         }
     },
     absvaluesumminimization: {
+        name: "absvaluesumminimization",
         instructions: `Given a sorted array of integers a, your task is to determine which element of a is closest to all other values of a. In other words, find the element x in a, which minimizes the following sum:
 
         abs(a[0] - x) + abs(a[1] - x) + ... + abs(a[a.length - 1] - x)
@@ -793,7 +795,7 @@ const challenges = {
 
         Given two arrays a and b, check whether they are similar.`,
         codeOutput: 
-        `function areSimilar(a, b) {
+        `function areSimilar2(a, b) {
             //Helper function to see if arrays are equal.
             const arrayCheck = (arr1, arr2) => {
                 for(let i = 0; i < arr1.length; i++) {
@@ -818,7 +820,7 @@ const challenges = {
             
             return arrayCheck(a, b);
         }`,
-        code: function areSimilar(a, b) {
+        code: function areSimilar2(a, b) {
             //Helper function to see if arrays are equal.
             const arrayCheck = (arr1, arr2) => {
                 for(let i = 0; i < arr1.length; i++) {
