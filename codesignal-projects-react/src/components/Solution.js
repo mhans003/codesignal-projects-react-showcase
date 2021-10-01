@@ -32,6 +32,9 @@ const Solution = props => {
     //Create an empty array to hold references to dynamic inputs (created when a challenge is selected).
     const refs = useRef([]);
 
+    //Create a reference to the output where a solution will be placed.
+    const solutionOutput = useRef("");
+
     //Each time the challenge changes, remove null values from the dynamic ref array.
     //This occurs when a challenge is selected that has multiple inputs, then is changed to a challenge with fewer inputs.
     //Those remaining inputs become null.
@@ -44,10 +47,10 @@ const Solution = props => {
         refs.current.forEach(field => {
             field.value = "";
         });
+        //Clear out the solution output if there was something there.
+        if(solutionOutput.current.value) solutionOutput.current.innerHTML = "";
+        //solutionOutput.current.innerHTML
     }, [props.challengeName])
-
-    //Create a reference to the output where a solution will be placed.
-    const solutionOutput = useRef("");
 
     //Convert input to number.
     const convertToNumber = stringInput => {
