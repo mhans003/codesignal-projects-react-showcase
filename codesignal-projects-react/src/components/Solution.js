@@ -40,6 +40,10 @@ const Solution = props => {
         while(refs.current[refs.current.length - 1] === null && refs.current.length) {
             refs.current.pop();
         }
+        //Reset input values.
+        refs.current.forEach(field => {
+            field.value = "";
+        });
     }, [props.challengeName])
 
     //Create a reference to the output where a solution will be placed.
