@@ -18,8 +18,8 @@ const Solutions = () => {
             <div className="container mt-5">
                 <div className="form-group">
                     <label for="select-challenge">Select Challenge</label>
-                    <select className="form-control" id="select-challenge" onChange={e => handleChallengeChange(e)} ref={challengeDropdown}>
-                        <option value="candies">Candies</option>
+                    <select className="form-control form-control-lg" id="select-challenge" onChange={e => handleChallengeChange(e)} ref={challengeDropdown}>
+                        <option selected>Select a Challenge</option>
                         <option value="absvaluesumminimization">Abs Value Sum Minimization</option>
                         <option value="adanumber">Ada Number</option>
                         <option value="addborder">Add Border</option>
@@ -51,6 +51,7 @@ const Solutions = () => {
                         <option value="boxBlur">Box Blur</option>
                         <option value="boxesPacking">Boxes Packing</option>
                         <option value="buildPalindrome">Build Palindrome</option>
+                        <option value="candies">Candies</option>
                         <option value="candles">Candles</option>
                         <option value="characterParity">Character Parity</option>
                         <option value="checkPalindrome">Check Palindrome</option>
