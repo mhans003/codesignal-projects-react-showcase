@@ -13,3 +13,6 @@ code {
     monospace;
 }
 */
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
