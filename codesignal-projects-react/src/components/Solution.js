@@ -175,46 +175,51 @@ const Solution = props => {
         <>
             {
                 props.challengeName ? 
-                <div>
-                    <div className="mt-2">
-                        <p>Solution Code:</p>
-                        <div className="bg-light p-4">
-                            <p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].code.name}.js`} target="_blank" rel="noopener noreferrer">Click Here to See Code in Repo</a></p>
-                            <code>{allChallenges[`${props.challengeName}`].codeOutput}</code>
-                        </div>  
-                    </div>
-                    
+                <>
                     <div className="my-4">
                         <p>Instructions:</p>
                         <div className="bg-light p-4">
                             <p>{allChallenges[`${props.challengeName}`].instructions}</p>
                         </div> 
                     </div>
-                    
 
-                    <fieldset className="form-group">
-                        <legend>User Input</legend>
-                        {allChallenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {
-                            return (
-                                //Dynamically create input fields for the number of inputs for this challenge.
-                                //This will create a reference to that input element so that we can capture a user's input test value.
-                                <div className="form-group" key={index}>
-                                    <label for={`input-${index}`}>{description.text}</label>
-                                    <input 
-                                        id={`input-${index}`}
-                                        className="form-control"
-                                        type={description.type === "Number" ? "number": "text"} 
-                                        inputtype={description.type}
-                                        ref={el => (refs.current[index] = el)}
-                                    />        
-                                </div>
-                            );
-                        })}
-                    </fieldset>
+                    <div className="row">
+                        <div className="col-lg">
+                            <div className="mt-2">
+                                <p>Solution Code:</p>
+                                <div className="bg-light p-4">
+                                    <p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].code.name}.js`} target="_blank" rel="noopener noreferrer">Click Here to See Code in Repo</a></p>
+                                    <code>{allChallenges[`${props.challengeName}`].codeOutput}</code>
+                                </div>  
+                            </div> 
+                        </div>
+                        
+                        <div className="col-lg">
+                            <fieldset className="form-group">
+                                <legend>User Input</legend>
+                                {allChallenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {
+                                    return (
+                                        //Dynamically create input fields for the number of inputs for this challenge.
+                                        //This will create a reference to that input element so that we can capture a user's input test value.
+                                        <div className="form-group" key={index}>
+                                            <label for={`input-${index}`}>{description.text}</label>
+                                            <input 
+                                                id={`input-${index}`}
+                                                className="form-control"
+                                                type={description.type === "Number" ? "number": "text"} 
+                                                inputtype={description.type}
+                                                ref={el => (refs.current[index] = el)}
+                                            />        
+                                        </div>
+                                    );
+                                })}
+                            </fieldset>
 
-                    <button type="button" className="btn btn-primary" onClick={generateOutput}>Test</button>
-                    <p ref={solutionOutput}></p>
-                </div>
+                            <button type="button" className="btn btn-primary" onClick={generateOutput}>Test</button>
+                            <p ref={solutionOutput}></p>
+                        </div>
+                    </div>
+                </>
                 : null
             }
         </>
