@@ -195,8 +195,8 @@ const Solution = props => {
                         </div>
                         
                         <div className="col-lg">
-                            <fieldset className="form-group">
-                                <legend>User Input</legend>
+                            <div className="form-group mt-4 mt-lg-2">
+                                <p>User Input:</p>
                                 {allChallenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {
                                     return (
                                         //Dynamically create input fields for the number of inputs for this challenge.
@@ -213,7 +213,7 @@ const Solution = props => {
                                         </div>
                                     );
                                 })}
-                            </fieldset>
+                            </div>
 
                             <button type="button" className="btn btn-primary" onClick={generateOutput}>Test</button>
                             <p ref={solutionOutput}></p>
