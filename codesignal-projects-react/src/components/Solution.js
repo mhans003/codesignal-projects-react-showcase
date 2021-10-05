@@ -216,7 +216,10 @@ const Solution = props => {
                             </div>
 
                             <button type="button" className="btn btn-primary" onClick={generateOutput}>Test</button>
-                            <p ref={solutionOutput}></p>
+                            <div className="mt-3">
+                                <p>Solution Output:</p>
+                                <code ref={solutionOutput}></code>
+                            </div>
                         </div>
                     </div>
                 </>
