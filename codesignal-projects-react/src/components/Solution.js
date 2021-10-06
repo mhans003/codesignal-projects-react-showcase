@@ -216,7 +216,7 @@ const Solution = props => {
                             </div>
 
                             <button type="button" className="btn btn-info btn-block btn-lg" onClick={generateOutput}>Run Test</button>
-                            <div className="mt-3">
+                            <div className="mt-3 mb-5">
                                 <p>Solution Output:</p>
                                 <code ref={solutionOutput}></code>
                             </div>
