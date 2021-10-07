@@ -17,8 +17,8 @@ const Solutions = () => {
             <Nav/>
             <div className="container mt-5">
                 <div className="form-group">
-                    <label for="select-challenge">Select Challenge</label>
-                    <select className="form-control form-control-lg" id="select-challenge" onChange={e => handleChallengeChange(e)} ref={challengeDropdown}>
+                    <label for="select-challenge" className="field-heading">Select Challenge:</label>
+                    <select className="form-control form-control-lg dropdown-items" id="select-challenge" onChange={e => handleChallengeChange(e)} ref={challengeDropdown}>
                         <option selected>Select a Challenge</option>
                         <option value="absvaluesumminimization">Abs Value Sum Minimization</option>
                         <option value="adanumber">Ada Number</option>

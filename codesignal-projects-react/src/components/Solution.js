@@ -177,7 +177,7 @@ const Solution = props => {
                 props.challengeName ? 
                 <>
                     <div className="my-4">
-                        <p>Instructions:</p>
+                        <p className="field-heading">Instructions:</p>
                         <div className="bg-light p-4">
                             <p>{allChallenges[`${props.challengeName}`].instructions}</p>
                         </div> 
@@ -186,7 +186,7 @@ const Solution = props => {
                     <div className="row">
                         <div className="col-lg">
                             <div className="mt-2">
-                                <p>Solution Code:</p>
+                                <p className="field-heading">Solution Code:</p>
                                 <div className="bg-light p-4">
                                     <p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].code.name}.js`} target="_blank" rel="noopener noreferrer">Click Here to See Code in Repo</a></p>
                                     <code>{allChallenges[`${props.challengeName}`].codeOutput}</code>
@@ -196,7 +196,7 @@ const Solution = props => {
                         
                         <div className="col-lg">
                             <div className="form-group mt-4 mt-lg-2">
-                                <p>User Input:</p>
+                                <p className="field-heading">User Input:</p>
                                 {allChallenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {
                                     return (
                                         //Dynamically create input fields for the number of inputs for this challenge.
@@ -217,7 +217,7 @@ const Solution = props => {
 
                             <button type="button" className="btn btn-info btn-block btn-lg" onClick={generateOutput}>Run Test</button>
                             <div className="mt-3 mb-5">
-                                <p>Solution Output:</p>
+                                <p className="field-heading">Solution Output:</p>
                                 <div className="bg-dark p-4">
                                     <code ref={solutionOutput}></code>
                                 </div> 
