@@ -22,3 +22,21 @@ body {
 .dropdown-items {
   font-weight: 300;
 }
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.6) !important;
+}
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 338px) {
+  .navbar-brand {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .navbar-toggler {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
