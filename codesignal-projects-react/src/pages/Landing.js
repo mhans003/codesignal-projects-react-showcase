@@ -4,7 +4,7 @@ const Landing = () => {
     return (
         <>
             <div className="px-4 py-5 my-5 text-center">
-                <h1 className="display-5 fw-bold">CODESIGNAL SOLUTIONS</h1>
+                <h1 className="display-5 fw-bold">CodeSignal Solutions</h1>
                 <h2 className="display-5 fw-bold text-muted">Michael Hanson</h2>
                 <hr className="my-5"/>
                 <div className="col-lg-6 mx-auto">
