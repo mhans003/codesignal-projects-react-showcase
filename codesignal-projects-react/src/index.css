@@ -29,6 +29,18 @@ body {
   font-size: 1.4rem;
 }
 
+.btn-secondary:hover {
+  outline-color: #6c757d;
+  background-color: #fff;
+  color: #6c757d;
+}
+
+.btn-info:hover {
+  outline-color: #17a2b8;
+  background-color: #fff;
+  color: #17a2b8;
+}
+
 @media screen and (max-width: 338px) {
   .navbar-brand {
     margin-left: auto !important;
