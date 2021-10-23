@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 const Landing = () => {
     return (
         <>
-            <div className="px-4 py-5 my-5 text-center">
-                <h1 className="display-5 fw-bold">CodeSignal Solutions</h1>
-                <h2 className="display-5 fw-bold text-muted">Michael Hanson</h2>
-                <hr className="my-5"/>
+            <div className="mb-5 text-center">
+                <div className="py-5 mb-5" style={{backgroundColor:"rgba(23,162,184,0.2)"}}>
+                    <h1 className="display-5">CodeSignal Solutions</h1>
+                    <h2 className="display-5 text-muted">Michael Hanson</h2>
+                </div>
                 <div className="col-lg-6 mx-auto">
-                    <p className="lead mb-4">Browse my JavaScript solutions to coding challenges.</p>
+                    <p className="lead mb-4" style={{fontSize:"1.4rem"}}>Browse my JavaScript solutions to coding challenges.</p>
                     <div className="justify-content-center">
                         <Link to={"solutions"}>
                             <button type="button" className="btn btn-info btn-lg px-4 mx-auto my-2 d-block">View Solutions</button>
