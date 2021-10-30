@@ -205,7 +205,7 @@ const Solution = props => {
                                             <label for={`input-${index}`}>{description.text}</label>
                                             <input 
                                                 id={`input-${index}`}
-                                                className="form-control"
+                                                className="form-control form-control-lg"
                                                 type={description.type === "Number" ? "number": "text"} 
                                                 inputtype={description.type}
                                                 ref={el => (refs.current[index] = el)}
