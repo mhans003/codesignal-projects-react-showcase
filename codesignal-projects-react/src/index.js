@@ -6,7 +6,7 @@ import BrowserRouter from 'react-router-dom/BrowserRouter'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={window.location.pathname || ''}>
      <App />
    </BrowserRouter>
   </React.StrictMode>,
