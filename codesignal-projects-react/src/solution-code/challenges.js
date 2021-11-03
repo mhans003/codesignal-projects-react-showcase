@@ -581,8 +581,9 @@ const challenges = {
         code: function alternatingSums(a) {
             const sums = [0,0];
             const firstVal = a.map((number, index) => {
-                index % 2 === 1 ? sums[1] += number : sums[0] += number;
+                return index % 2 === 1 ? sums[1] += number : sums[0] += number;
             });
+            console.log(firstVal);
             return sums;
         },
         arguments: {
@@ -751,7 +752,7 @@ const challenges = {
                     //firstElement === null ? firstElement = index : secondElement === null ? secondElement = index : null;
                     if(firstElement === null) {
                         firstElement = index;
-                    } else if(secondElement = null) {
+                    } else if(secondElement === null) {
                         secondElement = index;
                     } 
                 }
