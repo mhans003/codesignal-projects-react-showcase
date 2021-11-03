@@ -11,6 +11,9 @@ const Nav = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
+                        <a className="nav-link text-light" href="https://mhans003.github.io/portfolio/portfolio.html" target="_blank" rel="noopener noreferrer">Michael Hanson</a>
+                    </li>
+                    <li className="nav-item">
                         <a className="nav-link text-light" href="/">Home</a>
                     </li>
                 </ul>

@@ -20,6 +20,9 @@ const Landing = () => {
                         <a href="https://github.com/mhans003/algorithm-solutions-cs" target="_blank" rel="noopener noreferrer">
                             <button type="button" className="btn btn-secondary px-4 mx-auto my-2 d-block">Solutions Repo <i className="fab fa-github"></i></button>
                         </a>
+                        <a href="https://mhans003.github.io/portfolio/portfolio.html" target="_blank" rel="noopener noreferrer">
+                            <button type="button" className="btn btn-secondary px-4 mx-auto my-2 d-block">Michael's Portfolio <i className="fas fa-briefcase"></i></button>
+                        </a>
                     </div>
                 </div>
             </div>
