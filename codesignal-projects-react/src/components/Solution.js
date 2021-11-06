@@ -188,7 +188,8 @@ const Solution = props => {
                             <div className="mt-2">
                                 <p className="field-heading">Solution Code:</p>
                                 <div className="bg-light p-4">
-                                    <p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].code.name}.js`} target="_blank" rel="noopener noreferrer">Click Here to See Code in Repo</a></p>
+                                    {/*<p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].code.name}.js`} target="_blank" rel="noopener noreferrer">Click Here to See Code in Repo</a></p>*/}
+                                    <p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].name}.js`} target="_blank" rel="noopener noreferrer">Click Here to See Code in Repo</a></p>
                                     <code>{allChallenges[`${props.challengeName}`].codeOutput}</code>
                                 </div>  
                             </div> 

@@ -26,7 +26,7 @@ const challenges = {
         }
     },
     absvaluesumminimization: {
-        name: "absvaluesumminimization",
+        name: "absoluteValuesSumMinimization",
         instructions: `Given a sorted array of integers a, your task is to determine which element of a is closest to all other values of a. In other words, find the element x in a, which minimizes the following sum:
 
         abs(a[0] - x) + abs(a[1] - x) + ... + abs(a[a.length - 1] - x)
@@ -88,6 +88,7 @@ const challenges = {
         }
     },
     adanumber: {
+        name: "adaNumber",
         instructions: `Consider two following representations of a non-negative integer:
 
         A simple decimal integer, constructed of a non-empty sequence of digits from 0 to 9;
@@ -160,6 +161,7 @@ const challenges = {
         }
     },
     addborder: {
+        name: 'addBorder',
         instructions: `Given a rectangular matrix of characters, add a border of asterisks(*) to it.`,
         codeOutput: 
         `function addBorder(picture) {
@@ -198,6 +200,7 @@ const challenges = {
         }
     },
     additionWithoutCarrying: {
+        name: 'additionWithoutCarrying',
         instructions: `A little boy is studying arithmetic. He has just learned how to add two integers, written one below another, column by column. But he always forgets about the important part - carrying.
 
         Given two integers, your task is to find the result which the little boy will get.`,
@@ -250,6 +253,7 @@ const challenges = {
         }
     },
     adjacentElementsProduct: {
+        name: 'adjacentElementsProduct',
         instructions: `Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.`,
         codeOutput: 
         `function adjacentElementsProduct(inputArray) {
@@ -280,6 +284,7 @@ const challenges = {
         }
     },
     allLongestStrings: {
+        name: 'allLongestStrings',
         instructions: `Given an array of strings, return another array containing all of its longest strings.`,
         codeOutput: 
         `function allLongestStrings(inputArray) {
@@ -300,6 +305,7 @@ const challenges = {
         }
     },
     almostIncreasingSequence: {
+        name: 'almostIncreasingSequence',
         instructions: `Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.
 
         Note: sequence a0, a1, ..., an is considered to be a strictly increasing if a0 < a1 < ... < an. Sequence containing only one element is also considered to be strictly increasing.`,
@@ -344,6 +350,7 @@ const challenges = {
         }
     },
     alphabeticShift: {
+        name: 'alphabeticShift',
         instructions: `Given a string, your task is to replace each of its characters by the next one in the English alphabet; i.e. replace a with b, replace b with c, etc (z would be replaced by a).`,
         codeOutput: 
         `function alphabeticShift(inputString) {
@@ -384,6 +391,7 @@ const challenges = {
         }
     },
     alphabetSubsequence: {
+        name: 'alphabetSubsequence',
         instructions: `Check whether the given string is a subsequence of the plaintext alphabet.`,
         codeOutput: 
         `function alphabetSubsequence(s) {
@@ -418,6 +426,7 @@ const challenges = {
         }
     },
     alphanumericLess: {
+        name: 'alphanumericLess',
         instructions: `An alphanumeric ordering of strings is defined as follows: each string is considered as a sequence of tokens, where each token is a letter or a number (as opposed to an isolated digit, as is the case in lexicographic ordering). For example, the tokens of the string "ab01c004" are [a, b, 01, c, 004]. In order to compare two strings, we'll first break them down into tokens and then compare the corresponding pairs of tokens with each other (i.e. compare the first token of the first string with the first token of the second string, etc).
 
         Here is how tokens are compared:
@@ -568,6 +577,7 @@ const challenges = {
         }
     },
     alternatingSums: {
+        name: 'alternatingSums',
         instructions: `Several people are standing in a row and need to be divided into two teams. The first person goes into team 1, the second goes into team 2, the third goes into team 1 again, the fourth into team 2, and so on.
         You are given an array of positive integers - the weights of the people. Return an array of two integers, where the first element is the total weight of team 1, and the second element is the total weight of team 2 after the division is complete.`,
         codeOutput: 
@@ -596,6 +606,7 @@ const challenges = {
         }
     },
     appleBoxes: {
+        name: 'appleBoxes',
         instructions: `You have k apple boxes full of apples. Each square box of size m contains m × m apples. You just noticed two interesting properties about the boxes:
 
         The smallest box is size 1, the next one is size 2,..., all the way up to size k.
@@ -642,6 +653,7 @@ const challenges = {
         }
     },
     areEquallyStrong: {
+        name: 'areEquallyStrong',
         instructions: `Call two arms equally strong if the heaviest weights they each are able to lift are equal.
 
         Call two people equally strong if their strongest arms are equally strong (the strongest arm can be both the right and the left), and so are their weakest arms.
@@ -678,6 +690,7 @@ const challenges = {
         }
     },
     areIsomorphic: {
+        name: 'areIsomorphic',
         instructions: `Two two-dimensional arrays are isomorphic if they have the same number of rows and each pair of respective rows contains the same number of elements.
 
         Given two two-dimensional arrays, check if they are isomorphic.`,
@@ -704,6 +717,7 @@ const challenges = {
         }
     },
     areSimilar: {
+        name: 'areSimilar',
         instructions: `Two arrays are called similar if one can be obtained from another by swapping at most one pair of elements in one of the arrays.
 
         Given two arrays a and b, check whether they are similar.`,
@@ -792,6 +806,7 @@ const challenges = {
         }
     },
     areSimilar2: {
+        name: 'areSimilar2',
         instructions: `Two arrays are called similar if one can be obtained from another by swapping at most one pair of elements in one of the arrays.
 
         Given two arrays a and b, check whether they are similar.`,
@@ -860,6 +875,7 @@ const challenges = {
         }
     },
     arithmeticExpression: {
+        name: 'arithmeticExpression',
         instructions: `Consider an arithmetic expression of the form a#b=c. Check whether it is possible to replace # with one of the four signs: +, -, * or / to obtain a correct expression.`,
         codeOutput: 
         `function arithmeticExpression(a, b, c) {
@@ -902,6 +918,7 @@ const challenges = {
         }
     },
     arrayChange: {
+        name: 'arrayChange',
         instructions: `You are given an array of integers. On each move you are allowed to increase exactly one of its element by one. Find the minimal number of moves required to obtain a strictly increasing sequence from the input.`,
         codeOutput: 
         `function arrayChange(inputArray) {
@@ -952,6 +969,7 @@ const challenges = {
         }
     },
     concatenateArrays: {
+        name: 'concatenateArrays',
         instructions: `Given two arrays of integers a and b, obtain the array formed by the elements of a followed by the elements of b.`,
         codeOutput: 
         `function concatenateArrays(a, b) {
@@ -974,6 +992,7 @@ const challenges = {
         }
     },
     arrayConversion: {
+        name: 'arrayConversion',
         instructions: `Given an array of 2k integers (for some integer k), perform the following operations until the array contains only one element:
 
         On the 1st, 3rd, 5th, etc. iterations (1-based) replace each pair of consecutive elements with their sum;
@@ -1036,6 +1055,7 @@ const challenges = {
         }
     },
     arrayMaximalAdjacentDifference: {
+        name: 'arrayMaximalAdjacentDifference',
         instructions: `Given an array of integers, find the maximal absolute difference between any two of its adjacent elements.`,
         codeOutput: 
         `function arrayMaximalAdjacentDifference(inputArray) {
@@ -1072,6 +1092,7 @@ const challenges = {
         }
     },
     arrayPacking: {
+        name: 'arrayPacking',
         instructions: `You are given an array of up to four non-negative integers, each less than 256.
 
         Your task is to pack these integers into one number M in the following way:
@@ -1126,6 +1147,7 @@ const challenges = {
         }
     },
     arrayPreviousLess: {
+        name: 'arrayPreviousLess',
         instructions: `Given array of integers, for each position i, search among the previous positions for the last (from the left) position that contains a smaller value. Store this value at position i in the answer. If no such value can be found, store -1 instead.`,
         codeOutput: 
         `function arrayPreviousLess(items) {
@@ -1168,6 +1190,7 @@ const challenges = {
         }
     },
     arrayReplace: {
+        name: 'arrayReplace',
         instructions: `Given an array of integers, replace all the occurrences of elemToReplace with substitutionElem.`,
         codeOutput: 
         `function arrayReplace(inputArray, elemToReplace, substitutionElem) {
@@ -1210,6 +1233,7 @@ const challenges = {
         }
     },
     avoidObstacles: {
+        name: 'avoidObstacles',
         instructions: `You are given an array of integers representing coordinates of obstacles situated on a straight line.
 
         Assume that you are jumping from the point with coordinate 0 to the right. You are allowed only to make jumps of the same length represented by some integer.
