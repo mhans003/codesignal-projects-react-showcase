@@ -1018,6 +1018,7 @@ const challenges_d_f = {
         }
     },
     fileNaming: {
+        name: 'fileNaming',
         instructions: `You are given an array of desired filenames in the order of their creation. Since two files cannot have equal names, the one which comes later will have an addition to its name in a form of (k), where k is the smallest positive integer such that the obtained name is not used yet.
 
         Return an array of names that will be given to the files.`,
@@ -1094,6 +1095,7 @@ const challenges_d_f = {
         }
     },
     findEmailDomain: {
+        name: 'findEmailDomain',
         instructions: `Given a valid email address, find its domain part.`,
         codeOutput: 
         `function findEmailDomain(address) {
@@ -1130,6 +1132,7 @@ const challenges_d_f = {
         }
     },
     firstDigit: {
+        name: 'firstDigit',
         instructions: `Find the leftmost digit that occurs in a given string.`,
         codeOutput: 
         `function firstDigit(inputString) {
@@ -1182,6 +1185,7 @@ const challenges_d_f = {
         }
     },
     firstReverseTry: {
+        name: 'firstReverseTry',
         instructions: `Reversing an array can be a tough task, especially for a novice programmer. Mary just started coding, so she would like to start with something basic at first. Instead of reversing the array entirely, she wants to swap just its first and last elements.
 
         Given an array arr, swap its first and last elements and return the resulting array.`,
