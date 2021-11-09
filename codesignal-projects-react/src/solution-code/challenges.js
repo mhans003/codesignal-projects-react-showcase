@@ -1284,6 +1284,7 @@ const challenges = {
         }
     },
     beautifulText: {
+        name: 'beautifulText',
         instructions: `Consider a string containing only letters and whitespaces. It is allowed to replace some (possibly, none) whitespaces with newline symbols to obtain a multiline text. Call a multiline text beautiful if and only if each of its lines (i.e. substrings delimited by a newline character) contains an equal number of characters (only letters and whitespaces should be taken into account when counting the total while newline characters shouldn't). Call the length of the line the text width.
 
         Given a string and some integers l and r (l ≤ r), check if it's possible to obtain a beautiful text from the string with a text width that's within the range [l, r].`,
@@ -1350,6 +1351,7 @@ const challenges = {
         }
     },
     bishopAndPawn: {
+        name: 'bishopAndPawn',
         instructions: `Given the positions of a white bishop and a black pawn on the standard chess board, determine whether the bishop can capture the pawn in one move.
 
         The bishop has no restrictions in distance for each move, but is limited to diagonal movement. Check out the example below to see how it can move:`,
@@ -1470,6 +1472,7 @@ const challenges = {
         }
     },
     bishopDiagonal: {
+        name: 'bishopDiagonal',
         instructions: `In the Land Of Chess, bishops don't really like each other. In fact, when two bishops happen to stand on the same diagonal, they immediately rush towards the opposite ends of that same diagonal.
 
         Given the initial positions (in chess notation) of two bishops, bishop1 and bishop2, calculate their future positions. Keep in mind that bishops won't move unless they see each other along the same diagonal.`,
@@ -1576,6 +1579,7 @@ const challenges = {
         }
     },
     boxBlur: {
+        name: 'boxBlur',
         instructions: `Last night you partied a little too hard. Now there's a black and white photo of you that's about to go viral! You can't let this ruin your reputation, so you want to apply the box blur algorithm to the photo to hide its content.
 
         The pixels in the input image are represented as integers. The algorithm distorts the input image in the following way: Every pixel x in the output image has a value equal to the average value of the pixel values from the 3 × 3 square that has its center at x, including x itself. All the pixels on the border of x are then removed.
@@ -1652,6 +1656,7 @@ const challenges = {
         }
     },
     boxesPacking: {
+        name: 'boxesPacking',
         instructions: `You are given n rectangular boxes, the ith box has the length lengthi, the width widthi and the height heighti. Your task is to check if it is possible to pack all boxes into one so that inside each box there is no more than one another box (which, in turn, can contain at most one another box, and so on). More formally, your task is to check whether there is such sequence of n different numbers pi (1 ≤ pi ≤ n) that for each 1 ≤ i < n the box number pi can be put into the box number pi+1.
         A box can be put into another box if all sides of the first one are less than the respective ones of the second one. You can rotate each box as you wish, i.e. you can swap its length, width and height if necessary.`,
         codeOutput: 
@@ -1725,6 +1730,7 @@ const challenges = {
         }
     },
     buildPalindrome: {
+        name: 'buildPalindrome',
         instructions: `Given a string, find the shortest possible string which can be achieved by adding characters to the end of initial string to make it a palindrome.`,
         codeOutput: 
         `function buildPalindrome(st) {
