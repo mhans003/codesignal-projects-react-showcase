@@ -3,6 +3,7 @@
 
 const challenges_d_f = {
     dayOfWeek: {
+        name: 'dayOfWeek',
         instructions: `Whenever you decide to celebrate your birthday you always do this your favorite café, which is quite popular and as such usually very crowded. This year you got lucky: when you and your friend enter the café you're surprised to see that it's almost empty. The waiter lets slip that there are always very few people on this day of the week.
 
         You enjoyed having the café all to yourself, and are now curious about the next time you'll be this lucky. Given the current birthdayDate, determine the number of years until it will fall on the same day of the week.
@@ -130,6 +131,7 @@ const challenges_d_f = {
         }
     },
     deleteDigit: {
+        name: 'deleteDigit',
         instructions: `Given some integer, find the maximal number you can obtain by deleting exactly one digit of the given number.`,
         codeOutput: 
         `function deleteDigit(n) {
@@ -182,6 +184,7 @@ const challenges_d_f = {
         }
     },
     depositProfit: {
+        name: 'depositProfit',
         instructions: `You have deposited a specific amount of money into your bank account. Each year your balance increases at the same growth rate. With the assumption that you don't make any additional deposits, find out how long it would take for your balance to pass a specific threshold.`,
         codeOutput: 
         `function depositProfit(deposit, rate, threshold) {
@@ -224,6 +227,7 @@ const challenges_d_f = {
         }
     },
     differentRightmostBit: {
+        name: 'differentRightmostBit',
         instructions: `You're given two integers, n and m. Find position of the rightmost bit in which they differ in their binary representations (it is guaranteed that such a bit exists), counting from right to left. Return the value of 2position_of_the_found_bit (0-based).`,
         codeOutput: 
         `function differentRightmostBit(n, m) {
@@ -310,6 +314,7 @@ const challenges_d_f = {
         }
     },
     differentSquares: {
+        name: 'differentSquares',
         instructions: `Given a rectangular matrix containing only digits, calculate the number of different 2 × 2 squares in it.`,
         codeOutput: 
         `function differentSquares(matrix) {
@@ -370,6 +375,7 @@ const challenges_d_f = {
         }
     },
     differentSymbolsNaive: {
+        name: 'differentSymbolsNaive',
         instructions: `Given a string, find the number of different characters in it.`,
         codeOutput: 
         `function differentSymbolsNaive(s) {
@@ -408,6 +414,7 @@ const challenges_d_f = {
         }
     },
     digitDegree: {
+        name: 'digitDegree',
         instructions: `Let's define digit degree of some positive integer as the number of times we need to replace this number with the sum of its digits until we get to a one digit number.
 
         Given an integer, find its digit degree.`,
@@ -454,6 +461,7 @@ const challenges_d_f = {
         }
     },
     digitDifferenceSort: {
+        name: 'digitDifferenceSort',
         instructions: `Given an array of integers, sort its elements by the difference of their largest and smallest digits. In the case of a tie, that with the larger index in the array should come first.`,
         codeOutput: 
         `function digitDifferenceSort(a) {
@@ -532,6 +540,7 @@ const challenges_d_f = {
         }
     },
     digitsProduct: {
+        name: 'digitsProduct',
         instructions: `Given an integer product, find the smallest positive (i.e. greater than 0) integer the product of whose digits is equal to product. If there is no such integer, return -1 instead.`,
         codeOutput: 
         `function digitsProduct(product) {
@@ -624,6 +633,7 @@ const challenges_d_f = {
         }
     },
     drawRectangle: {
+        name: 'drawRectangle',
         instructions: `You are implementing a command-line version of the Paint app. Since the command line doesn't support colors, you are using different characters to represent pixels. Your current goal is to support rectangle x1 y1 x2 y2 operation, which draws a rectangle that has an upper left corner at (x1, y1) and a lower right corner at (x2, y2). Here the x-axis points from left to right, and the y-axis points from top to bottom.
 
         Given the initial canvas state and the array that represents the coordinates of the two corners, return the canvas state after the operation is applied. For the details about how rectangles are painted, see the example.`,
