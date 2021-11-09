@@ -1827,6 +1827,7 @@ const challenges = {
         }
     },
     candles: {
+        name: 'candles',
         instructions: `When a candle finishes burning it leaves a leftover. makeNew leftovers can be combined to make a new candle, which, when burning down, will in turn leave another leftover.
 
         You have candlesNumber candles in your possession. What's the total number of candles you can burn, assuming that you create new candles as soon as you have enough leftovers?`,
@@ -1889,6 +1890,7 @@ const challenges = {
         }
     },
     characterParity: {
+        name: 'characterParity',
         instructions: `Given a character, check if it represents an odd digit, an even digit or not a digit at all.`,
         codeOutput: 
         `function characterParity(symbol) {
@@ -1907,6 +1909,7 @@ const challenges = {
         }
     },
     checkPalindrome: {
+        name: 'checkPalindrome',
         instructions: `Given a string, check if it is a palindrome`,
         codeOutput: 
         `function checkPalindrome(inputString) {
@@ -1925,6 +1928,7 @@ const challenges = {
         }
     },
     chessBishopDream: {
+        name: 'chessBishopDream',
         instructions: `In ChessLand there is a small but proud chess bishop with a recurring dream. In the dream the bishop finds itself on an n × m chessboard with mirrors along each edge, and it is not a bishop but a ray of light. This ray of light moves only along diagonals (the bishop can't imagine any other types of moves even in its dreams), it never stops, and once it reaches an edge or a corner of the chessboard it reflects from it and moves on.
 
         Given the initial position and the direction of the ray, find its position after k steps where a step means either moving from one cell to the neighboring one or reflecting from a corner of the board.`,
@@ -2043,6 +2047,7 @@ const challenges = {
         }
     },
     chessBoardCellColor: {
+        name: 'chessBoardCellColor',
         instructions: `Given two cells on the standard chess board, determine whether they have the same color or not.`,
         codeOutput: 
         `function chessBoardCellColor(cell1, cell2) {
@@ -2089,6 +2094,7 @@ const challenges = {
         }
     },
     chessKnight: {
+        name: 'chessKnight',
         instructions: `Given a position of a knight on the standard chessboard, find the number of different moves the knight can perform.
 
         The knight can move to a square that is two squares horizontally and one square vertically, or two squares vertically and one square horizontally away from it. The complete move therefore looks like the letter L. Check out the image below to see all valid moves for a knight piece that is placed on one of the central squares.`,
@@ -2167,6 +2173,7 @@ const challenges = {
         }
     },
     chessTriangle: {
+        name: 'chessTriangle',
         instructions: `Consider a bishop, a knight and a rook on an n × m chessboard. They are said to form a triangle if each piece attacks exactly one other piece and is attacked by exactly one piece. Calculate the number of ways to choose positions of the pieces to form a triangle.
 
         Note that the bishop attacks pieces sharing the common diagonal with it; the rook attacks in horizontal and vertical directions; and, finally, the knight attacks squares which are two squares horizontally and one square vertically, or two squares vertically and one square horizontally away from its position.`,
@@ -2407,6 +2414,7 @@ const challenges = {
         }
     },
     christmasTree: {
+        name: 'christmasTree',
         instructions: `It's Christmas time! To share his Christmas spirit with all his friends, the young Christmas Elf decided to send each of them a Christmas e-mail with a nice Christmas tree. Unfortunately, Internet traffic is very expensive in the North Pole, so instead of sending an actual image he got creative and drew the tree using nothing but asterisks ('*' symbols). He has given you the specs (see below) and your task is to write a program that will generate trees following the spec and some initial parameters.
 
         Here is a formal definition of how the tree should be built, but before you read it the Elf HIGHLY recommends first looking at the examples that follow:
@@ -2564,6 +2572,7 @@ const challenges = {
         }
     },
     cipher26: {
+        name: 'cipher26',
         instructions: `You've intercepted an encrypted message, and you are really curious about its contents. You were able to find out that the message initially contained only lowercase English letters, and was encrypted with the following cipher:
 
         Let all letters from 'a' to 'z' correspond to the numbers from 0 to 25, respectively.
@@ -2617,6 +2626,7 @@ const challenges = {
         }
     },
     circleOfNumbers: {
+        name: 'circleOfNumbers',
         instructions: `Consider integer numbers from 0 to n - 1 written down along the circle in such a way that the distance between any two neighboring numbers is equal (note that 0 and n - 1 are neighboring, too).
 
         Given n and firstNumber, find the number which is written in the radially opposite position to firstNumber.`,
@@ -2641,6 +2651,7 @@ const challenges = {
         }
     },
     combs: {
+        name: 'combs',
         instructions: `Miss X has only two combs in her possession, both of which are old and miss a tooth or two. She also has many purses of different length, in which she carries the combs. The only way they fit is horizontally and without overlapping. Given teeth' positions on both combs, find the minimum length of the purse she needs to take them with her.
 
         It is guaranteed that there is at least one tooth at each end of the comb.
@@ -2747,6 +2758,7 @@ const challenges = {
         }
     },
     comfortableNumbers: {
+        name: 'comfortableNumbers',
         instructions: `Let's say that number a feels comfortable with number b if a ≠ b and b lies in the segment [a - s(a), a + s(a)], where s(x) is the sum of x's digits.
 
         How many pairs (a, b) are there, such that a < b, both a and b lie on the segment [l, r], and each number feels comfortable with the other (so a feels comfortable with b and b feels comfortable with a)?`,
@@ -2833,6 +2845,7 @@ const challenges = {
         }
     },
     commonCharacterCount: {
+        name: 'commonCharacterCount',
         instructions: `Given two strings, find the number of common characters between them.`,
         codeOutput: 
         `function commonCharacterCount(s1, s2) {
@@ -2921,6 +2934,7 @@ const challenges = {
         }
     },
     constructSquare: {
+        name: 'constructSquare',
         instructions: `Given a string consisting of lowercase English letters, find the largest square number which can be obtained by reordering the string's characters and replacing them with any digits you need (leading zeros are not allowed) where same characters always map to the same digits and different characters always map to different digits.
 
         If there is no solution, return -1.`,
@@ -3021,6 +3035,7 @@ const challenges = {
         }
     },
     contoursShifting: {
+        name: 'contoursShifting',
         instructions: `Mark got a rectangular array matrix for his birthday, and now he's thinking about all the fun things he can do with it. He likes shifting a lot, so he decides to shift all of its i-contours in a clockwise direction if i is even, and counterclockwise if i is odd.
 
         Here is how Mark defines i-contours:
@@ -3228,6 +3243,7 @@ const challenges = {
         }
     },
     correctNonogram: {
+        name: 'correctNonogram',
         instructions: `A nonogram is also known as Paint by Numbers and Japanese Crossword. The aim in this puzzle is to color the grid into black and white squares. At the top of each column, and at the side of each row, there are sets of one or more numbers which describe the runs of black squares in that row/column in exact order. For example, if you see 10 1 along some column/row, this indicates that there will be a run of exactly ten black squares, followed by one or more white squares, followed by a single black square. The cells along the edges of the grid can also be white.
 
         You are given a square nonogram of size size. Its grid is given as a square matrix nonogramField of size (size + 1) / 2 + size, where the first (size + 1) / 2 cells of each row and and each column define the numbers for the corresponding row/column, and the rest size × size cells define the the grid itself.
@@ -3424,6 +3440,7 @@ const challenges = {
         }
     },
     countSumOfTwoRepresentations2: {
+        name: 'countSumOfTwoRepresentations2',
         instructions: `Given integers n, l and r, find the number of ways to represent n as a sum of two integers A and B such that l ≤ A ≤ B ≤ r.`,
         codeOutput: 
         `function countSumOfTwoRepresentations2(n, l, r) {
@@ -3478,6 +3495,7 @@ const challenges = {
         }
     },
     createAnagram: {
+        name: 'createAnagram',
         instructions: `You are given two strings s and t of the same length, consisting of uppercase English letters. Your task is to find the minimum number of "replacement operations" needed to get some anagram of the string t from the string s. A replacement operation is performed by picking exactly one character from the string s and replacing it by some other character.`,
         codeOutput: 
         `function createAnagram(s, t) {
@@ -3586,6 +3604,7 @@ const challenges = {
         }
     },
     crossingSum: {
+        name: 'crossingSum',
         instructions: `Given a rectangular matrix and integers a and b, consider the union of the ath row and the bth (both 0-based) column of the matrix (i.e. all cells that belong either to the ath row or to the bth column, or to both). Return sum of all elements of that union.`,
         codeOutput: 
         `function crossingSum(matrix, a, b) {
@@ -3622,6 +3641,7 @@ const challenges = {
         }
     },
     crosswordFormation: {
+        name: 'crosswordFormation',
         instructions: `You're a crossword fanatic, and have finally decided to try and create your own. However, you also love symmetry and good design, so you come up with a set of rules they should follow:
 
         the crossword must contain exactly four words;
@@ -3752,6 +3772,7 @@ const challenges = {
         }
     },
     curiousClock: {
+        name: 'curiousClock',
         instructions: `Benjamin recently bought a digital clock at a magic trick shop. The seller never told Ben what was so special about it, but mentioned that one day Benjamin would be faced with a surprise.
 
         Indeed, the clock did surprise Benjamin: without warning, at someTime the clock suddenly started going in the opposite direction! Unfortunately, Benjamin has an important meeting very soon, and knows that at leavingTime he should leave the house so as to not be late. Ben spent all his money on the clock, so has to figure out what time his clock will show when it's time to leave.
@@ -3952,6 +3973,7 @@ const challenges = {
         }
     },
     cyclicString: {
+        name: 'cyclicString',
         instructions: `You're given a substring s of some cyclic string. What's the length of the smallest possible string that can be concatenated to itself many times to obtain this cyclic string?
 
         Example
