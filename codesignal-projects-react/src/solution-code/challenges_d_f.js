@@ -698,6 +698,7 @@ const challenges_d_f = {
         }
     },
     electionsWinners: {
+        name: 'electionsWinners',
         instructions: `Elections are in progress!
 
         Given an array of the numbers of votes given to each of the candidates so far, and an integer k equal to the number of voters who haven't cast their vote yet, find the number of candidates who still have a chance to win the election.
@@ -764,6 +765,7 @@ const challenges_d_f = {
         }
     },
     equalPairOfBits: {
+        name: 'equalPairOfBits',
         instructions: `You're given two integers, n and m. Find position of the rightmost pair of equal bits in their binary representations (it is guaranteed that such a pair exists), counting from right to left.
 
         Return the value of 2position_of_the_found_pair (0-based).`,
@@ -832,6 +834,7 @@ const challenges_d_f = {
         }
     },
     evenDigitsOnly: {
+        name: 'evenDigitsOnly',
         instructions: `Check if all digits of the given integer are even.`,
         codeOutput: 
         `function evenDigitsOnly(n) {
@@ -866,6 +869,7 @@ const challenges_d_f = {
         }
     },
     extractEachKth: {
+        name: 'extractEachKth',
         instructions: `Given array of integers, remove each kth element from it.`,
         codeOutput: 
         `function extractEachKth(inputArray, k) {
@@ -906,6 +910,7 @@ const challenges_d_f = {
         }
     },
     extractMatrixColumn: {
+        name: 'extractMatrixColumn',
         instructions: `Given a rectangular matrix and an integer column, return an array containing the elements of the columnth column of the given matrix (the leftmost column is the 0th one).`,
         codeOutput: 
         `function extractMatrixColumn(matrix, column) {
@@ -930,6 +935,7 @@ const challenges_d_f = {
         }
     },
     extraNumber: {
+        name: 'extraNumber',
         instructions: `You're given three integers, a, b and c. It is guaranteed that two of these integers are equal to each other. What is the value of the third integer?`,
         codeOutput: 
         `function extraNumber(a, b, c) {
@@ -956,6 +962,7 @@ const challenges_d_f = {
         }
     },
     eyeRhyme: {
+        name: 'eyeRhyme',
         instructions: `An eye rhyme is a rhyme in which two words are spelled similarly but pronounced differently. An example is the pair cough and bough; although they look similar, when they are spoken there is no rhyming quality.
 
         You are writing a thesis on the eye rhyme, and you thought it would be cool to make the text itself eye rhymed. This brilliant idea came to your mind a little too late: the text is already written. Now you want to check if a given pair of lines in your text have an eye rhyme. More specifically, you want to make sure that the last three characters of each pair of lines coincide.
