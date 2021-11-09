@@ -3,6 +3,7 @@
 
 const challenges_g_j = {
     gravitation: {
+        name: 'gravitation',
         instructions: `You are given a vertical box divided into equal columns. Someone dropped several stones from its top through the columns. Stones are falling straight down at a constant speed (equal for all stones) while possible (i.e. while they haven't reached the ground or they are not blocked by another motionless stone). Given the state of the box at some moment in time, find out which columns become motionless first.`,
         codeOutput: 
         `function gravitation(rows) {
@@ -66,6 +67,7 @@ const challenges_g_j = {
         }
     },
     growingPlant: {
+        name: 'growingPlant',
         instructions: `Caring for a plant can be hard work, but since you tend to it regularly, you have a plant that grows consistently. Each day, its height increases by a fixed amount represented by the integer upSpeed. But due to lack of sunlight, the plant decreases in height every night, by an amount represented by downSpeed.
 
         Since you grew the plant from a seed, it started at height 0 initially. Given an integer desiredHeight, your task is to find how many days it'll take for the plant to reach this height.`,
