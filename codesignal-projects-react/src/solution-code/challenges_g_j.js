@@ -112,6 +112,7 @@ const challenges_g_j = {
         }
     },
     holiday: {
+        name: 'holiday',
         instructions: `John Doe likes holidays very much, and he was very happy to hear that his country's government decided to introduce yet another one. He heard that the new holiday will be celebrated each year on the xth week of month, on weekDay.
 
         Your task is to return the day of month on which the holiday will be celebrated in the year yearNumber.
@@ -277,6 +278,7 @@ const challenges_g_j = {
         }
     },
     houseNumbersSum: {
+        name: 'houseNumbersSum',
         instructions: `A boy is walking a long way from school to his home. To make the walk more fun he decides to add up all the numbers of the houses that he passes by during his walk. Unfortunately, not all of the houses have numbers written on them, and on top of that the boy is regularly taking turns to change streets, so the numbers don't appear to him in any particular order.
 
         At some point during the walk the boy encounters a house with number 0 written on it, which surprises him so much that he stops adding numbers to his total right after seeing that house.
@@ -299,6 +301,7 @@ const challenges_g_j = {
         }
     },
     houseOfCats: {
+        name: 'houseOfCats',
         instructions: `There are some people and cats in a house. You are given the number of legs they have all together. Your task is to return an array containing every possible number of people that could be in the house sorted in ascending order. It's guaranteed that each person has 2 legs and each cat has 4 legs.`,
         codeOutput: 
         `function houseOfCats(legs) {
@@ -335,6 +338,7 @@ const challenges_g_j = {
         }
     },
     htmlEndTagByStartTag: {
+        name: 'htmlEndTagByStartTag',
         instructions: `You are implementing your own HTML editor. To make it more comfortable for developers you would like to add an auto-completion feature to it.
 
         Given the starting HTML tag, find the appropriate end tag which your editor should propose.`,
@@ -365,6 +369,7 @@ const challenges_g_j = {
         }
     },
     increaseNumberRoundness: {
+        name: 'increaseNumberRoundness',
         instructions: `Define an integer's roundness as the number of trailing zeroes in it.
 
         Given an integer n, check if it's possible to increase n's roundness by swapping some pair of its digits.`,
@@ -409,6 +414,7 @@ const challenges_g_j = {
         }
     },
     integerToStringOfFixedWidth: {
+        name: 'integerToStringOfFixedWidth',
         instructions: `Given a positive integer number and a certain length, we need to modify the given number to have a specified length. We are allowed to do that either by cutting out leading digits (if the number needs to be shortened) or by adding 0s in front of the original number.`,
         codeOutput: 
         `function integerToStringOfFixedWidth(number, width) {
