@@ -451,6 +451,7 @@ const challenges_g_j = {
         }
     },
     isBeautifulString: {
+        name: 'isBeautifulString',
         instructions: `A string is said to be beautiful if each letter in the string appears at most as many times as the previous letter in the alphabet within the string; ie: b occurs no more times than a; c occurs no more times than b; etc. Note that letter a has no previous letter.
 
         Given a string, check whether it is beautiful.`,
@@ -503,6 +504,7 @@ const challenges_g_j = {
         }
     },
     isCaseInsensitivePalindrome: {
+        name: 'isCaseInsensitivePalindrome',
         instructions: `Given a string, check if it can become a palindrome through a case change of some (possibly, none) letters.`,
         codeOutput: 
         `function isCaseInsensitivePalindrome(inputString) {
@@ -529,6 +531,7 @@ const challenges_g_j = {
         }
     },
     isDigit: {
+        name: 'isDigit',
         instructions: `Determine if symbol is a digit`,
         codeOutput: 
         `function isDigit(symbol) {
@@ -549,6 +552,7 @@ const challenges_g_j = {
         }
     },
     isInfiniteProcess: {
+        name: 'isInfiniteProcess',
         instructions: `Given integers a and b, determine whether the following pseudocode results in an infinite loop
 
         while a is not equal to b do
@@ -596,6 +600,7 @@ const challenges_g_j = {
         }
     },
     isInformationConsistent: {
+        name: 'isInformationConsistent',
         instructions: `Court is in session. We got a group of witnesses who have all taken an oath to tell the truth. The prosecutor is pointing at the defendants one by one and asking each witnesses a simple question - "guilty or not?". The witnesses are allowed to respond in one of the following three ways:
 
         I am sure he/she is guilty.
@@ -645,6 +650,7 @@ const challenges_g_j = {
         }
     },
     isIPv4Address: {
+        name: 'isIPv4Address',
         instructions: `An IP address is a numerical label assigned to each device (e.g., computer, printer) participating in a computer network that uses the Internet Protocol for communication. There are two versions of the Internet protocol, and thus two versions of addresses. One of them is the IPv4 address.
 
         Given a string, find out if it satisfies the IPv4 address naming rules.`,
@@ -695,6 +701,7 @@ const challenges_g_j = {
         }
     },
     isLucky: {
+        name: 'isLucky',
         instructions: `Ticket numbers usually consist of an even number of digits. A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.
 
         Given a ticket number n, determine if it's lucky or not.`,
@@ -747,6 +754,7 @@ const challenges_g_j = {
         }
     },
     isMAC48Address: {
+        name: 'isMAC48Address',
         instructions: `A media access control address (MAC address) is a unique identifier assigned to network interfaces for communications on the physical network segment.
 
         The standard (IEEE 802) format for printing MAC-48 addresses in human-friendly form is six groups of two hexadecimal digits (0 to 9 or A to F), separated by hyphens (e.g. 01-23-45-67-89-AB).
@@ -815,6 +823,7 @@ const challenges_g_j = {
         }
     },
     isPower: {
+        name: 'isPower',
         instructions: `Determine if the given number is a power of some non-negative integer.`,
         codeOutput: 
         `function isPower(n) {
@@ -885,6 +894,7 @@ const challenges_g_j = {
         }
     },
     isSentenceCorrect: {
+        name: 'isSentenceCorrect',
         instructions: `A sentence is considered correct if:
 
         it starts with a capital letter;
@@ -916,6 +926,7 @@ const challenges_g_j = {
         }
     },
     isSmooth: {
+        name: 'isSmooth',
         instructions: `We define the middle of the array arr as follows:
 
         if arr contains an odd number of elements, its middle is the element whose index number is the same when counting from the beginning of the array and from its end;
@@ -954,6 +965,7 @@ const challenges_g_j = {
         }
     },
     isSubsequence: {
+        name: 'isSubsequence',
         instructions: `Given a string s, determine if it is a subsequence of a given string t.`,
         codeOutput: 
         `function isSubsequence(t, s) {
@@ -992,6 +1004,7 @@ const challenges_g_j = {
         }
     },
     isSubstitutionCipher: {
+        name: 'isSubstitutionCipher',
         instructions: `A ciphertext alphabet is obtained from the plaintext alphabet by means of rearranging some characters. For example "bacdef...xyz" will be a simple ciphertext alphabet where a and b are rearranged.
 
         A substitution cipher is a method of encoding where each letter of the plaintext alphabet is replaced with the corresponding (i.e. having the same index) letter of some ciphertext alphabet.
@@ -1048,6 +1061,7 @@ const challenges_g_j = {
         }
     },
     isSumOfConsecutive2: {
+        name: 'isSumOfConsecutive2',
         instructions: `Find the number of ways to express n as sum of some (at least two) consecutive positive integers.`,
         codeOutput: 
         `function isSumOfConsecutive2(n) {
@@ -1084,6 +1098,7 @@ const challenges_g_j = {
         }
     },
     isUnstablePair: {
+        name: 'isUnstablePair',
         instructions: `Some file managers sort filenames taking into account case of the letters, others compare strings as if all of the letters are of the same case. That may lead to different ways of filename ordering.
 
         Call two filenames an unstable pair if their ordering depends on the case.
