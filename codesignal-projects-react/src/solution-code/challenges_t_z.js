@@ -226,6 +226,7 @@ const challenges_t_z = {
         }
     },
     uniqueDigitProducts: {
+        name: 'uniqueDigitProducts',
         instructions: `Let's call product(x) the product of x's digits. Given an array of integers a, calculate product(x) for each x in a, and return the number of distinct results you get.`,
         codeOutput: 
         `function uniqueDigitProducts(a) {
