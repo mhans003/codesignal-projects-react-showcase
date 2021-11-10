@@ -3,6 +3,7 @@
 
 const challenges_s = {
     seatsInTheater: {
+        name: 'seatsInTheater',
         instructions: `Given the total number of rows and columns in the theater (nRows and nCols, respectively), and the row and column you're sitting in, return the number of people who sit strictly behind you and in your column or to the left, assuming all seats are occupied.`,
         codeOutput: 
         `function seatsInTheater(nCols, nRows, col, row) {
@@ -35,6 +36,7 @@ const challenges_s = {
         }
     },
     secondRightmostZeroBit: {
+        name: 'secondRightmostZeroBit',
         instructions: `Presented with the integer n, find the 0-based position of the second rightmost zero bit in its binary representation (it is guaranteed that such a bit exists), counting from right to left.
 
         Return the value of 2position_of_the_found_bit.`,
@@ -89,6 +91,7 @@ const challenges_s = {
         }
     },
     shapeArea: {
+        name: 'shapeArea',
         instructions: `Below we will define an n-interesting polygon. Your task is to find the area of a polygon for a given n.
 
         A 1-interesting polygon is just a square with a side of length 1. An n-interesting polygon is obtained by taking the n - 1-interesting polygon and appending 1-interesting polygons to its rim, side by side. You can see the 1-, 2-, 3- and 4-interesting polygons in the picture below.`,
@@ -121,6 +124,7 @@ const challenges_s = {
         }
     },
     shuffledArray: {
+        name: 'shuffledArray',
         instructions: `A noob programmer was given two simple tasks: sum and sort the elements of the given array
         a = [a1, a2, ..., an]. He started with summing and did it easily, but decided to store the sum he found in some random position of the original array which was a bad idea. Now he needs to cope with the second task, sorting the original array a, and it's giving him trouble since he modified it.
         
@@ -172,6 +176,7 @@ const challenges_s = {
         }
     },
     sortByHeight: {
+        name: 'sortByHeight',
         instructions: `Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!`,
         codeOutput: 
         `function sortByHeight(a) {
@@ -204,6 +209,7 @@ const challenges_s = {
         }
     },
     sortByLength: {
+        name: 'sortByLength',
         instructions: `Given an array of strings, sort them in the order of increasing lengths. If two strings have the same length, their relative order must be the same as in the initial array.`,
         codeOutput: 
         `function sortByLength(inputArray) {
@@ -252,6 +258,7 @@ const challenges_s = {
         }
     },
     spiralNumbers: {
+        name: 'spiralNumbers',
         instructions: `Construct a square matrix with a size N × N containing integers from 1 to N * N in a spiral order, starting from top-left and in clockwise direction.`,
         codeOutput: 
         `function spiralNumbers(n) {
@@ -372,6 +379,7 @@ const challenges_s = {
         }
     },
     squareDigitsSequence: {
+        name: 'squareDigitsSequence',
         instructions: `Consider a sequence of numbers a0, a1, ..., an, in which an element is equal to the sum of squared digits of the previous element. The sequence ends once an element that has already been in the sequence appears again.
 
         Given the first element a0, find the length of the sequence.`,
@@ -428,6 +436,7 @@ const challenges_s = {
         }
     },
     starRotation: {
+        name: 'starRotation',
         instructions: `Consider a (2k+1) × (2k+1) square subarray of an integer integers matrix. Let's call the union of the square's two longest diagonals, middle column and middle row a star. Given the coordinates of the star's center in the matrix and its width, rotate it 45 · t degrees clockwise preserving position of all matrix elements that do not belong to the star.`,
         codeOutput: 
         `function starRotation(matrix, width, center, t) {
@@ -598,6 +607,7 @@ const challenges_s = {
         }
     },
     stringsConstruction: {
+        name: 'stringsConstruction',
         instructions: `Given two strings a and b, both consisting only of lowercase English letters, your task is to calculate how many strings equal to a can be constructed using only letters from the string b? Each letter can be used only once and in one string only.`,
         codeOutput: 
         `function stringsConstruction(a, b) {
@@ -678,6 +688,7 @@ const challenges_s = {
         }
     },
     stringsCrossover: {
+        name: 'stringsCrossover',
         instructions: `Define crossover operation over two equal-length strings A and B as follows:
 
         the result of that operation is a string of the same length as the input strings
@@ -754,6 +765,7 @@ const challenges_s = {
         }
     },
     stringsRearrangement: {
+        name: 'stringsRearrangement',
         instructions: `Given an array of equal-length strings, you'd like to know if it's possible to rearrange the order of the elements in such a way that each consecutive pair of strings differ by exactly one character. Return true if it's possible, and false if not.`,
         codeOutput: 
         `function stringsRearrangement(inputArray) {
@@ -872,6 +884,7 @@ const challenges_s = {
         }
     },
     sudoku: {
+        name: 'sudoku',
         instructions: `Sudoku is a number-placement puzzle. The objective is to fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 sub-grids that compose the grid contains all of the digits from 1 to 9.
 
         This algorithm should check if the given grid of numbers represents a correct solution to Sudoku.`,
@@ -972,6 +985,7 @@ const challenges_s = {
         }
     },
     sumUpNumbers: {
+        name: 'sumUpNumbers',
         instructions: `CodeMaster has just returned from shopping. He scanned the check of the items he bought and gave the resulting string to Ratiorg to figure out the total number of purchased items. Since Ratiorg is a bot he is definitely going to automate it, so he needs a program that sums up all the numbers which appear in the given input.
 
         Help Ratiorg by writing a function that returns the sum of numbers that appear in the given inputString.`,
@@ -1034,6 +1048,7 @@ const challenges_s = {
         }
     },
     swapAdjacentBits: {
+        name: 'swapAdjacentBits',
         instructions: `You're given an arbitrary 32-bit integer n. Take its binary representation, split bits into it in pairs (bit number 0 and 1, bit number 2 and 3, etc.) and swap bits in each pair. Then return the result as a decimal number.`,
         codeOutput: 
         `function swapAdjacentBits(n) {
@@ -1216,6 +1231,7 @@ const challenges_s = {
         }
     },
     swapAdjacentWords: {
+        name: 'swapAdjacentWords',
         instructions: `Implement the missing code, denoted by ellipses. You may not modify the pre-existing code.
         You are given a string consisting of words separated by whitespace characters, where the words consist only of English letters. Your task is to swap pairs of consecutive words and return the result.`,
         codeOutput: 
@@ -1257,6 +1273,7 @@ const challenges_s = {
         }
     },
     swapDiagonals: {
+        name: 'swapDiagonals',
         instructions: `The longest diagonals of a square matrix are defined as follows:
 
         the first longest diagonal goes from the top left corner to the bottom right one;
@@ -1287,6 +1304,7 @@ const challenges_s = {
         }
     },
     switchLights: {
+        name: 'switchLights',
         instructions: `N candles are placed in a row, some of them are initially lit. For each candle from the 1st to the Nth the following algorithm is applied: if the observed candle is lit then states of this candle and all candles before it are changed to the opposite. Which candles will remain lit after applying the algorithm to all candles in the order they are placed in the line?`,
         codeOutput: 
         `function switchLights(a) {
