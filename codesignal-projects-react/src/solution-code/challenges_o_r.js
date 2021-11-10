@@ -3,6 +3,7 @@
 
 const challenges_o_r = {
     pagesNumberingWithInk: {
+        name: 'pagesNumberingWithInk',
         instructions: `You work in a company that prints and publishes books. You are responsible for designing the page numbering mechanism in the printer. You know how many digits a printer can print with the leftover ink. Now you want to write a function to determine what the last page of the book is that you can number given the current page and numberOfDigits left. A page is considered numbered if it has the full number printed on it (e.g. if we are working with page 102 but have ink only for two digits then this page will not be considered numbered).
 
         It's guaranteed that you can number the current page, and that you can't number the last one in the book.`,
@@ -45,6 +46,7 @@ const challenges_o_r = {
         }
     },
     pairOfShoes: {
+        name: 'pairOfShoes',
         instructions: `Yesterday you found some shoes in the back of your closet. Each shoe is described by two values:
 
         type indicates if it's a left or a right shoe;
@@ -101,6 +103,7 @@ const challenges_o_r = {
         }
     },
     palindromeRearranging: {
+        name: 'palindromeRearranging',
         instructions: `Given a string, find out if its characters can be rearranged to form a palindrome.`,
         codeOutput: 
         `function palindromeRearranging(inputString) {
@@ -153,6 +156,7 @@ const challenges_o_r = {
         }
     },
     phoneCall: {
+        name: 'phoneCall',
         instructions: `Some phone usage rate may be described as follows:
 
         first minute of a call costs min1 cents,
@@ -226,6 +230,7 @@ const challenges_o_r = {
         }
     },
     polygonPerimeter: {
+        name: 'polygonPerimeter',
         instructions: `You have a rectangular white board with some black cells. The black cells create a connected black figure, i.e. it is possible to get from any black cell to any other one through connected adjacent (sharing a common side) black cells.
 
         Find the perimeter of the black figure assuming that a single cell has unit length.
@@ -276,6 +281,7 @@ const challenges_o_r = {
         }
     },
     properNounCorrection: {
+        name: 'properNounCorrection',
         instructions: `Proper nouns always begin with a capital letter, followed by small letters. Correct a given proper noun so that it fits this statement.`,
         codeOutput: 
         `function properNounCorrection(noun) {
