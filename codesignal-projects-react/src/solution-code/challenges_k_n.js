@@ -1403,6 +1403,7 @@ const challenges_k_n = {
         }
     },
     newNumeralSystem: {
+        name: 'newNumeralSystem',
         instructions: `Your Informatics teacher at school likes coming up with new ways to help you understand the material. When you started studying numeral systems, he introduced his own numeral system, which he's convinced will help clarify things. His numeral system has base 26, and its digits are represented by English capital letters - A for 0, B for 1, and so on.
 
         The teacher assigned you the following numeral system exercise: given a one-digit number, you should find all unordered pairs of one-digit numbers whose values add up to the number.`,
@@ -1439,6 +1440,7 @@ const challenges_k_n = {
         }
     },
     newYearCelebrations: {
+        name: 'newYearCelebrations',
         instructions: `You're a pretty busy billionaire, and you often fly your personal Private Jet to remote places. Usually travel doesn't bother you, but this time you are unlucky: it's New Year's Eve, and since you have to fly halfway around the world, you'll probably have to celebrate New Year's Day in mid-air!
 
         Your course lies west of your current location and crosses several time zones. The pilot told you the exact schedule: it is known that you will take off at takeOffTime, and in minutes[i] after takeoff you will cross the ith border between time zones. After crossing each border you will have to set your wrist watch one hour earlier (every second matters to you, so you can't let your watch show incorrect time). It is guaranteed that you won't cross the IDL (i.e. after crossing each time zone border your current time will be set one hour back).
@@ -1517,6 +1519,7 @@ const challenges_k_n = {
         }
     },
     noIfsNoButs: {
+        name: 'noIfsNoButs',
         instructions: `Write a function that accepts two parameters and says whether a is smaller than, bigger than, or equal to b. No 'if' or ? can be used`,
         codeOutput: 
         `let noIfsNoButs = (a, b) => {
@@ -1557,6 +1560,7 @@ const challenges_k_n = {
         }
     },
     nthNumber: {
+        name: 'nthNumber',
         instructions: `You are given a string s of characters that contains at least n numbers (here, a number is defined as a consecutive series of digits, where any character immediately to the left and right of the series are not digits). The numbers may contain leading zeros, but it is guaranteed that each number has at least one non-zero digit in it.
 
         Your task is to find the nth number and return it as a string without leading zeros.`,
@@ -1617,6 +1621,7 @@ const challenges_k_n = {
         }
     },
     numberOfClans: {
+        name: 'numberOfClans',
         instructions: `Let's call two integers A and B friends if each integer from the array divisors is either a divisor of both A and B or neither A nor B. If two integers are friends, they are said to be in the same clan. How many clans are the integers from 1 to k, inclusive, broken into?`,
         codeOutput: 
         `function numberOfClans(divisors, k) {
@@ -1687,6 +1692,7 @@ const challenges_k_n = {
         }
     },
     numbersGrouping: {
+        name: 'numbersGrouping',
         instructions: `You are given an array of integers that you want distribute between several groups. The first group should contain numbers from 1 to 104, the second should contain those from 104 + 1 to 2 * 104, ..., the 100th one should contain numbers from 99 * 104 + 1 to 106 and so on.
 
         All the numbers will then be written down in groups to the text file in such a way that:
