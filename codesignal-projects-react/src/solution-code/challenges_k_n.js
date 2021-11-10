@@ -522,6 +522,7 @@ const challenges_k_n = {
         }
     },
     magicalWell: {
+        name: 'magicalWell',
         instructions: `You are standing at a magical well. It has two positive integers written on it: a and b. Each time you cast a magic marble into the well, it gives you a * b dollars and then both a and b increase by 1. You have n magic marbles. How much money will you make?`,
         codeOutput: 
         `function magicalWell(a, b, n) {
@@ -566,6 +567,7 @@ const challenges_k_n = {
         }
     },
     makeArrayConsecutive2: {
+        name: 'makeArrayConsecutive2',
         instructions: `Ratiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to arrange them from smallest to largest so that each statue will be bigger than the previous one exactly by 1. He may need some additional statues to be able to accomplish that. Help him figure out the minimum number of additional statues needed.`,
         codeOutput: 
         `function makeArrayConsecutive2(statues) {
@@ -632,6 +634,7 @@ const challenges_k_n = {
         }
     },
     matrixElementsSum: {
+        name: 'matrixElementsSum',
         instructions: `After becoming famous, the CodeBots decided to move into a new building together. Each of the rooms has a different cost, and some of them are free, but there's a rumour that all the free rooms are haunted! Since the CodeBots are quite superstitious, they refuse to stay in any of the free rooms, or any of the rooms below any of the free rooms.
 
         Given matrix, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don't appear below a 0).`,
@@ -694,6 +697,7 @@ const challenges_k_n = {
         }
     },
     arrayMaxConsecutiveSum: {
+        name: 'arrayMaxConsecutiveSum',
         instructions: `Given array of integers, find the maximal possible sum of some of its k consecutive elements.`,
         codeOutput: 
         `function arrayMaxConsecutiveSum(inputArray, k) {
@@ -742,6 +746,7 @@ const challenges_k_n = {
         }
     },
     maximumSum: {
+        name: 'maximumSum',
         instructions: `You are given an array of integers a. A range sum query is defined by a pair of non-negative integers l and r (l <= r). The output to a range sum query on the given array a is the sum of all the elements of a that have indices from l to r, inclusive.
 
         You have the array a and a list of range sum queries q. Find an algorithm that can rearrange the array a in such a way that the total sum of all of the query outputs is maximized, and return this total sum.`,
@@ -882,6 +887,7 @@ const challenges_k_n = {
         }
     },
     maxMultiple: {
+        name: 'maxMultiple',
         instructions: `Given a divisor and a bound, find the largest integer N such that:
 
         N is divisible by divisor.
@@ -909,6 +915,7 @@ const challenges_k_n = {
         }
     },
     messageFromBinaryCode: {
+        name: 'messageFromBinaryCode',
         instructions: `You are taking part in an Escape Room challenge designed specifically for programmers. In your efforts to find a clue, you've found a binary code written on the wall behind a vase, and realized that it must be an encrypted message. After some thought, your first guess is that each consecutive 8 bits of the code stand for the character with the corresponding extended ASCII code.
 
         Assuming that your hunch is correct, decode the message.`,
@@ -983,6 +990,7 @@ const challenges_k_n = {
         }
     },
     metroCard: {
+        name: 'metroCard',
         instructions: `You just bought a public transit card that allows you to ride the Metro for a certain number of days.
 
         Here is how it works: upon first receiving the card, the system allocates you a 31-day pass, which equals the number of days in January. The second time you pay for the card, your pass is extended by 28 days, i.e. the number of days in February (note that leap years are not considered), and so on. The 13th time you extend the pass, you get 31 days again.
@@ -1009,6 +1017,7 @@ const challenges_k_n = {
         }
     },
     minesweeper: {
+        name: 'minesweeper',
         instructions: `In the popular Minesweeper game you have a board with some mines and those cells that don't contain a mine have a number in it that indicates the total number of mines in the neighboring cells. Starting off with some arrangement of mines we want to create a Minesweeper game setup.`,
         codeOutput: 
         `function minesweeper(matrix) {
@@ -1095,6 +1104,7 @@ const challenges_k_n = {
         }
     },
     minimalNumberOfCoins: {
+        name: 'minimalNumberOfCoins',
         instructions: `You find yourself in Bananaland trying to buy a banana. You are super rich so you have an unlimited supply of banana-coins, but you are trying to use as few coins as possible.
 
         The coin values available in Bananaland are stored in a sorted array coins. coins[0] = 1, and for each i (0 < i < coins.length) coins[i] is divisible by coins[i - 1]. Find the minimal number of banana-coins you'll have to spend to buy a banana given the banana's price.`,
@@ -1139,6 +1149,7 @@ const challenges_k_n = {
         }
     },
     mirrorBits: {
+        name: 'mirrorBits',
         instructions: `Reverse the order of the bits in a given integer.`,
         codeOutput: 
         `function mirrorBits(a) {
@@ -1165,6 +1176,7 @@ const challenges_k_n = {
         }
     },
     missedClasses: {
+        name: 'missedClasses',
         instructions: `Your Math teacher takes education very seriously, and hates it when a class is missed or canceled for any reason. He even made up the following rule: if a class is missed because of a holiday, the teacher will compensate for it with a makeup class after school.
 
         You're given an array, daysOfTheWeek, with the weekdays on which your teacher's classes are scheduled, and holidays, representing the dates of the holidays throughout the academic year (from 1st of September in year to 31st of May in year + 1). How many times will you be forced to stay after school for a makeup class because of holiday conflicts in the current academic year?
@@ -1312,6 +1324,7 @@ const challenges_k_n = {
         }
     },
     mostFrequentDigitSum: {
+        name: 'mostFrequentDigitSum',
         instructions: `A step(x) operation works like this: it changes a number x into x - s(x), where s(x) is the sum of x's digits. You like applying functions to numbers, so given the number n, you decide to build a decreasing sequence of numbers: n, step(n), step(step(n)), etc., with 0 as the last element.
 
         Building a single sequence isn't enough for you, so you replace all elements of the sequence with the sums of their digits (s(x)). Now you're curious as to which number appears in the new sequence most often. If there are several answers, return the maximal one.`,
