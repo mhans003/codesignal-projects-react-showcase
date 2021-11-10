@@ -3,6 +3,7 @@
 
 const challenges_t_z = {
     isTandemRepeat: {
+        name: 'isTandemRepeat',
         instructions: `Determine whether the given string can be obtained by one concatenation of some string to itself.`,
         codeOutput: 
         `function isTandemRepeat(inputString) {
@@ -33,6 +34,7 @@ const challenges_t_z = {
         }
     },
     tennisSet: {
+        name: 'tennisSet',
         instructions: `In tennis, the winner of a set is based on how many games each player wins. The first player to win 6 games is declared the winner unless their opponent had already won 5 games, in which case the set continues until one of the players has won 7 games.
 
         Given two integers score1 and score2, your task is to determine if it is possible for a tennis set to be finished with a final score of score1 : score2.`,
@@ -107,6 +109,7 @@ const challenges_t_z = {
         }
     },
     threeSplit: {
+        name: 'threeSplit',
         instructions: `You have a long strip of paper with integers written on it in a single line from left to right. You wish to cut the paper into exactly three pieces such that each piece contains at least one integer and the sum of the integers in each piece is the same. You cannot cut through a number, i.e. each initial number will unambiguously belong to one of the pieces after cutting. How many ways can you do it?
 
         It is guaranteed that the sum of all elements in the array is divisible by 3.`,
@@ -177,6 +180,7 @@ const challenges_t_z = {
         }
     },
     timedReading: {
+        name: 'timedReading',
         instructions: `Timed Reading is an educational tool used in many schools to improve and advance reading skills. A young elementary student has just finished his very first timed reading exercise. Unfortunately he's not a very good reader yet, so whenever he encountered a word longer than maxLength, he simply skipped it and read on.
 
         Help the teacher figure out how many words the boy has read by calculating the number of words in the text he has read, no longer than maxLength.
