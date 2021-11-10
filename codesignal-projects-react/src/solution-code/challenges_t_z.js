@@ -279,6 +279,7 @@ const challenges_t_z = {
         }
     },
     validTime: {
+        name: 'validTime',
         instructions: `Check if the given string is a correct time representation of the 24-hour clock.
 
         Example
@@ -320,6 +321,7 @@ const challenges_t_z = {
         }
     },
     variableName: {
+        name: 'variableName',
         instructions: `Correct variable names consist only of English letters, digits and underscores and they can't start with a digit.
 
         Check if the given string is a correct variable name.`,
@@ -378,6 +380,7 @@ const challenges_t_z = {
         }
     },
     videoPart: {
+        name: 'videoPart',
         instructions: `You have been watching a video for some time. Knowing the total video duration find out what portion of the video you have already watched.
 
         Example
@@ -515,6 +518,7 @@ const challenges_t_z = {
         }
     },
     volleyballPositions: {
+        name: 'volleyballPositions',
         instructions: `You are watching a volleyball tournament, but you missed the beginning of the very first game of your favorite team. Now you're curious about how the coach arranged the players on the field at the start of the game.
 
         The team you favor plays in the following formation:
