@@ -89,6 +89,7 @@ const challenges_k_n = {
         }
     },
     largestNumber: {
+        name: 'largestNumber',
         instructions: `Given an integer n, return the largest number that contains exactly n digits.`,
         codeOutput: 
         `function largestNumber(n) {
@@ -121,6 +122,7 @@ const challenges_k_n = {
         }
     },
     lateRide: {
+        name: 'lateRide',
         instructions: `One night you go for a ride on your motorcycle. At 00:00 you start your engine, and the built-in timer automatically begins counting the length of your ride, in minutes. Off you go to explore the neighborhood.
 
         When you finally decide to head back, you realize there's a chance the bridges on your route home are up, leaving you stranded! Unfortunately, you don't have your watch on you and don't know what time it is. All you know thanks to the bike's timer is that n minutes have passed since 00:00.
@@ -156,6 +158,7 @@ const challenges_k_n = {
         }
     },
     leastFactorial: {
+        name: 'leastFactorial',
         instructions: `Given an integer n, find the minimal k such that
 
         k = m! (where m! = 1 * 2 * ... * m) for some integer m;
@@ -198,6 +201,7 @@ const challenges_k_n = {
         }
     },
     lineEncoding: {
+        name: 'lineEncoding',
         instructions: `Given a string, return its encoding defined as follows:
 
         First, the string is divided into the least possible number of disjoint substrings consisting of identical characters
@@ -305,6 +309,7 @@ const challenges_k_n = {
         }
     },
     lineUp: {
+        name: 'lineUp',
         instructions: `To prepare his students for an upcoming game, the sports coach decides to try some new training drills. To begin with, he lines them up and starts with the following warm-up exercise: when the coach says 'L', he instructs the students to turn to the left. Alternatively, when he says 'R', they should turn to the right. Finally, when the coach says 'A', the students should turn around.
 
         Unfortunately some students (not all of them, but at least one) can't tell left from right, meaning they always turn right when they hear 'L' and left when they hear 'R'. The coach wants to know how many times the students end up facing the same direction.
@@ -403,6 +408,7 @@ const challenges_k_n = {
         }
     },
     longestDigitsPrefix: {
+        name: 'longestDigitsPrefix',
         instructions: `Given a string, output its longest prefix which contains only digits.`,
         codeOutput: 
         `function longestDigitsPrefix(inputString) {
@@ -437,6 +443,7 @@ const challenges_k_n = {
         }
     },
     longestWord: {
+        name: 'longestWord',
         instructions: `Define a word as a sequence of consecutive English letters. Find the longest word from the given string.`,
         codeOutput: 
         `function longestWord(text) {
