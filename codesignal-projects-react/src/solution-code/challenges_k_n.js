@@ -3,6 +3,7 @@
 
 const challenges_k_n = {
     killKthBit: {
+        name: 'killKthBit',
         instructions: `In order to stop the Mad Coder evil genius you need to decipher the encrypted message he sent to his minions. The message contains several numbers that, when typed into a supercomputer, will launch a missile into the sky blocking out the sun, and making all the people on Earth grumpy and sad.
 
         You figured out that some numbers have a modified single digit in their binary representation. More specifically, in the given number n the kth bit from the right was initially set to 0, but its current value might be different. It's now up to you to write a function that will change the kth bit of n back to 0.`,
@@ -35,6 +36,7 @@ const challenges_k_n = {
         }
     },
     knapsackLight: {
+        name: 'knapsackLight',
         instructions: `You found two items in a treasure chest! The first item weighs weight1 and is worth value1, and the second item weighs weight2 and is worth value2. What is the total maximum value of the items you can take with you, assuming that your max weight capacity is maxW and you can't come back for the items later?`,
         codeOutput: 
         `function knapsackLight(value1, weight1, value2, weight2, maxW) {
