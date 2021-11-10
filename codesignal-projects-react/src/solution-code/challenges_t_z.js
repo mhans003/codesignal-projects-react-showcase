@@ -618,6 +618,7 @@ const challenges_t_z = {
         }
     },
     weakNumbers: {
+        name: 'weakNumbers',
         instructions: `We define the weakness of number x as the number of positive integers smaller than x that have more divisors than x.
 
         It follows that the weaker the number, the greater overall weakness it has. For the given integer n, you need to answer two questions:
@@ -728,6 +729,7 @@ const challenges_t_z = {
         }
     },
     whoseTurn: {
+        name: 'whoseTurn',
         instructions: `Imagine a standard chess board with only two white and two black knights placed in their standard starting positions: the white knights on b1 and g1; the black knights on b8 and g8.
 
         There are two players: one plays for white, the other for black. During each move, the player picks one of his knights and moves it to an unoccupied square according to standard chess rules. Thus, a knight on d5 can move to any of the following squares: b6, c7, e7, f6, f4, e3, c3, and b4, as long as it is not occupied by either a friendly or an enemy knight.
@@ -796,6 +798,7 @@ const challenges_t_z = {
         }
     },
     willYou: {
+        name: 'willYou',
         instructions: `Once Mary heard a famous song, and a line from it stuck in her head. That line was "Will you still love me when I'm no longer young and beautiful?". Mary believes that a person is loved if and only if he/she is both young and beautiful, but this is quite a depressing thought, so she wants to put her belief to the test.
 
         Knowing whether a person is young, beautiful and loved, find out if they contradict Mary's belief.
