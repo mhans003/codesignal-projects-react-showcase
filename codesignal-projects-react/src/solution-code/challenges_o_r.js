@@ -300,6 +300,7 @@ const challenges_o_r = {
         }
     },
     rangeBitCount: {
+        name: 'rangeBitCount',
         instructions: `You are given two numbers a and b where 0 ≤ a ≤ b. Imagine you construct an array of all the integers from a to b inclusive. You need to count the number of 1s in the binary representations of all the numbers in the array.`,
         codeOutput: 
         `function rangeBitCount(a, b) {
@@ -348,6 +349,7 @@ const challenges_o_r = {
         }
     },
     reachNextLevel: {
+        name: 'reachNextLevel',
         instructions: `You are playing an RPG game. Currently your experience points (XP) total is equal to experience. To reach the next level your XP should be at least at threshold. If you kill the monster in front of you, you will gain more experience points in the amount of the reward.
 
         Given values experience, threshold and reward, check if you reach the next level after killing the monster.`,
@@ -378,6 +380,7 @@ const challenges_o_r = {
         }
     },
     rectangleRotation: {
+        name: 'rectangleRotation',
         instructions: `A rectangle with sides equal to even integers a and b is drawn on the Cartesian plane. Its center (the intersection point of its diagonals) coincides with the point (0, 0), but the sides of the rectangle are not parallel to the axes; instead, they are forming 45 degree angles with the axes.
 
         How many points with integer coordinates are located inside the given rectangle (including on its sides)?`,
@@ -428,6 +431,7 @@ const challenges_o_r = {
         }
     },
     reflectString: {
+        name: 'reflectString',
         instructions: `Define an alphabet reflection as follows: a turns into z, b turns into y, c turns into x, ..., n turns into m, m turns into n, ..., z turns into a.
 
         Define a string reflection as the result of applying the alphabet reflection to each of its characters.
@@ -468,6 +472,7 @@ const challenges_o_r = {
         }
     },
     regularMonths: {
+        name: 'regularMonths',
         instructions: `In an effort to be more innovative, your boss introduced a strange new tradition: the first day of every month you're allowed to work from home. You like this rule when the day falls on a Monday, because any excuse to skip rush hour traffic is great!
 
         You and your colleagues have started calling these months regular months. Since you're a fan of working from home, you decide to find out how far away the nearest regular month is, given that the currMonth has just started.
@@ -633,6 +638,7 @@ const challenges_o_r = {
         }
     },
     removeArrayPart: {
+        name: 'removeArrayPart',
         instructions: `Remove a part of a given array between given 0-based indexes l and r (inclusive).`,
         codeOutput: 
         `function removeArrayPart(inputArray, l, r) {
@@ -659,6 +665,7 @@ const challenges_o_r = {
         }
     },
     replaceAllDigitsRegExp: {
+        name: 'replaceAllDigitsRegExp',
         instructions: `Implement a function that replaces each digit in the given string with a '#' character.`,
         codeOutput: 
         `function replaceAllDigitsRegExp(input) {
@@ -679,6 +686,7 @@ const challenges_o_r = {
         }
     },
     replaceMiddle: {
+        name: 'replaceMiddle',
         instructions: `We define the middle of the array arr as follows:
 
         if arr contains an odd number of elements, its middle is the element whose index number is the same when counting from the beginning of the array and from its end;
@@ -709,6 +717,7 @@ const challenges_o_r = {
         }
     },
     reverseInParentheses: {
+        name: 'reverseInParentheses',
         instructions: `Write a function that reverses characters in (possibly nested) parentheses in the input string.
 
         Input strings will always be well-formed with matching ()s.`,
@@ -789,6 +798,7 @@ const challenges_o_r = {
         }
     },
     reverseOnDiagonals: {
+        name: 'reverseOnDiagonals',
         instructions: `The longest diagonals of a square matrix are defined as follows:
 
         the first longest diagonal goes from the top left corner to the bottom right one;
@@ -829,6 +839,7 @@ const challenges_o_r = {
         }
     },
     rounders: {
+        name: 'rounders',
         instructions: `We want to turn the given integer into a number that has only one non-zero digit using a tail rounding approach. This means that at each step we take the last non 0 digit of the number and round it to 0 or to 10. If it's less than 5 we round it to 0 if it's larger than or equal to 5 we round it to 10 (rounding to 10 means increasing the next significant digit by 1). The process stops immediately once there is only one non-zero digit left.`,
         codeOutput: 
         `function rounders(n) {
@@ -869,6 +880,7 @@ const challenges_o_r = {
         }
     },
     rowsRearranging: {
+        name: 'rowsRearranging',
         instructions: `Given a rectangular matrix of integers, check if it is possible to rearrange its rows in such a way that all its columns become strictly increasing sequences (read from top to bottom).`,
         codeOutput: 
         `function rowsRearranging(matrix) {
@@ -913,6 +925,7 @@ const challenges_o_r = {
         }
     },
     runnersMeetings: {
+        name: 'runnersMeetings',
         instructions: `Some people run along a straight line in the same direction. They start simultaneously at pairwise distinct positions and run with constant speed (which may differ from person to person).
 
         If two or more people are at the same point at some moment we call that a meeting. The number of people gathered at the same point is called meeting cardinality.
