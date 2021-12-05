@@ -130,6 +130,55 @@ const challenges_d_f = {
             ]
         }
     },
+    decipher: {
+        name: 'decipher',
+        instructions: `Consider the following ciphering algorithm:
+
+        For each character replace it with its code.
+        Concatenate all of the obtained numbers.
+        Given a ciphered string, return the initial one if it is known that it consists only of lowercase letters.`,
+        codeOutput: 
+        `function decipher(cipher) {
+            let currentCode = "";
+            let result = "";
+            for(let i = 0; i < cipher.length; i++) {
+                //Start or continue building the current code.
+                currentCode += cipher[i];
+                //Check if the current code is a valid value between 97-122.
+                if(Number(currentCode) >= 97 && Number(currentCode) <= 122) {
+                    //If so, add to the result using this character code.
+                    result += String.fromCharCode(Number(currentCode));
+                    //Now, reset the current code.
+                    currentCode = "";
+                }
+            }
+            return result;
+        }`,
+        code: function decipher(cipher) {
+            let currentCode = "";
+            let result = "";
+            for(let i = 0; i < cipher.length; i++) {
+                //Start or continue building the current code.
+                currentCode += cipher[i];
+                //Check if the current code is a valid value between 97-122.
+                if(Number(currentCode) >= 97 && Number(currentCode) <= 122) {
+                    //If so, add to the result using this character code.
+                    result += String.fromCharCode(Number(currentCode));
+                    //Now, reset the current code.
+                    currentCode = "";
+                }
+            }
+            return result;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String of ASCII Character Codes; No Spaces, etc. (Example: 10197115121 = 'easy')",
+                    type: "String"
+                }
+            ]
+        }
+    },
     deleteDigit: {
         name: 'deleteDigit',
         instructions: `Given some integer, find the maximal number you can obtain by deleting exactly one digit of the given number.`,
