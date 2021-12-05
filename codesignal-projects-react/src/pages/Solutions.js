@@ -75,6 +75,7 @@ const Solutions = () => {
                         <option value="curiousClock">Curious Clock</option>
                         <option value="cyclicString">Cyclic String</option>
                         <option value="dayOfWeek">Day of Week</option>
+                        <option value="decipher">Decipher</option>
                         <option value="deleteDigit">Delete Digit</option>
                         <option value="depositProfit">Deposit Profit</option>
                         <option value="differentRightmostBit">Different Right-Most Bit</option>
@@ -97,6 +98,7 @@ const Solutions = () => {
                         <option value="firstReverseTry">First Reverse Try</option>
                         <option value="gravitation">Gravitation</option>
                         <option value="growingPlant">Growing Plant</option>
+                        <option value="higherVersion">Higher Version</option>
                         <option value="holiday">Holiday</option>
                         <option value="houseNumbersSum">House Numbers Sum</option>
                         <option value="houseOfCats">House of Cats</option>
@@ -174,6 +176,7 @@ const Solutions = () => {
                         <option value="spiralNumbers">Spiral Numbers</option>
                         <option value="squareDigitsSequence">Square Digits Sequence</option>
                         <option value="starRotation">Star Rotation</option>
+                        <option value="stolenLunch">Stolen Lunch</option>
                         <option value="stringsConstruction">Strings Construction</option>
                         <option value="stringsCrossover">Strings Crossover</option>
                         <option value="stringsRearrangement">Strings Rearrangement</option>
