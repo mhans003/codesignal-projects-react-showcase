@@ -8,6 +8,7 @@ function App() {
     <Router>
       <Switch>
         
+        
         <Route exact path="/codesignal-projects-react-showcase" component={Landing}/>
         <Route exact path="/solutions/codesignal-projects-react-showcase" component={Solutions}/>
         
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" component={Landing}/>
         <Route exact path="/solutions" component={Solutions}/>
         */}
+      
       </Switch>
     </Router>
   );
