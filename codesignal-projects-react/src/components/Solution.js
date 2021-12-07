@@ -184,7 +184,7 @@ const Solution = props => {
                     </div>
 
                     <div className="row">
-                        <div className="col-lg">
+                        <div className="col-lg-6">
                             <div className="mt-2">
                                 <p className="field-heading">Solution Code:</p>
                                 <div className="bg-light p-4">
@@ -194,12 +194,12 @@ const Solution = props => {
                                     <p><a href="https://github.com/mhans003/algorithm-solutions-cs/" target="_blank" rel="noopener noreferrer">Click Here</a> to see Repo with all solutions (fully formatted code).</p>
                                     <p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].code.name}.js`} target="_blank" rel="noopener noreferrer">Click Here to See Code in Repo</a></p>
                                     <p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].name}.js`} target="_blank" rel="noopener noreferrer">Click Here to See Code in Repo</a></p>*/}
-                                    <code>{allChallenges[`${props.challengeName}`].codeOutput}</code>
+                                    <pre id="code-output">{allChallenges[`${props.challengeName}`].codeOutput}</pre>
                                 </div>  
                             </div> 
                         </div>
                         
-                        <div className="col-lg">
+                        <div className="col-lg-6">
                             <div className="form-group mt-4 mt-lg-2">
                                 <p className="field-heading">User Input:</p>
                                 {allChallenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {

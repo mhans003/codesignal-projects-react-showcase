@@ -41,6 +41,12 @@ body {
   color: #17a2b8;
 }
 
+#code-output {
+  color: #f3034b;
+  font-family: 'Source Code Pro', monospace !important;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 338px) {
   .navbar-brand {
     margin-left: auto !important;
