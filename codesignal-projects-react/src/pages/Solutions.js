@@ -22,6 +22,7 @@ const Solutions = () => {
                         <option selected>Select a Challenge</option>
                         <option value="absvaluesumminimization">Abs Value Sum Minimization</option>
                         <option value="adanumber">Ada Number</option>
+                        <option value="addBinary">Add Binary</option>
                         <option value="addborder">Add Border</option>
                         <option value="additionWithoutCarrying">Addition Without Carrying</option>
                         <option value="adjacentElementsProduct">Adjacent Elements Product</option>

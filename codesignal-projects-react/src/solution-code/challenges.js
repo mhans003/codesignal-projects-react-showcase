@@ -160,6 +160,34 @@ const challenges = {
             ]
         }
     },
+    addBinary: {
+        instructions: `Given two binary strings a and b, return their sum as a binary string.`,
+        codeOutput: 
+        `var addBinary = function(a, b) {
+            //Use BigInt to prevent overflow.
+            let sum = BigInt("0b" + a) + BigInt("0b" + b);
+            //Convert back to binary.
+            return sum.toString(2);
+        };`,
+        code: function addBinary(a, b) {
+            //Use BigInt to prevent overflow.
+            let sum = BigInt(`0b${a}`) + BigInt(`0b${b}`);
+            //Convert back to binary.
+            return sum.toString(2);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Binary String (Example: 1010)",
+                    type: "String"
+                },
+                {
+                    text: "Binary String (Example: 1011)",
+                    type: "String"
+                }
+            ]
+        }
+    },
     addborder: {
         name: 'addBorder',
         instructions: `Given a rectangular matrix of characters, add a border of asterisks(*) to it.`,
