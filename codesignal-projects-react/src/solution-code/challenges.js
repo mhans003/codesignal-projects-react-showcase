@@ -161,6 +161,7 @@ const challenges = {
         }
     },
     addBinary: {
+        name: 'addBinary',
         instructions: `Given two binary strings a and b, return their sum as a binary string.`,
         codeOutput: 
         `var addBinary = function(a, b) {
@@ -4077,6 +4078,7 @@ export default challenges;
 Template:
 
 name: {
+    name: ``,
     instructions: ``,
     codeOutput: 
     ``,
