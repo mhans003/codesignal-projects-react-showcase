@@ -1265,6 +1265,7 @@ export default challenges_d_f;
 Template:
 
 name: {
+    name: ``,
     instructions: ``,
     codeOutput: 
     ``,

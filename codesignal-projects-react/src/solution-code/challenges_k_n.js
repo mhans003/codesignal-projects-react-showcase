@@ -1766,6 +1766,7 @@ export default challenges_k_n;
 Template:
 
 name: {
+    name: ``,
     instructions: ``,
     codeOutput: 
     ``,

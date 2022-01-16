@@ -1026,6 +1026,7 @@ export default challenges_o_r;
 Template:
 
 name: {
+    name: ``,
     instructions: ``,
     codeOutput: 
     ``,

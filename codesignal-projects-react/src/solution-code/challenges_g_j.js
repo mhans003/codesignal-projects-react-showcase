@@ -1188,6 +1188,7 @@ export default challenges_g_j;
 Template:
 
 name: {
+    name: ``,
     instructions: ``,
     codeOutput: 
     ``,

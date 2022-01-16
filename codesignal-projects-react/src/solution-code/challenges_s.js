@@ -1394,6 +1394,7 @@ export default challenges_s;
 Template:
 
 name: {
+    name: ``,
     instructions: ``,
     codeOutput: 
     ``,

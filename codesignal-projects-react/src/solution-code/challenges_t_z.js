@@ -848,6 +848,7 @@ export default challenges_t_z;
 Template:
 
 name: {
+    name: ``,
     instructions: ``,
     codeOutput: 
     ``,
