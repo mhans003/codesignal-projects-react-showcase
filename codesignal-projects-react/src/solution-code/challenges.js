@@ -2752,6 +2752,47 @@ const challenges = {
             ]
         }
     },
+    climbStairs: {
+        name: `climbStairs`,
+        instructions: `You are climbing a staircase. It takes n steps to reach the top.
+
+        Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?`,
+        codeOutput: 
+        `var climbStairs = function(n) {
+            //Since this pattern essentially can be simplified to the fibonacci sequence, start with 0 and 1. 
+            let num1 = 0;
+            let num2 = 1;
+            //Until we reach the destination n, repeatedly add the last two elements.
+            for(let i = 1; i < n; i++) {
+                let nextNum = num1 + num2;
+                num1 = num2;
+                num2 = nextNum;
+            }
+            //Finally, return the last 2 elements. This will be the number of combinations of 1 and 2 steps.
+            return num1 + num2;
+        };`,
+        code: function climbStairs(n) {
+            //Since this pattern essentially can be simplified to the fibonacci sequence, start with 0 and 1. 
+            let num1 = 0;
+            let num2 = 1;
+            //Until we reach the destination n, repeatedly add the last two elements.
+            for(let i = 1; i < n; i++) {
+                let nextNum = num1 + num2;
+                num1 = num2;
+                num2 = nextNum;
+            }
+            //Finally, return the last 2 elements. This will be the number of combinations of 1 and 2 steps.
+            return num1 + num2;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Number of Stairs",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     combs: {
         name: 'combs',
         instructions: `Miss X has only two combs in her possession, both of which are old and miss a tooth or two. She also has many purses of different length, in which she carries the combs. The only way they fit is horizontally and without overlapping. Given teeth' positions on both combs, find the minimum length of the purse she needs to take them with her.

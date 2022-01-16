@@ -39,7 +39,6 @@ const Solutions = () => {
                         <option value="areSimilar2">Are Similar - Version 2</option>
                         <option value="arithmeticExpression">Arithmetic Expression</option>
                         <option value="arrayChange">Array Change</option>
-                        <option value="concatenateArrays">Concatenate Arrays</option>
                         <option value="arrayConversion">Array Conversion</option>
                         <option value="arrayMaximalAdjacentDifference">Array Maximal Adjacent Difference</option>
                         <option value="arrayPacking">Array Packing</option>
@@ -64,9 +63,11 @@ const Solutions = () => {
                         <option value="christmasTree">Christmas Tree</option>
                         <option value="cipher26">Cipher 26</option>
                         <option value="circleOfNumbers">Circle of Numbers</option>
+                        <option value="climbStairs">Climb Stairs</option>
                         <option value="combs">Combs</option>
                         <option value="comfortableNumbers">Comfortable Numbers</option>
                         <option value="commonCharacterCount">Common Character Count</option>
+                        <option value="concatenateArrays">Concatenate Arrays</option>
                         <option value="constructSquare">Construct Square</option>
                         <option value="contoursShifting">Contours Shifting</option>
                         <option value="correctNonogram">Correct Nonogram</option>
