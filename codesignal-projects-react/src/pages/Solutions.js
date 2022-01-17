@@ -101,6 +101,7 @@ const Solutions = () => {
                         <option value="firstReverseTry">First Reverse Try</option>
                         <option value="gravitation">Gravitation</option>
                         <option value="growingPlant">Growing Plant</option>
+                        <option value="hammingWeight">Hamming Weight</option>
                         <option value="higherVersion">Higher Version</option>
                         <option value="holiday">Holiday</option>
                         <option value="houseNumbersSum">House Numbers Sum</option>
