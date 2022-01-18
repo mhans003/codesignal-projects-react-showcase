@@ -492,6 +492,53 @@ const challenges_g_j = {
             ]
         }
     },
+    insertionSortList: {
+        name: `insertionSortList`,
+        instructions: `Implement insertion sort on an array of integers.`,
+        codeOutput: 
+        `var insertionSortList = function(head) {
+            //Iterate through the unsorted portion.
+            for(let i = 1; i < head.length; i++) {
+                let currentElement = head[i];
+                //Iterate back through the sorted portion of this list.
+                let j = i - 1;
+                while((j >= 0) && (currentElement < head[j])) {
+                    //Start shifting all elements upward in the sorted portion.
+                    head[j + 1] = head[j];
+                    //Move to the next element down.
+                    j--;
+                }
+                //Place the current element in its correct spot
+                head[j + 1] = currentElement;
+            }
+            return head;
+        };`,
+        code: function insertionSortList(head) {
+            //Iterate through the unsorted portion.
+            for(let i = 1; i < head.length; i++) {
+                let currentElement = head[i];
+                //Iterate back through the sorted portion of this list.
+                let j = i - 1;
+                while((j >= 0) && (currentElement < head[j])) {
+                    //Start shifting all elements upward in the sorted portion.
+                    head[j + 1] = head[j];
+                    //Move to the next element down.
+                    j--;
+                }
+                //Place the current element in its correct spot
+                head[j + 1] = currentElement;
+            }
+            return head;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (e,g. 5,4,3,2,1)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     integerToStringOfFixedWidth: {
         name: 'integerToStringOfFixedWidth',
         instructions: `Given a positive integer number and a certain length, we need to modify the given number to have a specified length. We are allowed to do that either by cutting out leading digits (if the number needs to be shortened) or by adding 0s in front of the original number.`,

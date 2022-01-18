@@ -108,6 +108,7 @@ const Solutions = () => {
                         <option value="houseOfCats">House of Cats</option>
                         <option value="htmlEndTagByStartTag">HTML End Tag By Start Tag</option>
                         <option value="increaseNumberRoundness">Increase Number Roundness</option>
+                        <option value="insertionSortList">Insertion Sort List</option>
                         <option value="integerToStringOfFixedWidth">Integer to String of Fixed Width</option>
                         <option value="isBeautifulString">Is Beautiful String</option>
                         <option value="isCaseInsensitivePalindrome">Is Case Insensitive Palindrome</option>
