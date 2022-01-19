@@ -119,6 +119,7 @@ const Solutions = () => {
                         <option value="isLucky">Is Lucky</option>
                         <option value="isMAC48Address">Is MAC48 Address</option>
                         <option value="isPalindrome">Is Palindrome</option>
+                        <option value="isPerfectSquare">Is Perfect Square</option>
                         <option value="isPower">Is Power</option>
                         <option value="isSentenceCorrect">Is Sentence Correct</option>
                         <option value="isSmooth">Is Smooth</option>
