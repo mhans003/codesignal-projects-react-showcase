@@ -948,6 +948,36 @@ const challenges_g_j = {
             ]
         }
     },
+    isPalindrome: {
+        name: `isPalindrome`,
+        instructions: `A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+        Given a string s, return true if it is a palindrome, or false otherwise.`,
+        codeOutput: 
+        `var isPalindrome = function(s) {
+            //Compare the reversed string to the normal string (both stripped of special characters and lower case)
+            return s.toLowerCase()
+                .replace(/[^0-9a-z]/gi, '')
+                .split('')
+                .reverse()
+                .join('') === s.toLowerCase().replace(/[^0-9a-z]/gi, '');
+        };`,
+        code: function isPalindrome(s) {
+            //Compare the reversed string to the normal string (both stripped of special characters and lower case)
+            return s.toLowerCase()
+                .replace(/[^0-9a-z]/gi, '')
+                .split('')
+                .reverse()
+                .join('') === s.toLowerCase().replace(/[^0-9a-z]/gi, '');
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String to check",
+                    type: "String"
+                }
+            ]
+        }
+    },
     isPower: {
         name: 'isPower',
         instructions: `Determine if the given number is a power of some non-negative integer.`,
