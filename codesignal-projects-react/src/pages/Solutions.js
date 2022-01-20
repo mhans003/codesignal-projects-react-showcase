@@ -133,6 +133,7 @@ const Solutions = () => {
                         <option value="largestNumber">Largest Number</option>
                         <option value="lateRide">Late Ride</option>
                         <option value="leastFactorial">Least Factorial</option>
+                        <option value="lengthOfLastWord">Length of Last Word</option>
                         <option value="lineEncoding">Line Encoding</option>
                         <option value="lineUp">Line Up</option>
                         <option value="longestDigitsPrefix">Longest Digits Prefix</option>
