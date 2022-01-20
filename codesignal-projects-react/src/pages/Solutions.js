@@ -136,6 +136,7 @@ const Solutions = () => {
                         <option value="lengthOfLastWord">Length of Last Word</option>
                         <option value="lineEncoding">Line Encoding</option>
                         <option value="lineUp">Line Up</option>
+                        <option value="longestCommonPrefix">Longest Common Prefix</option>
                         <option value="longestDigitsPrefix">Longest Digits Prefix</option>
                         <option value="longestWord">Longest Word</option>
                         <option value="magicalWell">Magical Well</option>
