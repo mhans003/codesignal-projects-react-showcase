@@ -140,6 +140,7 @@ const Solutions = () => {
                         <option value="longestDigitsPrefix">Longest Digits Prefix</option>
                         <option value="longestWord">Longest Word</option>
                         <option value="magicalWell">Magical Well</option>
+                        <option value="majorityElement">Majority Element</option>
                         <option value="makeArrayConsecutive2">Make Array Consecutive 2</option>
                         <option value="matrixElementsSum">Matrix Elements Sum</option>
                         <option value="arrayMaxConsecutiveSum">Array Max Consecutive Sum</option>

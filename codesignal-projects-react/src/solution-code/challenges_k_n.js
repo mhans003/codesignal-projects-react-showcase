@@ -646,6 +646,52 @@ const challenges_k_n = {
             ]
         }
     },
+    majorityElement: {
+        name: `majorityElement`,
+        instructions: `Given an array nums of size n, return the majority element.
+        The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.`,
+        codeOutput: 
+        `var majorityElement = function(nums) {
+            //Create an object to hold all values that appear in the array.
+            let numsMap = {};
+            //Map out the number of occurrences of each value.
+            nums.forEach(num => {
+                if(numsMap[num]) {
+                    numsMap[num]++;
+                } else {
+                    numsMap[num] = 1;
+                }
+            });
+            //Using the object, get all object keys (numbers that appear) into an array, 
+            //Then, reduce the array down to the one with the largest value.
+            return Object.keys(numsMap)
+                .reduce((prev, current) => numsMap[prev] > numsMap[current] ? prev : current);
+        };`,
+        code: function majorityElement(nums) {
+            //Create an object to hold all values that appear in the array.
+            let numsMap = {};
+            //Map out the number of occurrences of each value.
+            nums.forEach(num => {
+                if(numsMap[num]) {
+                    numsMap[num]++;
+                } else {
+                    numsMap[num] = 1;
+                }
+            });
+            //Using the object, get all object keys (numbers that appear) into an array, 
+            //Then, reduce the array down to the one with the largest value.
+            return Object.keys(numsMap)
+                .reduce((prev, current) => numsMap[prev] > numsMap[current] ? prev : current);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (Form of 1,2,3...)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     makeArrayConsecutive2: {
         name: 'makeArrayConsecutive2',
         instructions: `Ratiorg got statues of different sizes as a present from CodeMaster for his birthday, each statue having an non-negative integer size. Since he likes to make things perfect, he wants to arrange them from smallest to largest so that each statue will be bigger than the previous one exactly by 1. He may need some additional statues to be able to accomplish that. Help him figure out the minimum number of additional statues needed.`,
