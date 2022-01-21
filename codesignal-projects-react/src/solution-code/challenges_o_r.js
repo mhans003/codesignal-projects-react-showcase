@@ -155,6 +155,100 @@ const challenges_o_r = {
             ]
         }
     },
+    pascalsTriangle: {
+        name: `pascalsTriangle`,
+        instructions: `Given an integer numRows, return the first numRows of Pascal's triangle.`,
+        codeOutput: 
+        `var pascalsTriangle = function(numRows) {
+            let result = [[1]];
+            for(let i = 1; i < numRows; i++) {
+                //Start this row (only will run if generating more than first row)
+                let thisRow = [];
+                for(let j = 0; j <= result[result.length - 1].length - 2; j++) {
+                    //Add next two elements of last array in the result array.
+                    thisRow.push(result[result.length - 1][j] + result[result.length - 1][j + 1]);
+                }
+                //Push 1 to the beginning and end of the row.
+                thisRow.unshift(1);
+                thisRow.push(1);
+                //Push this row to the result.
+                result.push(thisRow);
+            }
+            return result;
+        };`,
+        code: function pascalsTriangle(numRows) {
+            let result = [[1]];
+            for(let i = 1; i < numRows; i++) {
+                //Start this row (only will run if generating more than first row)
+                let thisRow = [];
+                for(let j = 0; j <= result[result.length - 1].length - 2; j++) {
+                    //Add next two elements of last array in the result array.
+                    thisRow.push(result[result.length - 1][j] + result[result.length - 1][j + 1]);
+                }
+                //Push 1 to the beginning and end of the row.
+                thisRow.unshift(1);
+                thisRow.push(1);
+                //Push this row to the result.
+                result.push(thisRow);
+            }
+            return result;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Integer Number (of Rows)",
+                    type: "Number"
+                }
+            ]
+        }
+    },
+    pascalsTriangle2: {
+        name: `pascalsTriangle2`,
+        instructions: `Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle.`,
+        codeOutput: 
+        `var pascalsTriangle2 = function(rowIndex) {
+            let result = [[1]];
+            for(let i = 1; i <= rowIndex; i++) {
+                //Start this row (only will run if generating more than first row)
+                let thisRow = [];
+                for(let j = 0; j <= result[result.length - 1].length - 2; j++) {
+                    //Add next two elements of last array in the result array.
+                    thisRow.push(result[result.length - 1][j] + result[result.length - 1][j + 1]);
+                }
+                //Push 1 to the beginning and end of the row.
+                thisRow.unshift(1);
+                thisRow.push(1);
+                //Push this row to the result.
+                result.push(thisRow);
+            }
+            return result[rowIndex];
+        };`,
+        code: function pascalsTriangle2(rowIndex) {
+            let result = [[1]];
+            for(let i = 1; i <= rowIndex; i++) {
+                //Start this row (only will run if generating more than first row)
+                let thisRow = [];
+                for(let j = 0; j <= result[result.length - 1].length - 2; j++) {
+                    //Add next two elements of last array in the result array.
+                    thisRow.push(result[result.length - 1][j] + result[result.length - 1][j + 1]);
+                }
+                //Push 1 to the beginning and end of the row.
+                thisRow.unshift(1);
+                thisRow.push(1);
+                //Push this row to the result.
+                result.push(thisRow);
+            }
+            return result[rowIndex];
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Whole Number Integer (0 or Greater)",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     phoneCall: {
         name: 'phoneCall',
         instructions: `Some phone usage rate may be described as follows:

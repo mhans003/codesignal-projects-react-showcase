@@ -162,6 +162,8 @@ const Solutions = () => {
                         <option value="pagesNumberingWithInk">Pages Numbering With Ink</option>
                         <option value="pairOfShoes">Pair of Shoes</option>
                         <option value="palindromeRearranging">Palindrome Rearranging</option>
+                        <option value="pascalsTriangle">Pascals Triangle</option>
+                        <option value="pascalsTriangle2">Pascals Triangle 2</option>
                         <option value="phoneCall">Phone Call</option>
                         <option value="polygonPerimeter">Polygon Perimeter</option>
                         <option value="properNounCorrection">Proper Noun Correction</option>
