@@ -323,6 +323,34 @@ const challenges_o_r = {
             ]
         }
     },
+    plusOne: {
+        name: `plusOne`,
+        instructions: `You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
+        Increment the large integer by one and return the resulting array of digits.`,
+        codeOutput: 
+        `var plusOne = function(digits) {
+            //Use BigInt constructor to prevent overflow and innacuracy. 
+            let num = BigInt(digits.join(''));
+            //Increment the value and return as a new array.
+            num++;
+            return Array.from(num.toString()).map(Number);
+        };`,
+        code: function plusOne(digits) {
+            //Use BigInt constructor to prevent overflow and innacuracy. 
+            let num = BigInt(digits.join(''));
+            //Increment the value and return as a new array.
+            num++;
+            return Array.from(num.toString()).map(Number);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Single-Digit Integers (No Brackets []; Form of 1,2,3...)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     polygonPerimeter: {
         name: 'polygonPerimeter',
         instructions: `You have a rectangular white board with some black cells. The black cells create a connected black figure, i.e. it is possible to get from any black cell to any other one through connected adjacent (sharing a common side) black cells.
