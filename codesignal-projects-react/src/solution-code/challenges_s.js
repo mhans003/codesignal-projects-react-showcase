@@ -2,6 +2,38 @@
 /* global BigInt */
 
 const challenges_s = {
+    searchInsert: {
+        name: `searchInsert`,
+        instructions: `Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+        You must write an algorithm with O(log n) runtime complexity.`,
+        codeOutput: 
+        `var searchInsert = function(nums, target) {
+            if(nums.includes(target)) return nums.indexOf(target);
+            //If target is not already part of nums, put it in the array, sort it, and return the index.
+            nums.push(target);
+            nums.sort((a,b) => a - b);
+            return nums.indexOf(target)
+        };`,
+        code: function searchInsert(nums, target) {
+            if(nums.includes(target)) return nums.indexOf(target);
+            //If target is not already part of nums, put it in the array, sort it, and return the index.
+            nums.push(target);
+            nums.sort((a,b) => a - b);
+            return nums.indexOf(target)
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Sorted Distinct Integers (e.g. 1,2,5,7,10)",
+                    type: "NumberArray"
+                },
+                {
+                    text: "Single Integer for Target",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     seatsInTheater: {
         name: 'seatsInTheater',
         instructions: `Given the total number of rows and columns in the theater (nRows and nCols, respectively), and the row and column you're sitting in, return the number of people who sit strictly behind you and in your column or to the left, assuming all seats are occupied.`,

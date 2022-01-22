@@ -183,6 +183,7 @@ const Solutions = () => {
                         <option value="rounders">Rounders</option>
                         <option value="rowsRearranging">Rows Rearranging</option>
                         <option value="runnersMeetings">Runners Meetings</option>
+                        <option value="searchInsert">Search Insert</option>
                         <option value="seatsInTheater">Seats in Theater</option>
                         <option value="secondRightmostZeroBit">Second Right-Most Zero Bit</option>
                         <option value="shapeArea">Shape Area</option>
