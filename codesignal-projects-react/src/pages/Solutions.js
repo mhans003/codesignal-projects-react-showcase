@@ -188,6 +188,7 @@ const Solutions = () => {
                         <option value="secondRightmostZeroBit">Second Right-Most Zero Bit</option>
                         <option value="shapeArea">Shape Area</option>
                         <option value="shuffledArray">Shuffled Array</option>
+                        <option value="singleNumber">Single Number</option>
                         <option value="sortByHeight">Sort by Height</option>
                         <option value="sortByLength">Sort by Length</option>
                         <option value="spiralNumbers">Spiral Numbers</option>

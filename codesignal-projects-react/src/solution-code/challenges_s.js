@@ -207,6 +207,45 @@ const challenges_s = {
             ]
         }
     },
+    singleNumber: {
+        name: `singleNumber`,
+        instructions: `Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.`,
+        codeOutput: 
+        `var singleNumber = function(nums) {
+            let numMap = {};
+            nums.forEach(num => {
+                if(numMap[num]) {
+                    numMap[num]++
+                } else {
+                    numMap[num] = 1;
+                }
+            });
+            for(let num in numMap) {
+                if(numMap[num] === 1) return num;    
+            }
+        };`,
+        code: function singleNumber(nums) {
+            let numMap = {};
+            nums.forEach(num => {
+                if(numMap[num]) {
+                    numMap[num]++
+                } else {
+                    numMap[num] = 1;
+                }
+            });
+            for(let num in numMap) {
+                if(numMap[num] === 1) return num;    
+            }
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (All numbers appear twice except one; e.g. 1,1,2,2,3)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     sortByHeight: {
         name: 'sortByHeight',
         instructions: `Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!`,
