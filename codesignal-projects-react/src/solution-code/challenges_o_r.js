@@ -786,6 +786,43 @@ const challenges_o_r = {
             ]
         }
     },
+    removeDuplicates: {
+        name: `removeDuplicates`,
+        instructions: `Remove array duplicates in-place.`,
+        codeOutput: 
+        `var removeDuplicates = function(nums) {   
+            let i = 0;
+            //As long as the end of the array is not reached, remove one element if the next is a duplicate.
+            while(i < nums.length - 1) {
+                if(nums[i] === nums[i + 1]) {
+                    nums.splice(i, 1);
+                } else {
+                    i++;
+                }
+            }
+            return nums;
+        }`,
+        code: function removeDuplicates(nums) {   
+            let i = 0;
+            //As long as the end of the array is not reached, remove one element if the next is a duplicate.
+            while(i < nums.length - 1) {
+                if(nums[i] === nums[i + 1]) {
+                    nums.splice(i, 1);
+                } else {
+                    i++;
+                }
+            }
+            return nums;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (Form of 1,2,3...)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     replaceAllDigitsRegExp: {
         name: 'replaceAllDigitsRegExp',
         instructions: `Implement a function that replaces each digit in the given string with a '#' character.`,
