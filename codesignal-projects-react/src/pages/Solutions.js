@@ -8,8 +8,8 @@ const Solutions = () => {
     const [challengeName, setChallengeName] = useState("");
     const challengeDropdown = useRef();
     const handleChallengeChange = e => {
-        console.log(e.value);
-        setChallengeName(challengeDropdown.current.value);
+        //As long as one of the code challenges is selected (not the initial 'select a challenge', then render the code)
+        if(challengeDropdown.current.value) setChallengeName(challengeDropdown.current.value);
     }
 
     return (
@@ -19,7 +19,7 @@ const Solutions = () => {
                 <div className="form-group">
                     <label for="select-challenge" className="field-heading">Select Challenge:</label>
                     <select className="form-control form-control-lg dropdown-items" id="select-challenge" onChange={e => handleChallengeChange(e)} ref={challengeDropdown}>
-                        <option selected>Select a Challenge</option>
+                        <option value="" selected>Select a Challenge</option>
                         <option value="absvaluesumminimization">Abs Value Sum Minimization</option>
                         <option value="adanumber">Ada Number</option>
                         <option value="addBinary">Add Binary</option>
