@@ -262,6 +262,41 @@ const challenges_t_z = {
             ]
         }
     },
+    twoSum2: {
+        name: `twoSum2`,
+        instructions: `Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+        You may assume that each input would have exactly one solution, and you may not use the same element twice.
+        You can return the answer in any order.`,
+        codeOutput: 
+        `var twoSum2 = function(nums, target) {
+            for(let i = 0; i < nums.length - 1; i++) {
+                let missingAddend = target - nums[i];
+                if(nums.indexOf(missingAddend, i + 1) !== -1) {
+                    return [i, nums.indexOf(missingAddend, i + 1)]
+                }
+            }
+        };`,
+        code: function twoSum2(nums, target) {
+            for(let i = 0; i < nums.length - 1; i++) {
+                let missingAddend = target - nums[i];
+                if(nums.indexOf(missingAddend, i + 1) !== -1) {
+                    return [i, nums.indexOf(missingAddend, i + 1)]
+                }
+            }
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers, Per Instructions (Form of 1,2,3...)",
+                    type: "NumberArray"
+                },
+                {
+                    text: "Integer for Target, Per Instructions",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     uniqueDigitProducts: {
         name: 'uniqueDigitProducts',
         instructions: `Let's call product(x) the product of x's digits. Given an array of integers a, calculate product(x) for each x in a, and return the number of distinct results you get.`,
