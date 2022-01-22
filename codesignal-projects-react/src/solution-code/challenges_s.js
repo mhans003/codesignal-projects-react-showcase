@@ -1001,6 +1001,41 @@ const challenges_s = {
             ]
         }
     },
+    strStr: {
+        name: `strStr`,
+        instructions: `Implement strStr().
+        Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+        Clarification:
+        What should we return when needle is an empty string? This is a great question to ask during an interview.
+        For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().`,
+        codeOutput: 
+        `var strStr = function(haystack, needle) {
+            return !needle.length ?
+                0 :
+                haystack.includes(needle) ?
+                haystack.indexOf(needle) :
+                -1;
+        };`,
+        code: function strStr(haystack, needle) {
+            return !needle.length ?
+                0 :
+                haystack.includes(needle) ?
+                haystack.indexOf(needle) :
+                -1;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String to represent 'haystack'",
+                    type: "String"
+                },
+                {
+                    text: "String to represent 'needle'",
+                    type: "String"
+                }
+            ]
+        }
+    },
     sudoku: {
         name: 'sudoku',
         instructions: `Sudoku is a number-placement puzzle. The objective is to fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 sub-grids that compose the grid contains all of the digits from 1 to 9.

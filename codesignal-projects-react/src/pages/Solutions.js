@@ -198,6 +198,7 @@ const Solutions = () => {
                         <option value="stringsConstruction">Strings Construction</option>
                         <option value="stringsCrossover">Strings Crossover</option>
                         <option value="stringsRearrangement">Strings Rearrangement</option>
+                        <option value="strStr">strStr Implementation</option>
                         <option value="sudoku">Sudoku</option>
                         <option value="sumUpNumbers">Sum Up Numbers</option>
                         <option value="swapAdjacentBits">Swap Adjacent Bits</option>
