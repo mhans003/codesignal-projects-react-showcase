@@ -179,6 +179,7 @@ const Solutions = () => {
                         <option value="replaceMiddle">Replace Middle</option>
                         <option value="reverseInParentheses">Reverse In Parentheses</option>
                         <option value="reverseOnDiagonals">Reverse on Diagonals</option>
+                        <option value="reverseString">Reverse String</option>
                         <option value="romanToInt">Roman to Int</option>
                         <option value="rounders">Rounders</option>
                         <option value="rowsRearranging">Rows Rearranging</option>

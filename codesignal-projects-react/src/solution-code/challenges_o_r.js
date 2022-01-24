@@ -997,6 +997,55 @@ const challenges_o_r = {
             ]
         }
     },
+    reverseString: {
+        name: `reverseString`,
+        instructions: `Write a function that reverses a string. The input string is given as an array of characters s.
+
+        You must do this by modifying the input array in-place with O(1) extra memory.`,
+        codeOutput: 
+        `var reverseString = function(s) {
+            //Create pointers
+            let left = 0; 
+            let right = s.length - 1;
+            
+            //Using the beginning and end pointers, iterate down to the center of the array that represents the string, and swap values.
+            while(left <= right) {
+                //Swap the values.
+                [s[left], s[right]] = [s[right], s[left]];
+                
+                //Update the pointer values.
+                left++;
+                right--;
+            }
+            
+            return s;
+        };`,
+        code: function reverseString(s) {
+            //Create pointers
+            let left = 0; 
+            let right = s.length - 1;
+            
+            //Using the beginning and end pointers, iterate down to the center of the array that represents the string, and swap values.
+            while(left <= right) {
+                //Swap the values.
+                [s[left], s[right]] = [s[right], s[left]];
+                
+                //Update the pointer values.
+                left++;
+                right--;
+            }
+            
+            return s;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Characters (e.g. h,e,l,l,o)",
+                    type: "StringArray"
+                }
+            ]
+        }
+    },
     romanToInt: {
         name: `romanToInt`,
         instructions: `Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
