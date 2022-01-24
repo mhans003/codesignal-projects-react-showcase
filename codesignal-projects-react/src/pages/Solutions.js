@@ -219,6 +219,7 @@ const Solutions = () => {
                         <option value="weakNumbers">Weak Numbers</option>
                         <option value="whoseTurn">Whose Turn</option>
                         <option value="willYou">Will You</option>
+                        <option value="wordPattern">Word Pattern</option>
                     </select>
                 </div>
                 <Solution challengeName={challengeName}/>
