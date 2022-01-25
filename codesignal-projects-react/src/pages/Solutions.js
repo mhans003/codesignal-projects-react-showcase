@@ -122,6 +122,7 @@ const Solutions = () => {
                         <option value="isPalindrome">Is Palindrome</option>
                         <option value="isPerfectSquare">Is Perfect Square</option>
                         <option value="isPower">Is Power</option>
+                        <option value="isPowerOfThree">Is Power of Three</option>
                         <option value="isSentenceCorrect">Is Sentence Correct</option>
                         <option value="isSmooth">Is Smooth</option>
                         <option value="isSubsequence">Is Subsequence</option>
