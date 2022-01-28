@@ -1046,6 +1046,45 @@ const challenges_o_r = {
             ]
         }
     },
+    reverseVowels: {
+        name: `reverseVowels`,
+        instructions: `Given a string s, reverse only all the vowels in the string and return it.
+
+        The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both cases.`,
+        codeOutput: 
+        `var reverseVowels = function(s) {
+            let vowels = ['a','e','i','o','u'];
+            //Check each character in string and if vowel, save in an array.
+            let stringVowels = s.split("").filter(char => {
+                if(vowels.includes(char.toLowerCase())) return char;
+            });
+            //Iterate through string. If character is vowel, replace it with the LAST element in the array of vowels from the string. 
+            return s.split("").map(char => {
+                if(vowels.includes(char.toLowerCase())) return stringVowels.pop();
+                return char;
+            }).join("");
+        };`,
+        code: function reverseVowels(s) {
+            let vowels = ['a','e','i','o','u'];
+            //Check each character in string and if vowel, save in an array.
+            let stringVowels = s.split("").filter(char => {
+                if(vowels.includes(char.toLowerCase())) return char;
+            });
+            //Iterate through string. If character is vowel, replace it with the LAST element in the array of vowels from the string. 
+            return s.split("").map(char => {
+                if(vowels.includes(char.toLowerCase())) return stringVowels.pop();
+                return char;
+            }).join("");
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String of Characters",
+                    type: "String"
+                }
+            ]
+        }
+    },
     romanToInt: {
         name: `romanToInt`,
         instructions: `Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
