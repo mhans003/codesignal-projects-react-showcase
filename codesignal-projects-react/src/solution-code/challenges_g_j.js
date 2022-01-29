@@ -576,6 +576,57 @@ const challenges_g_j = {
             ]
         }
     },
+    intersection: {
+        name: `intersection`,
+        instructions: `Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.`,
+        codeOutput: 
+        `var intersection = function(nums1, nums2) {
+            //Run function with correct parameters depending on which array has larger length.
+            if(nums1.length > nums2.length) return findIntersections(nums1, nums2);
+            return findIntersections(nums2, nums1);
+            
+            //Helper function looks through the larger array to find elements in the shorter array.
+            function findIntersections(shorterArray, largerArray) {
+                let intersections = [];
+                for(let i = 0; i < shorterArray.length; i++) {
+                    //Unique new values (found in both arrays) are added as intersections.
+                    if(largerArray.includes(shorterArray[i]) && !intersections.includes(shorterArray[i])) {
+                        intersections.push(shorterArray[i]);
+                    }
+                }
+                return intersections;
+            }
+        };`,
+        code: function intersection(nums1, nums2) {
+            //Run function with correct parameters depending on which array has larger length.
+            if(nums1.length > nums2.length) return findIntersections(nums1, nums2);
+            return findIntersections(nums2, nums1);
+            
+            //Helper function looks through the larger array to find elements in the shorter array.
+            function findIntersections(shorterArray, largerArray) {
+                let intersections = [];
+                for(let i = 0; i < shorterArray.length; i++) {
+                    //Unique new values (found in both arrays) are added as intersections.
+                    if(largerArray.includes(shorterArray[i]) && !intersections.includes(shorterArray[i])) {
+                        intersections.push(shorterArray[i]);
+                    }
+                }
+                return intersections;
+            }
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (Form of 1,2,3...)",
+                    type: "NumberArray"
+                },
+                {
+                    text: "Array of Integers (Form of 1,2,3...)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     isBeautifulString: {
         name: 'isBeautifulString',
         instructions: `A string is said to be beautiful if each letter in the string appears at most as many times as the previous letter in the alphabet within the string; ie: b occurs no more times than a; c occurs no more times than b; etc. Note that letter a has no previous letter.
