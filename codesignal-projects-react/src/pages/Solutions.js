@@ -98,6 +98,7 @@ const Solutions = () => {
                         <option value="eyeRhyme">Eye Rhyme</option>
                         <option value="fileNaming">File Naming</option>
                         <option value="findEmailDomain">Find Email Domain</option>
+                        <option value="findTheDifference">Find the Difference</option>
                         <option value="firstDigit">First Digit</option>
                         <option value="firstReverseTry">First Reverse Try</option>
                         <option value="gravitation">Gravitation</option>
