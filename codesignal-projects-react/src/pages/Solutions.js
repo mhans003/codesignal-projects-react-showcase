@@ -69,6 +69,7 @@ const Solutions = () => {
                         <option value="comfortableNumbers">Comfortable Numbers</option>
                         <option value="commonCharacterCount">Common Character Count</option>
                         <option value="concatenateArrays">Concatenate Arrays</option>
+                        <option value="constructRectangle">Construct Rectangle</option>
                         <option value="constructSquare">Construct Square</option>
                         <option value="contoursShifting">Contours Shifting</option>
                         <option value="correctNonogram">Correct Nonogram</option>
