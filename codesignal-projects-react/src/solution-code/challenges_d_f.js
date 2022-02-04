@@ -275,6 +275,34 @@ const challenges_d_f = {
             ]
         }
     },
+    detectCapitalUse: {
+        name: `detectCapitalUse`,
+        instructions: `We define the usage of capitals in a word to be right when one of the following cases holds:
+
+        All letters in this word are capitals, like "USA".
+        All letters in this word are not capitals, like "leetcode".
+        Only the first letter in this word is capital, like "Google".
+        Given a string word, return true if the usage of capitals in it is right.`,
+        codeOutput: 
+        `var detectCapitalUse = function(word) {
+            return word.toUpperCase() === word ||
+                word.toLowerCase() === word ||
+                word.substring(1).toLowerCase() === word.substring(1);
+        };`,
+        code: function detectCapitalUse(word) {
+            return word.toUpperCase() === word ||
+                word.toLowerCase() === word ||
+                word.substring(1).toLowerCase() === word.substring(1);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Single Word to Check",
+                    type: "String"
+                }
+            ]
+        }
+    },
     differentRightmostBit: {
         name: 'differentRightmostBit',
         instructions: `You're given two integers, n and m. Find position of the rightmost bit in which they differ in their binary representations (it is guaranteed that such a bit exists), counting from right to left. Return the value of 2position_of_the_found_bit (0-based).`,

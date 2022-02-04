@@ -84,6 +84,7 @@ const Solutions = () => {
                         <option value="decipher">Decipher</option>
                         <option value="deleteDigit">Delete Digit</option>
                         <option value="depositProfit">Deposit Profit</option>
+                        <option value="detectCapitalUse">Detect Capital Use</option>
                         <option value="differentRightmostBit">Different Right-Most Bit</option>
                         <option value="differentSquares">Different Squares</option>
                         <option value="differentSymbolsNaive">Different Symbols Naive</option>
