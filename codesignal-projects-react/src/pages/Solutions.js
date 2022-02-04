@@ -57,6 +57,7 @@ const Solutions = () => {
                         <option value="canWinNim">Can Win Nim</option>
                         <option value="characterParity">Character Parity</option>
                         <option value="checkPalindrome">Check Palindrome</option>
+                        <option value="checkPerfectNumber">Check Perfect Number</option>
                         <option value="chessBishopDream">Chess Bishop Dream</option>
                         <option value="chessBoardCellColor">Chess Board Cell Color</option>
                         <option value="chessKnight">Chess Knight</option>
