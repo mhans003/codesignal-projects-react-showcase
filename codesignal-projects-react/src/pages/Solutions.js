@@ -42,6 +42,7 @@ const Solutions = () => {
                         <option value="arrayConversion">Array Conversion</option>
                         <option value="arrayMaximalAdjacentDifference">Array Maximal Adjacent Difference</option>
                         <option value="arrayPacking">Array Packing</option>
+                        <option value="arrayPairSum">Array Pair Sum</option>
                         <option value="arrayPreviousLess">Array Previous Less</option>
                         <option value="arrayReplace">Array Replace</option>
                         <option value="avoidObstacles">Avoid Obstacles</option>

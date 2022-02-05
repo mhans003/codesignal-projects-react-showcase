@@ -1175,6 +1175,47 @@ const challenges = {
             ]
         }
     },
+    arrayPairSum: {
+        name: `arrayPairSum`,
+        instructions: `Given an integer array nums of 2n integers, group these integers into n pairs (a1, b1), (a2, b2), ..., (an, bn) such that the sum of min(ai, bi) for all i is maximized. Return the maximized sum.`,
+        codeOutput: 
+        `var arrayPairSum = function(nums) {
+            //Sort the numbers from least to greatest
+            nums.sort((a, b) => a - b);
+            
+            //Store the sum.
+            let sum = 0;
+            
+            //Since these numbers are grouped by being sorted, add every other number.
+            for(let i = 0; i < nums.length; i += 2) {
+                sum += nums[i];
+            }
+            
+            return sum;
+        };`,
+        code: function arrayPairSum(nums) {
+            //Sort the numbers from least to greatest
+            nums.sort((a, b) => a - b);
+            
+            //Store the sum.
+            let sum = 0;
+            
+            //Since these numbers are grouped by being sorted, add every other number.
+            for(let i = 0; i < nums.length; i += 2) {
+                sum += nums[i];
+            }
+            
+            return sum;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers with Even Length (e.g 5,3,9,1,0,2)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     arrayPreviousLess: {
         name: 'arrayPreviousLess',
         instructions: `Given array of integers, for each position i, search among the previous positions for the last (from the left) position that contains a smaller value. Store this value at position i in the answer. If no such value can be found, store -1 instead.`,
