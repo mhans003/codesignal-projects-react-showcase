@@ -154,6 +154,7 @@ const Solutions = () => {
                         <option value="majorityElement">Majority Element</option>
                         <option value="makeArrayConsecutive2">Make Array Consecutive 2</option>
                         <option value="matrixElementsSum">Matrix Elements Sum</option>
+                        <option value="matrixReshape">Matrix Reshape</option>
                         <option value="arrayMaxConsecutiveSum">Array Max Consecutive Sum</option>
                         <option value="maximumSum">Maximum Sum</option>
                         <option value="maxMultiple">Max Multiple</option>
