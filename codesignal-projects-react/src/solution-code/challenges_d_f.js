@@ -709,6 +709,33 @@ const challenges_d_f = {
             ]
         }
     },
+    distributeCandies: {
+        name: `distributeCandies`,
+        instructions: `Alice has n candies, where the ith candy is of type candyType[i]. Alice noticed that she started to gain weight, so she visited a doctor.
+
+        The doctor advised Alice to only eat n / 2 of the candies she has (n is always even). Alice likes her candies very much, and she wants to eat the maximum number of different types of candies while still following the doctor's advice.
+        
+        Given the integer array candyType of length n, return the maximum number of different types of candies she can eat if she only eats n / 2 of them.`,
+        codeOutput: 
+        `var distributeCandies = function(candyType) {
+            //Using Set constructor, get the total number of unique types of candies (will be in object form, so use size property)
+            //Return the smallest value, whether it be the number of unique types OR half the number of candies.
+            return Math.min([new Set(candyType)][0].size, candyType.length / 2)
+        };`,
+        code: function distributeCandies(candyType) {
+            //Using Set constructor, get the total number of unique types of candies (will be in object form, so use size property)
+            //Return the smallest value, whether it be the number of unique types OR half the number of candies.
+            return Math.min([new Set(candyType)][0].size, candyType.length / 2)
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array With Even Length to Represent Candies (e.g. 1,1,2,2,2,3)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     drawRectangle: {
         name: 'drawRectangle',
         instructions: `You are implementing a command-line version of the Paint app. Since the command line doesn't support colors, you are using different characters to represent pixels. Your current goal is to support rectangle x1 y1 x2 y2 operation, which draws a rectangle that has an upper left corner at (x1, y1) and a lower right corner at (x2, y2). Here the x-axis points from left to right, and the y-axis points from top to bottom.

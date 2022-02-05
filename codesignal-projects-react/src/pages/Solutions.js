@@ -92,6 +92,7 @@ const Solutions = () => {
                         <option value="digitDegree">Digit Degree</option>
                         <option value="digitDifferenceSort">Digit Difference Sort</option>
                         <option value="digitsProduct">Digits Product</option>
+                        <option value="distributeCandies">DistributeCandies</option>
                         <option value="drawRectangle">Draw Rectangle</option>
                         <option value="electionsWinners">Elections Winners</option>
                         <option value="equalPairOfBits">Equal Pair of Bits</option>
