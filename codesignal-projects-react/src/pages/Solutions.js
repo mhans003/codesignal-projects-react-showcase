@@ -227,6 +227,7 @@ const Solutions = () => {
                         <option value="twoSum">Two Sum</option>
                         <option value="twoSum2">Two Sum 2</option>
                         <option value="uniqueDigitProducts">Unique Digit Products</option>
+                        <option value="uniqueMorseRepresentations">Unique Morse Representations</option>
                         <option value="validTime">Valid Time</option>
                         <option value="variableName">Variable Name</option>
                         <option value="videoPart">Video Part</option>
