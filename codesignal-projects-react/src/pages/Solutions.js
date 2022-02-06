@@ -172,6 +172,7 @@ const Solutions = () => {
                         <option value="nthNumber">Nth Number</option>
                         <option value="numberOfClans">Number of Clans</option>
                         <option value="numbersGrouping">Numbers Grouping</option>
+                        <option value="numJewelsInStones">Num Jewels in Stones</option>
                         <option value="pagesNumberingWithInk">Pages Numbering With Ink</option>
                         <option value="pairOfShoes">Pair of Shoes</option>
                         <option value="palindromeRearranging">Palindrome Rearranging</option>
