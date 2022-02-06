@@ -195,6 +195,7 @@ const Solutions = () => {
                         <option value="reverseString">Reverse String</option>
                         <option value="reverseVowels">Reverse Vowels</option>
                         <option value="romanToInt">Roman to Int</option>
+                        <option value="rotateString">Rotate String</option>
                         <option value="rounders">Rounders</option>
                         <option value="rowsRearranging">Rows Rearranging</option>
                         <option value="runnersMeetings">Runners Meetings</option>

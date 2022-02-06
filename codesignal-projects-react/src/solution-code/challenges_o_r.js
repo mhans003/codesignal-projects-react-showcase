@@ -1422,6 +1422,35 @@ const challenges_o_r = {
             ]
         }
     },
+    rotateString: {
+        name: `rotateString`,
+        instructions: `Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.
+
+        A shift on s consists of moving the leftmost character of s to the rightmost position.
+        
+        For example, if s = "abcde", then it will be "bcdea" after one shift.`,
+        codeOutput: 
+        `var rotateString = function(s, goal) {
+            if((s + s).includes(goal) && goal.length >= s.length) return true;
+            return false;
+        };`,
+        code: function rotateString(s, goal) {
+            if((s + s).includes(goal) && goal.length >= s.length) return true;
+            return false;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String to Check",
+                    type: "String"
+                },
+                {
+                    text: "String to Check Against (Goal)",
+                    type: "String"
+                }
+            ]
+        }
+    },
     rounders: {
         name: 'rounders',
         instructions: `We want to turn the given integer into a number that has only one non-zero digit using a tail rounding approach. This means that at each step we take the last non 0 digit of the number and round it to 0 or to 10. If it's less than 5 we round it to 0 if it's larger than or equal to 5 we round it to 10 (rounding to 10 means increasing the next significant digit by 1). The process stops immediately once there is only one non-zero digit left.`,
