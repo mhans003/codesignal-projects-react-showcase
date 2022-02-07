@@ -204,6 +204,7 @@ const Solutions = () => {
                         <option value="searchInsert">Search Insert</option>
                         <option value="seatsInTheater">Seats in Theater</option>
                         <option value="secondRightmostZeroBit">Second Right-Most Zero Bit</option>
+                        <option value="selfDividingNumbers">Self-Dividing Numbers</option>
                         <option value="shapeArea">Shape Area</option>
                         <option value="shuffledArray">Shuffled Array</option>
                         <option value="singleNumber">Single Number</option>
