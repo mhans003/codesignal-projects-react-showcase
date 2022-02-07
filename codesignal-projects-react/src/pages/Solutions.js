@@ -180,6 +180,7 @@ const Solutions = () => {
                         <option value="pascalsTriangle">Pascals Triangle</option>
                         <option value="pascalsTriangle2">Pascals Triangle 2</option>
                         <option value="phoneCall">Phone Call</option>
+                        <option value="pivotIndex">Pivot Index</option>
                         <option value="plusOne">Plus One</option>
                         <option value="polygonPerimeter">Polygon Perimeter</option>
                         <option value="properNounCorrection">Proper Noun Correction</option>

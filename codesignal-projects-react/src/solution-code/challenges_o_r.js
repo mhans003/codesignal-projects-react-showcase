@@ -323,6 +323,47 @@ const challenges_o_r = {
             ]
         }
     },
+    pivotIndex: {
+        name: `pivotIndex`,
+        instructions: `Given an array of integers nums, calculate the pivot index of this array.
+
+        The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
+        
+        If the index is on the left edge of the array, then the left sum is 0 because there are no elements to the left. This also applies to the right edge of the array.
+        
+        Return the leftmost pivot index. If no such index exists, return -1.`,
+        codeOutput: 
+        `var pivotIndex = function(nums) {
+            //Loop through every possible index.
+            for(let i = 0; i < nums.length; i++) {
+                //Split the array into two parts (not including current index i), and sum up the values.
+                let leftSum = nums.slice(0, i).reduce((a, b) => a += b, 0);
+                let rightSum = nums.slice(i + 1).reduce((a, b) => a += b, 0);
+                //If these sums are the same, return the index number.
+                if(leftSum === rightSum) return i;
+            }
+            return -1;
+        };`,
+        code: function pivotIndex(nums) {
+            //Loop through every possible index.
+            for(let i = 0; i < nums.length; i++) {
+                //Split the array into two parts (not including current index i), and sum up the values.
+                let leftSum = nums.slice(0, i).reduce((a, b) => a += b, 0);
+                let rightSum = nums.slice(i + 1).reduce((a, b) => a += b, 0);
+                //If these sums are the same, return the index number.
+                if(leftSum === rightSum) return i;
+            }
+            return -1;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (e.g. 1,7,3,6,5,6)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     plusOne: {
         name: `plusOne`,
         instructions: `You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
