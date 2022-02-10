@@ -109,6 +109,7 @@ const Solutions = () => {
                         <option value="findErrorNums">Find Error Nums</option>
                         <option value="findLUSlength">Find Longest Uncommon Subsequence I</option>
                         <option value="findMaxConsecutiveOnes">Find Max Consecutive Ones</option>
+                        <option value="findRestaurant">Find Restaurant</option>
                         <option value="findShortestSubArray">Find Shortest Sub Array</option>
                         <option value="findTheDifference">Find the Difference</option>
                         <option value="firstDigit">First Digit</option>
