@@ -56,6 +56,7 @@ const Solutions = () => {
                         <option value="canConstruct">Can Construct</option>
                         <option value="candies">Candies</option>
                         <option value="candles">Candles</option>
+                        <option value="canPlaceFlowers">Can Place Flowers</option>
                         <option value="canWinNim">Can Win Nim</option>
                         <option value="characterParity">Character Parity</option>
                         <option value="checkPalindrome">Check Palindrome</option>
