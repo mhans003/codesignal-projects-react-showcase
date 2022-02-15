@@ -999,6 +999,29 @@ const challenges_g_j = {
             ]
         }
     },
+    isNumberPalindrome: {
+        name: `isNumberPalindrome`,
+        instructions: `Given an integer x, return true if x is palindrome integer.
+
+        An integer is a palindrome when it reads the same backward as forward.
+        
+        For example, 121 is a palindrome while 123 is not.`,
+        codeOutput: 
+        `var isNumberPalindrome = function(x) {
+            return x.toString().split("").reverse().join("") === x.toString();
+        };`,
+        code: function isNumberPalindrome(x) {
+            return x.toString().split("").reverse().join("") === x.toString();
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Integer (Positive or Negative)",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     isOneBitCharacter: {
         name: `isOneBitCharacter`,
         instructions: `We have two special characters:
