@@ -225,6 +225,54 @@ const challenges_t_z = {
             ]
         }
     },
+    toLowerCase: {
+        name: `toLowerCase`,
+        instructions: `Given a string s, return the string after replacing every uppercase letter with the same lowercase letter.
+        THIS SOLUTION DOES NOT USE BUILT-IN toLowerCase()`,
+        codeOutput: 
+        `var toLowerCase = function(s) {
+            //This solution does not use built-in toLowerCase.
+            
+            //Build a new string to output.
+            let output = "";
+        
+            //Loop through each character. If this character is uppercase, replace with lowercase version.
+            for(let i = 0; i < s.length; i++) {
+                if(s.charCodeAt(i) > 64 && s.charCodeAt(i) < 91) {
+                    output += String.fromCharCode(s.charCodeAt(i) + 32);
+                } else {
+                    output += s[i];
+                }
+            }
+            
+            return output;
+        };`,
+        code: function toLowerCase(s) {
+            //This solution does not use built-in toLowerCase.
+            
+            //Build a new string to output.
+            let output = "";
+        
+            //Loop through each character. If this character is uppercase, replace with lowercase version.
+            for(let i = 0; i < s.length; i++) {
+                if(s.charCodeAt(i) > 64 && s.charCodeAt(i) < 91) {
+                    output += String.fromCharCode(s.charCodeAt(i) + 32);
+                } else {
+                    output += s[i];
+                }
+            }
+            
+            return output;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String to Lowercase",
+                    type: "String"
+                }
+            ]
+        }
+    },
     twoSum: {
         name: `twoSum`,
         instructions: `Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
