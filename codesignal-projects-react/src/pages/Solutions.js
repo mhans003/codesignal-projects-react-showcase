@@ -187,6 +187,7 @@ const Solutions = () => {
                         <option value="palindromeRearranging">Palindrome Rearranging</option>
                         <option value="pascalsTriangle">Pascals Triangle</option>
                         <option value="pascalsTriangle2">Pascals Triangle 2</option>
+                        <option value="permutations">Permutations</option>
                         <option value="phoneCall">Phone Call</option>
                         <option value="pivotIndex">Pivot Index</option>
                         <option value="plusOne">Plus One</option>
