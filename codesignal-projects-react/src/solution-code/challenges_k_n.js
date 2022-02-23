@@ -960,6 +960,45 @@ const challenges_k_n = {
             ]
         }
     },
+    maximumProduct: {
+        name: `maximumProduct`,
+        instructions: `Given an integer array nums, find three numbers whose product is maximum and return the maximum product.`,
+        codeOutput: 
+        `var maximumProduct = function(nums) {
+            //Sort the array.
+            nums.sort((a,b) => a - b);
+            
+            //Get the product of the first two elements AND the very last element
+            //This will potentially multiply the first two negatives (to make a positive) with the largest positive at the end
+            let beginningProduct = nums[0] * nums[1] * nums[nums.length - 1];
+            //This will multiply the largest 3 elements.
+            let endProduct = nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3];
+            
+            //See which combination of elements multiply to larger product.
+            return Math.max(beginningProduct, endProduct);
+        };`,
+        code: function maximumProduct(nums) {
+            //Sort the array.
+            nums.sort((a,b) => a - b);
+            
+            //Get the product of the first two elements AND the very last element
+            //This will potentially multiply the first two negatives (to make a positive) with the largest positive at the end
+            let beginningProduct = nums[0] * nums[1] * nums[nums.length - 1];
+            //This will multiply the largest 3 elements.
+            let endProduct = nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3];
+            
+            //See which combination of elements multiply to larger product.
+            return Math.max(beginningProduct, endProduct);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (e.g. -1,8,9,-2,-10,-29,50)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     maximumSum: {
         name: 'maximumSum',
         instructions: `You are given an array of integers a. A range sum query is defined by a pair of non-negative integers l and r (l <= r). The output to a range sum query on the given array a is the sum of all the elements of a that have indices from l to r, inclusive.

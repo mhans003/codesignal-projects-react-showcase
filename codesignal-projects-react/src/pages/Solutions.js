@@ -166,6 +166,7 @@ const Solutions = () => {
                         <option value="matrixElementsSum">Matrix Elements Sum</option>
                         <option value="matrixReshape">Matrix Reshape</option>
                         <option value="arrayMaxConsecutiveSum">Array Max Consecutive Sum</option>
+                        <option value="maximumProduct">Maximum Product</option>
                         <option value="maximumSum">Maximum Sum</option>
                         <option value="maxMultiple">Max Multiple</option>
                         <option value="messageFromBinaryCode">Message From Binary Code</option>
