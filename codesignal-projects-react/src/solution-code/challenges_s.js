@@ -223,6 +223,41 @@ const challenges_s = {
             ]
         }
     },
+    sharedBirthday: {
+        name: `sharedBirthday`,
+        instructions: `Enter a number of people. This will generate random 'birthdays' (365 distinct values) and determine if any of the 'people' share a birthday.`,
+        codeOutput: 
+        `function sharedBirthday(num) {
+            let birthdays = {};
+        
+            for(let i = 0; i < num; i++) {
+                let birthday = Math.floor(Math.random() * 365);
+                if(birthdays[birthday]) return true;
+                birthdays[birthday] = true;
+            }
+        
+            return false;
+        }`,
+        code: function sharedBirthday(num) {
+            let birthdays = {};
+        
+            for(let i = 0; i < num; i++) {
+                let birthday = Math.floor(Math.random() * 365);
+                if(birthdays[birthday]) return true;
+                birthdays[birthday] = true;
+            }
+        
+            return false;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Enter a whole positive number of people",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     shuffledArray: {
         name: 'shuffledArray',
         instructions: `A noob programmer was given two simple tasks: sum and sort the elements of the given array
