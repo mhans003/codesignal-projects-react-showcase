@@ -49,6 +49,7 @@ const Solutions = () => {
                         <option value="beautifulText">Beautiful Text</option>
                         <option value="bishopAndPawn">Bishop and Pawn</option>
                         <option value="bishopDiagonal">Bishop Diagonal</option>
+                        <option value="bitwiseComplement">Bitwise Complement</option>
                         <option value="boxBlur">Box Blur</option>
                         <option value="boxesPacking">Boxes Packing</option>
                         <option value="buildPalindrome">Build Palindrome</option>
