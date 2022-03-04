@@ -108,6 +108,7 @@ const Solutions = () => {
                         <option value="fileNaming">File Naming</option>
                         <option value="findEmailDomain">Find Email Domain</option>
                         <option value="findErrorNums">Find Error Nums</option>
+                        <option value="findJudge">Find Judge</option>
                         <option value="findLUSlength">Find Longest Uncommon Subsequence I</option>
                         <option value="findMaxConsecutiveOnes">Find Max Consecutive Ones</option>
                         <option value="findRestaurant">Find Restaurant</option>
