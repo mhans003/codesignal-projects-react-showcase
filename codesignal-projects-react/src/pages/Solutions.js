@@ -137,6 +137,7 @@ const Solutions = () => {
                         <option value="isIPv4Address">Is IPv4 Address</option>
                         <option value="isLucky">Is Lucky</option>
                         <option value="isMAC48Address">Is MAC48 Address</option>
+                        <option value="isMonotonic">Is Monotonic</option>
                         <option value="isNumberPalindrome">Is Number Palindrome</option>
                         <option value="isOneBitCharacter">Is One Bit Character</option>
                         <option value="isPalindrome">Is Palindrome</option>
