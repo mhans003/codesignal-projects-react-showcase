@@ -154,6 +154,7 @@ const Solutions = () => {
                         <option value="isValidParentheses">Is Valid Parentheses</option>
                         <option value="killKthBit">Kill Kth Bit</option>
                         <option value="knapsackLight">Knapsack Light</option>
+                        <option value="largeGroupPositions">Large Group Positions</option>
                         <option value="largestNumber">Largest Number</option>
                         <option value="lateRide">Late Ride</option>
                         <option value="leastFactorial">Least Factorial</option>
