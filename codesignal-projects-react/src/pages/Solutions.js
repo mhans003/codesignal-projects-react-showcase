@@ -25,6 +25,7 @@ const Solutions = () => {
                         <option value="addBinary">Add Binary</option>
                         <option value="addborder">Add Border</option>
                         <option value="additionWithoutCarrying">Addition Without Carrying</option>
+                        <option value="addToArrayForm">Add to Array Form</option>
                         <option value="adjacentElementsProduct">Adjacent Elements Product</option>
                         <option value="allLongestStrings">All Longest Strings</option>
                         <option value="almostIncreasingSequence">Almost Increasing Sequence</option>
