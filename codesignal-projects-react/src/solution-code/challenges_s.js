@@ -431,6 +431,27 @@ const challenges_s = {
             ]
         }
     },
+    sortedSquares: {
+        name: `sortedSquares`,
+        instructions: `Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.`,
+        codeOutput: 
+        `var sortedSquares = function(nums) {
+            //Square the numbers first and then sort the result array.
+            return nums.map(num => num * num).sort((a, b) => a - b);
+        };`,
+        code: function sortedSquares(nums) {
+            //Square the numbers first and then sort the result array.
+            return nums.map(num => num * num).sort((a, b) => a - b);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (e.g. 1,5,9,-2,5)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     spiralNumbers: {
         name: 'spiralNumbers',
         instructions: `Construct a square matrix with a size N × N containing integers from 1 to N * N in a spiral order, starting from top-left and in clockwise direction.`,
