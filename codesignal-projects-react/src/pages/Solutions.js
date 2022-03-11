@@ -47,6 +47,7 @@ const Solutions = () => {
                         <option value="arrayPreviousLess">Array Previous Less</option>
                         <option value="arrayReplace">Array Replace</option>
                         <option value="avoidObstacles">Avoid Obstacles</option>
+                        <option value="backspaceCompare">Backspace Compare</option>
                         <option value="beautifulText">Beautiful Text</option>
                         <option value="binaryGap">Binary Gap</option>
                         <option value="bishopAndPawn">Bishop and Pawn</option>

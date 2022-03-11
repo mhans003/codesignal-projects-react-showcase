@@ -1379,6 +1379,75 @@ const challenges = {
             ]
         }
     },
+    backspaceCompare: {
+        name: `backspaceCompare`,
+        instructions: `Given two strings s and t, return true if they are equal when both are typed into empty text editors. '#' means a backspace character.
+
+        Note that after backspacing an empty text, the text will continue empty.`,
+        codeOutput: 
+        `var backspaceCompare = function(s, t) {
+            //Build the 'typed' string for each input.
+            let current_s = typeString(s);
+            let current_t = typeString(t);
+            
+            return current_s === current_t ? true : false;
+            
+            //Helper function to 'type out' string.
+            function typeString(str) {
+                //Store typed-out string in array form.
+                let current_str = [];
+                
+                for(let i = 0; i < str.length; i++) {
+                    //Remove the last character if this is a #, otherwise add to it.
+                    if(str[i] === "#") {
+                        current_str.pop();
+                    } else {
+                        current_str.push(str[i]);
+                    }
+                }
+                
+                //Return string representation.
+                return current_str.join("");
+            }
+        };`,
+        code: function backspaceCompare(s, t) {
+            //Build the 'typed' string for each input.
+            let current_s = typeString(s);
+            let current_t = typeString(t);
+            
+            return current_s === current_t ? true : false;
+            
+            //Helper function to 'type out' string.
+            function typeString(str) {
+                //Store typed-out string in array form.
+                let current_str = [];
+                
+                for(let i = 0; i < str.length; i++) {
+                    //Remove the last character if this is a #, otherwise add to it.
+                    if(str[i] === "#") {
+                        current_str.pop();
+                    } else {
+                        current_str.push(str[i]);
+                    }
+                }
+                
+                //Return string representation.
+                return current_str.join("");
+            }
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "First String",
+                    type: "String"
+                },
+                {
+                    text: "Second String",
+                    type: "String"
+                }
+            ]
+        }
+    },
     beautifulText: {
         name: 'beautifulText',
         instructions: `Consider a string containing only letters and whitespaces. It is allowed to replace some (possibly, none) whitespaces with newline symbols to obtain a multiline text. Call a multiline text beautiful if and only if each of its lines (i.e. substrings delimited by a newline character) contains an equal number of characters (only letters and whitespaces should be taken into account when counting the total while newline characters shouldn't). Call the length of the line the text width.
