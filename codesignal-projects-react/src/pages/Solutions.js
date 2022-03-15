@@ -238,6 +238,7 @@ const Solutions = () => {
                         <option value="squareDigitsSequence">Square Digits Sequence</option>
                         <option value="starRotation">Star Rotation</option>
                         <option value="stolenLunch">Stolen Lunch</option>
+                        <option value="stringMatching">String Matching</option>
                         <option value="stringsConstruction">Strings Construction</option>
                         <option value="stringsCrossover">Strings Crossover</option>
                         <option value="stringsRearrangement">Strings Rearrangement</option>
