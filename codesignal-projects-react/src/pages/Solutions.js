@@ -208,6 +208,7 @@ const Solutions = () => {
                         <option value="reachNextLevel">Reach Next Level</option>
                         <option value="rectangleRotation">Rectangle Rotation</option>
                         <option value="reflectString">Reflect String</option>
+                        <option value="reformat">Reformat String</option>
                         <option value="regularMonths">Regular Months</option>
                         <option value="removeArrayPart">Remove Array Part</option>
                         <option value="removeDuplicates">Remove Duplicates</option>
