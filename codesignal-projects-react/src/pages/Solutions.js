@@ -178,6 +178,7 @@ const Solutions = () => {
                         <option value="maximumProduct">Maximum Product</option>
                         <option value="maximumSum">Maximum Sum</option>
                         <option value="maxMultiple">Max Multiple</option>
+                        <option value="maxScore">Max Score</option>
                         <option value="messageFromBinaryCode">Message From Binary Code</option>
                         <option value="metroCard">Metro Card</option>
                         <option value="minesweeper">Minesweeper</option>
