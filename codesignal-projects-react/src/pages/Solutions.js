@@ -217,6 +217,7 @@ const Solutions = () => {
                         <option value="removeDuplicates">Remove Duplicates</option>
                         <option value="removeNb">removeNb</option>
                         <option value="removeOuterParentheses">Remove Outer Parentheses</option>
+                        <option value="reorderSpaces">Reorder Spaces</option>
                         <option value="replaceAllDigitsRegExp">Replace All Digits RegExp</option>
                         <option value="replaceMiddle">Replace Middle</option>
                         <option value="reverse">Reverse (Number)</option>
