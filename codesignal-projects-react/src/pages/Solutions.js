@@ -92,6 +92,7 @@ const Solutions = () => {
                         <option value="cyclicString">Cyclic String</option>
                         <option value="dayOfWeek">Day of Week</option>
                         <option value="decipher">Decipher</option>
+                        <option value="defuse">Defuse</option>
                         <option value="deleteDigit">Delete Digit</option>
                         <option value="depositProfit">Deposit Profit</option>
                         <option value="detectCapitalUse">Detect Capital Use</option>
