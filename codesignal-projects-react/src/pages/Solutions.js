@@ -207,6 +207,7 @@ const Solutions = () => {
                         <option value="pivotIndex">Pivot Index</option>
                         <option value="plusOne">Plus One</option>
                         <option value="polygonPerimeter">Polygon Perimeter</option>
+                        <option value="prefixCount">Prefix Count</option>
                         <option value="prefixesDivBy5">Prefixes Div By 5</option>
                         <option value="properNounCorrection">Proper Noun Correction</option>
                         <option value="rangeBitCount">Range Bit Count</option>

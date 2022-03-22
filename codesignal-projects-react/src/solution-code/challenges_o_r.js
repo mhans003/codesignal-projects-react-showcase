@@ -532,6 +532,41 @@ const challenges_o_r = {
             ]
         }
     },
+    prefixCount: {
+        name: `prefixCount`,
+        instructions: `You are given an array of strings words and a string pref.
+
+        Return the number of strings in words that contain pref as a prefix.
+        
+        A prefix of a string s is any leading contiguous substring of s.`,
+        codeOutput: 
+        `var prefixCount = function(words, pref) {
+            //Loop through each word, using reduce function (using count as previous and word as current)
+            return words.reduce((count, word) => {
+                //Increase the count by 1 if this word contains the prefix at the required position(s).
+                return word.substring(0, pref.length) === pref ? count + 1 : count;
+            }, 0);
+        };`,
+        code: function prefixCount(words, pref) {
+            //Loop through each word, using reduce function (using count as previous and word as current)
+            return words.reduce((count, word) => {
+                //Increase the count by 1 if this word contains the prefix at the required position(s).
+                return word.substring(0, pref.length) === pref ? count + 1 : count;
+            }, 0);
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of words to check (Form of test,tester,testing,another,sample)",
+                    type: "StringArray"
+                },
+                {
+                    text: "Prefix to look for",
+                    type: "String"
+                }
+            ]
+        }
+    },
     prefixesDivBy5: {
         name: `prefixesDivBy5`,
         instructions: `You are given a binary array nums (0-indexed).
