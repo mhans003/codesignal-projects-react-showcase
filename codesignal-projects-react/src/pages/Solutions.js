@@ -155,6 +155,7 @@ const Solutions = () => {
                         <option value="isSubsequence">Is Subsequence</option>
                         <option value="isSubstitutionCipher">Is Substitution Cipher</option>
                         <option value="isSumOfConsecutive2">Is Sum of Consecutive 2</option>
+                        <option value="isThree">Is Three</option>
                         <option value="isToeplitzMatrix">Is Toeplitz Matrix</option>
                         <option value="isUnstablePair">Is Unstable Pair</option>
                         <option value="isValidParentheses">Is Valid Parentheses</option>
