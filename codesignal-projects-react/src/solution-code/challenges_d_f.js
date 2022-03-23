@@ -1392,6 +1392,42 @@ const challenges_d_f = {
             ]
         }
     },
+    findFinalValue: {
+        name: `findFinalValue`,
+        instructions: `You are given an array of integers nums. You are also given an integer original which is the first number that needs to be searched for in nums.
+
+        You then do the following steps:
+        
+        If original is found in nums, multiply it by two (i.e., set original = 2 * original).
+        Otherwise, stop the process.
+        Repeat this process with the new number as long as you keep finding the number.
+        Return the final value of original.`,
+        codeOutput: 
+        `var findFinalValue = function(nums, original) {
+            //Simply double original until the value of original is not found.
+            while(nums.includes(original)) original *= 2;
+            
+            return original;
+        };`,
+        code: function findFinalValue(nums, original) {
+            //Simply double original until the value of original is not found.
+            while(nums.includes(original)) original *= 2;
+            
+            return original;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (Example: 1,3,4,6,12)",
+                    type: "NumberArray"
+                },
+                {
+                    text: "Original number to search for",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     findJudge: {
         name: `findJudge`,
         instructions: `In a town, there are n people labeled from 1 to n. There is a rumor that one of these people is secretly the town judge.
