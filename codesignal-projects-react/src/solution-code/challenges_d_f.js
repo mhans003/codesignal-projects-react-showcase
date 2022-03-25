@@ -935,6 +935,61 @@ const challenges_d_f = {
             ]
         }
     },
+    divideArray: {
+        name: `divideArray`,
+        instructions: `You are given an integer array nums consisting of 2 * n integers.
+
+        You need to divide nums into n pairs such that:
+        
+        Each element belongs to exactly one pair.
+        The elements present in a pair are equal.
+        Return true if nums can be divided into n pairs, otherwise return false.`,
+        codeOutput: 
+        `var divideArray = function(nums) {
+            //Sort the array.
+            nums.sort((a, b) => a - b);
+            
+            //Start going through the array. At any point if next two numbers are not equal, return false.
+            while(nums.length > 1) {
+                //Remove the next two numbers.
+                let num1 = nums.shift();
+                let num2 = nums.shift();
+                
+                //Since they must come in even pairs, these must be the same.
+                if(num1 !== num2) return false;
+            }
+            
+            //If there is an element left (odd number), return false.
+            if(nums.length) return false;
+            return true;
+        };`,
+        code: function divideArray(nums) {
+            //Sort the array.
+            nums.sort((a, b) => a - b);
+            
+            //Start going through the array. At any point if next two numbers are not equal, return false.
+            while(nums.length > 1) {
+                //Remove the next two numbers.
+                let num1 = nums.shift();
+                let num2 = nums.shift();
+                
+                //Since they must come in even pairs, these must be the same.
+                if(num1 !== num2) return false;
+            }
+            
+            //If there is an element left (odd number), return false.
+            if(nums.length) return false;
+            return true;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (e.g. 1,2,2,9,1,2,9,2)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     drawRectangle: {
         name: 'drawRectangle',
         instructions: `You are implementing a command-line version of the Paint app. Since the command line doesn't support colors, you are using different characters to represent pixels. Your current goal is to support rectangle x1 y1 x2 y2 operation, which draws a rectangle that has an upper left corner at (x1, y1) and a lower right corner at (x2, y2). Here the x-axis points from left to right, and the y-axis points from top to bottom.
