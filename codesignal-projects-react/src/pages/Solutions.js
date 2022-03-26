@@ -84,6 +84,7 @@ const Solutions = () => {
                         <option value="correctNonogram">Correct Nonogram</option>
                         <option value="countBinarySubstrings">Count Binary Substrings</option>
                         <option value="countEven">Count Even</option>
+                        <option value="countHillValley">Count Hills and Valleys</option>
                         <option value="countLargestGroup">Count Largest Group</option>
                         <option value="countSumOfTwoRepresentations2">Count Sum of Two Representations 2</option>
                         <option value="createAnagram">Create Anagram</option>
