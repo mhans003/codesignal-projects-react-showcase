@@ -251,6 +251,7 @@ const Solutions = () => {
                         <option value="singleNumber">Single Number</option>
                         <option value="sortByHeight">Sort by Height</option>
                         <option value="sortByLength">Sort by Length</option>
+                        <option value="sortEvenOdd">Sort Even Odd</option>
                         <option value="sortedSquares">Sorted Squares</option>
                         <option value="spiralNumbers">Spiral Numbers</option>
                         <option value="squareDigitsSequence">Square Digits Sequence</option>
