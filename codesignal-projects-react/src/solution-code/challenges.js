@@ -4524,6 +4524,78 @@ const challenges = {
             ]
         }
     },
+    countOperations: {
+        name: `countOperations`,
+        instructions: `You are given two non-negative integers num1 and num2.
+
+        In one operation, if num1 >= num2, you must subtract num2 from num1, otherwise subtract num1 from num2.
+        
+        For example, if num1 = 5 and num2 = 4, subtract num2 from num1, thus obtaining num1 = 1 and num2 = 4. However, if num1 = 4 and num2 = 5, after one operation, num1 = 4 and num2 = 1.
+        Return the number of operations required to make either num1 = 0 or num2 = 0.`,
+        codeOutput: 
+        `var countOperations = function(num1, num2) {
+            //Count operations
+            let operations = 0;
+            
+            //Iteratively subtract until one reaches 0.
+            while(num1 > 0 && num2 > 0) {
+                //If both numbers are the same value, subtracting one from the other results in 0. Return early counting this operation.
+                if(num1 === num2) return operations + 1;
+                
+                //Subtract
+                let difference = Math.abs(num1 - num2);
+                
+                //Assign this new value to the correct number.
+                if(num1 > num2) {
+                    num1 = difference;
+                } else {
+                    num2 = difference;
+                }
+                
+                //Increment operations
+                operations++;  
+            }
+            
+            return operations;
+        };`,
+        code: function countOperations(num1, num2) {
+            //Count operations
+            let operations = 0;
+            
+            //Iteratively subtract until one reaches 0.
+            while(num1 > 0 && num2 > 0) {
+                //If both numbers are the same value, subtracting one from the other results in 0. Return early counting this operation.
+                if(num1 === num2) return operations + 1;
+                
+                //Subtract
+                let difference = Math.abs(num1 - num2);
+                
+                //Assign this new value to the correct number.
+                if(num1 > num2) {
+                    num1 = difference;
+                } else {
+                    num2 = difference;
+                }
+                
+                //Increment operations
+                operations++;  
+            }
+            
+            return operations;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "First Whole Positive Number",
+                    type: "Number"
+                },
+                {
+                    text: "Second Whole Positive Number",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     countSumOfTwoRepresentations2: {
         name: 'countSumOfTwoRepresentations2',
         instructions: `Given integers n, l and r, find the number of ways to represent n as a sum of two integers A and B such that l ≤ A ≤ B ≤ r.`,

@@ -86,6 +86,7 @@ const Solutions = () => {
                         <option value="countEven">Count Even</option>
                         <option value="countHillValley">Count Hills and Valleys</option>
                         <option value="countLargestGroup">Count Largest Group</option>
+                        <option value="countOperations">Count Operations</option>
                         <option value="countSumOfTwoRepresentations2">Count Sum of Two Representations 2</option>
                         <option value="createAnagram">Create Anagram</option>
                         <option value="crossingSum">Crossing Sum</option>
