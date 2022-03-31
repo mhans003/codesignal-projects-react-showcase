@@ -2149,6 +2149,37 @@ const challenges_d_f = {
             ]
         }
     },
+    firstPalindrome: {
+        name: `firstPalindrome`,
+        instructions: `Given an array of strings words, return the first palindromic string in the array. If there is no such string, return an empty string "".
+
+        A string is palindromic if it reads the same forward and backward.`,
+        codeOutput: 
+        `var firstPalindrome = function(words) {
+            //Loop through each word, and if it is the same forward and backward.
+            for(let i = 0; i < words.length; i++) {
+                if(words[i].split('').reverse().join('') === words[i]) return words[i];
+            }
+            //If none are found, return empty.
+            return "";
+        };`,
+        code: function firstPalindrome(words) {
+            //Loop through each word, and if it is the same forward and backward.
+            for(let i = 0; i < words.length; i++) {
+                if(words[i].split('').reverse().join('') === words[i]) return words[i];
+            }
+            //If none are found, return empty.
+            return "";
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of words (e.g. car,rat,tat,saw)",
+                    type: "StringArray"
+                }
+            ]
+        }
+    },
     firstReverseTry: {
         name: 'firstReverseTry',
         instructions: `Reversing an array can be a tough task, especially for a novice programmer. Mary just started coding, so she would like to start with something basic at first. Instead of reversing the array entirely, she wants to swap just its first and last elements.

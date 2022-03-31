@@ -129,6 +129,7 @@ const Solutions = () => {
                         <option value="findShortestSubArray">Find Shortest Sub Array</option>
                         <option value="findTheDifference">Find the Difference</option>
                         <option value="firstDigit">First Digit</option>
+                        <option value="firstPalindrome">First Palindrome</option>
                         <option value="firstReverseTry">First Reverse Try</option>
                         <option value="gravitation">Gravitation</option>
                         <option value="growingPlant">Growing Plant</option>
