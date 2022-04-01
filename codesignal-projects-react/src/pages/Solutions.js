@@ -275,6 +275,7 @@ const Solutions = () => {
                         <option value="tennisSet">Tennis Set</option>
                         <option value="threeSplit">Three Split</option>
                         <option value="timedReading">Timed Reading</option>
+                        <option value="timeRequiredToBuy">Time Required to Buy</option>
                         <option value="toLowerCase">To Lower Case</option>
                         <option value="twoSum">Two Sum</option>
                         <option value="twoSum2">Two Sum 2</option>
