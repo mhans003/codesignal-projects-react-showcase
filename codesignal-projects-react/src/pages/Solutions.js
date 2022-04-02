@@ -56,6 +56,7 @@ const Solutions = () => {
                         <option value="boxBlur">Box Blur</option>
                         <option value="boxesPacking">Boxes Packing</option>
                         <option value="buddyStrings">Buddy Strings</option>
+                        <option value="buildArray">Build Array</option>
                         <option value="buildPalindrome">Build Palindrome</option>
                         <option value="calPoints">Cal Points (Baseball)</option>
                         <option value="canConstruct">Can Construct</option>
