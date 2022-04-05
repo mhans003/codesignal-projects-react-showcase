@@ -239,6 +239,7 @@ const Solutions = () => {
                         <option value="reverse">Reverse (Number)</option>
                         <option value="reverseInParentheses">Reverse In Parentheses</option>
                         <option value="reverseOnDiagonals">Reverse on Diagonals</option>
+                        <option value="reverseOnlyLetters">Reverse Only Letters</option>
                         <option value="reverseString">Reverse String</option>
                         <option value="reverseVowels">Reverse Vowels</option>
                         <option value="romanToInt">Roman to Int</option>
