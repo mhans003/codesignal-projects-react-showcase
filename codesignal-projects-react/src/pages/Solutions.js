@@ -280,6 +280,7 @@ const Solutions = () => {
                         <option value="threeSplit">Three Split</option>
                         <option value="timedReading">Timed Reading</option>
                         <option value="timeRequiredToBuy">Time Required to Buy</option>
+                        <option value="toGoatLatin">To Goat Latin</option>
                         <option value="toLowerCase">To Lower Case</option>
                         <option value="twoSum">Two Sum</option>
                         <option value="twoSum2">Two Sum 2</option>
