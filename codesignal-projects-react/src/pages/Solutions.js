@@ -254,6 +254,7 @@ const Solutions = () => {
                         <option value="selfDividingNumbers">Self-Dividing Numbers</option>
                         <option value="shapeArea">Shape Area</option>
                         <option value="sharedBirthday">Shared Birthday</option>
+                        <option value="shortestToChar">Shortest to Char</option>
                         <option value="shuffledArray">Shuffled Array</option>
                         <option value="singleNumber">Single Number</option>
                         <option value="sortByHeight">Sort by Height</option>
