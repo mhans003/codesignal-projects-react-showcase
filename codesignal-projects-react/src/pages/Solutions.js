@@ -123,6 +123,7 @@ const Solutions = () => {
                         <option value="findErrorNums">Find Error Nums</option>
                         <option value="findFinalValue">Find Final Value</option>
                         <option value="findJudge">Find Judge</option>
+                        <option value="findLucky">Find Lucky</option>
                         <option value="findLUSlength">Find Longest Uncommon Subsequence I</option>
                         <option value="findMaxConsecutiveOnes">Find Max Consecutive Ones</option>
                         <option value="findMiddleIndex">Find Middle Index</option>

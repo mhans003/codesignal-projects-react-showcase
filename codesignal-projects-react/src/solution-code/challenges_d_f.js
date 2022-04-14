@@ -1692,6 +1692,79 @@ const challenges_d_f = {
             ]
         }
     },
+    findLucky: {
+        name: `findLucky`,
+        instructions: `Given an array of integers arr, a lucky integer is an integer that has a frequency in the array equal to its value.
+
+        Return the largest lucky integer in the array. If there is no lucky integer return -1.`,
+        codeOutput: 
+        `var findLucky = function(arr) {
+            //Sort the array (to reduce number of iterations) 
+            arr.sort((a, b) => b - a);
+            
+            let current = null
+            let currentCount = 0;
+            
+            while(arr.length) {
+                let thisEl = arr.shift();
+                
+                //See if removed element is the same as the previous one(s)
+                if(thisEl !== current) {
+                    //If not, see if the count of the previous element being counted is 'lucky'
+                    if(current === currentCount) return current;
+                    
+                    //If not lucky, reset the current count and update current.
+                    current = thisEl;
+                    currentCount = 0;
+                } 
+                
+                //Regardless, increment count of current element
+                currentCount++;
+            }
+            
+            //Check if last number counted is lucky.
+            if(current === currentCount) return current;
+            
+            return -1;
+        };`,
+        code: function findLucky(arr) {
+            //Sort the array (to reduce number of iterations) 
+            arr.sort((a, b) => b - a);
+            
+            let current = null
+            let currentCount = 0;
+            
+            while(arr.length) {
+                let thisEl = arr.shift();
+                
+                //See if removed element is the same as the previous one(s)
+                if(thisEl !== current) {
+                    //If not, see if the count of the previous element being counted is 'lucky'
+                    if(current === currentCount) return current;
+                    
+                    //If not lucky, reset the current count and update current.
+                    current = thisEl;
+                    currentCount = 0;
+                } 
+                
+                //Regardless, increment count of current element
+                currentCount++;
+            }
+            
+            //Check if last number counted is lucky.
+            if(current === currentCount) return current;
+            
+            return -1;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (e.g. 2,2,4,4,4,4,3,2,1)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     findLUSlength: {
         name: `findLUSlength`,
         instructions: `Given two strings a and b, return the length of the longest uncommon subsequence between a and b. If the longest uncommon subsequence does not exist, return -1.
