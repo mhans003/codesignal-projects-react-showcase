@@ -108,6 +108,53 @@ const challenges_t_z = {
             ]
         }
     },
+    thousandSeparator: {
+        name: `thousandSeparator`,
+        instructions: `Given an integer n, add a dot (".") as the thousands separator and return it in string format.`,
+        codeOutput: 
+        `var thousandSeparator = function(n) {
+            //Split number into array (in reverse to build number starting at smallest place).
+            let digitArray = n.toString().split("").reverse();
+            
+            //Store output as array.
+            let output = [];
+        
+            //Go through each digit and only add . before every third digit.
+            digitArray.forEach((digit, index) => {
+                if(index % 3 === 0 && index !== 0) output.unshift('.');
+                
+                output.unshift(digit);
+            });
+            
+            //Convert output back to string.
+            return output.join("")
+        };`,
+        code: function thousandSeparator(n) {
+            //Split number into array (in reverse to build number starting at smallest place).
+            let digitArray = n.toString().split("").reverse();
+            
+            //Store output as array.
+            let output = [];
+        
+            //Go through each digit and only add . before every third digit.
+            digitArray.forEach((digit, index) => {
+                if(index % 3 === 0 && index !== 0) output.unshift('.');
+                
+                output.unshift(digit);
+            });
+            
+            //Convert output back to string.
+            return output.join("")
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Whole Number Integer",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     threeSplit: {
         name: 'threeSplit',
         instructions: `You have a long strip of paper with integers written on it in a single line from left to right. You wish to cut the paper into exactly three pieces such that each piece contains at least one integer and the sum of the integers in each piece is the same. You cannot cut through a number, i.e. each initial number will unambiguously belong to one of the pieces after cutting. How many ways can you do it?
