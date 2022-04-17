@@ -204,6 +204,7 @@ const Solutions = () => {
                         <option value="mirrorBits">Mirror Bits</option>
                         <option value="missedClasses">Missed Classes</option>
                         <option value="mostFrequentDigitSum">Most Frequent Digit Sum</option>
+                        <option value="mostVisited">Most Visited</option>
                         <option value="newNumeralSystem">New Numeral System</option>
                         <option value="newYearCelebrations">New Year Celebrations</option>
                         <option value="noIfsNoButs">No Ifs No Buts</option>
