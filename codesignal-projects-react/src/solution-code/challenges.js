@@ -1448,6 +1448,69 @@ const challenges = {
             ]
         }
     },
+    balancedStringSplit: {
+        name: `balancedStringSplit`,
+        instructions: `Balanced strings are those that have an equal quantity of 'L' and 'R' characters.
+
+        Given a balanced string s, split it in the maximum amount of balanced strings.
+        
+        Return the maximum amount of split balanced strings.`,
+        codeOutput: 
+        `var balancedStringSplit = function(s) {
+            //Keep track of total splits and counts of how many R and L are currently in a given group.
+            let count = 0;
+            let currentRCount = 0;
+            let currentLCount = 0;
+             
+            for(let i = 0; i < s.length; i++) {
+                //Add to current group.
+                if(s[i] === "R") {
+                    currentRCount++;
+                } else if(s[i] === "L") {
+                    currentLCount++;
+                }
+                //Check for new group. If so, reset R and L count for next group.
+                if(currentRCount === currentLCount && currentRCount > 0) {
+                    count++;
+                    currentRCount = 0;
+                    currentLCount = 0;
+                }
+            }
+            
+            return count;
+        };`,
+        code: function balancedStringSplit(s) {
+            //Keep track of total splits and counts of how many R and L are currently in a given group.
+            let count = 0;
+            let currentRCount = 0;
+            let currentLCount = 0;
+             
+            for(let i = 0; i < s.length; i++) {
+                //Add to current group.
+                if(s[i] === "R") {
+                    currentRCount++;
+                } else if(s[i] === "L") {
+                    currentLCount++;
+                }
+                //Check for new group. If so, reset R and L count for next group.
+                if(currentRCount === currentLCount && currentRCount > 0) {
+                    count++;
+                    currentRCount = 0;
+                    currentLCount = 0;
+                }
+            }
+            
+            return count;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Balanced String of Only L's and R's (e.g. RLLLLRRRLR)",
+                    type: "String"
+                }
+            ]
+        }
+    },
     beautifulText: {
         name: 'beautifulText',
         instructions: `Consider a string containing only letters and whitespaces. It is allowed to replace some (possibly, none) whitespaces with newline symbols to obtain a multiline text. Call a multiline text beautiful if and only if each of its lines (i.e. substrings delimited by a newline character) contains an equal number of characters (only letters and whitespaces should be taken into account when counting the total while newline characters shouldn't). Call the length of the line the text width.
