@@ -152,6 +152,7 @@ const Solutions = () => {
                         <option value="isBeautifulString">Is Beautiful String</option>
                         <option value="isCaseInsensitivePalindrome">Is Case Insensitive Palindrome</option>
                         <option value="isDigit">Is Digit</option>
+                        <option value="isHappy">Is Happy</option>
                         <option value="isInfiniteProcess">Is Infinite Process</option>
                         <option value="isInformationConsistent">Is Information Consistent</option>
                         <option value="isIPv4Address">Is IPv4 Address</option>
