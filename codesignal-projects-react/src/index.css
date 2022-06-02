@@ -41,10 +41,34 @@ body {
   color: #17a2b8;
 }
 
+.btn-secondary-fixed {
+  width: 230px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-xl {
+  font-size: 1.75rem;
+}
+
 #code-output {
   color: #f3034b;
   font-family: 'Source Code Pro', monospace !important;
   font-weight: 500;
+}
+
+.font-medium {
+  font-weight: 200 !important;
+}
+
+.heading-wrapper {
+  background-image: url('./images/computer-bg.jpg');
+}
+
+.light-overlay {
+  background-color: rgba(240,245,255,0.9);
 }
 
 @media screen and (max-width: 338px) {
