@@ -29,7 +29,9 @@ body {
 .navbar-brand {
   font-size: 1.4rem;
 }
-
+.navbar-nav {
+  align-items: center;
+}
 .btn-secondary:hover {
   outline-color: #6c757d;
   background-color: #fff;
