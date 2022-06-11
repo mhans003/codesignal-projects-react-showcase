@@ -17,21 +17,27 @@ body {
   /*font-family: 'Open Sans', sans-serif !important;*/
 
 }
+
 .field-heading {
   font-size: 1.2rem;
 }
+
 .dropdown-items {
   font-weight: 300;
 }
+
 .navbar-toggler {
   border-color: rgba(255,255,255,0.6) !important;
 }
+
 .navbar-brand {
   font-size: 1.4rem;
 }
+
 .navbar-nav {
   align-items: center;
 }
+
 .btn-secondary:hover {
   outline-color: #6c757d;
   background-color: #fff;
