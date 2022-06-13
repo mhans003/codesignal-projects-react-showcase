@@ -178,8 +178,9 @@ const Solution = props => {
                 <>
                     <div className="my-4">
                         <p className="field-heading">Instructions:</p>
+                        <hr/>
                         <div className="bg-light p-4">
-                            <p>{allChallenges[`${props.challengeName}`].instructions}</p>
+                            <p className="instructions"><em>{allChallenges[`${props.challengeName}`].instructions}</em></p>
                         </div> 
                     </div>
 
@@ -187,6 +188,7 @@ const Solution = props => {
                         <div className="col-lg-6">
                             <div className="mt-2">
                                 <p className="field-heading">Solution Code:</p>
+                                <hr/>
                                 <div className="bg-light p-4">
                                 <p><a href={`https://github.com/mhans003/algorithm-solutions-cs/blob/main/${allChallenges[`${props.challengeName}`].name}.js`} target="_blank" rel="noopener noreferrer">Click Here to See Code in Repo</a></p>
                                 <p className="text-muted">Link not working? <a href="https://mhans003.github.io/portfolio/contact.html" target="_blank" rel="noopener noreferrer">Let me know.</a></p>
@@ -202,12 +204,13 @@ const Solution = props => {
                         <div className="col-lg-6">
                             <div className="form-group mt-4 mt-lg-2">
                                 <p className="field-heading">User Input:</p>
+                                <hr/>
                                 {allChallenges[`${props.challengeName}`].arguments.descriptions.map((description, index) => {
                                     return (
                                         //Dynamically create input fields for the number of inputs for this challenge.
                                         //This will create a reference to that input element so that we can capture a user's input test value.
                                         <div className="form-group" key={index}>
-                                            <label for={`input-${index}`}>{description.text}</label>
+                                            <label className="input-label" htmlFor={`input-${index}`}>{description.text}</label>
                                             <input 
                                                 id={`input-${index}`}
                                                 className="form-control form-control-lg"
@@ -219,10 +222,10 @@ const Solution = props => {
                                     );
                                 })}
                             </div>
-
-                            <button type="button" className="btn btn-info btn-block btn-lg" onClick={generateOutput}>Run Test</button>
+                            <button type="button" className="btn btn-info btn-block btn-lg btn-xl font-medium" onClick={generateOutput}>Run Test</button>
                             <div className="mt-3 mb-5">
                                 <p className="field-heading">Solution Output:</p>
+                                <hr/>
                                 <div className="bg-dark p-4">
                                     <code ref={solutionOutput}></code>
                                 </div> 

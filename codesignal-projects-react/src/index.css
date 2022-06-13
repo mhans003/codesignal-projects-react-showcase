@@ -19,7 +19,8 @@ body {
 }
 
 .field-heading {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 200;
 }
 
 .dropdown-items {
@@ -80,6 +81,18 @@ a:hover {
   background-color: rgba(240,245,255,0.9);
 }
 
+.instructions {
+  font-size: 1.25rem;
+  color: #17a2b8;
+}
+
+.input-label {
+  font-size: 1.25rem;
+}
+
+label.field-heading {
+  margin-bottom: 0px;
+}
 /*Animation Classes*/
 
 .fade-in-1 {
