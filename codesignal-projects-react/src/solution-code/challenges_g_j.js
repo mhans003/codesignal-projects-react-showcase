@@ -316,6 +316,51 @@ const challenges_g_j = {
             ]
         }
     },
+    heightChecker: {
+        name: `heightChecker`,
+        instructions: `A school is trying to take an annual photo of all the students. The students are asked to stand in a single file line in non-decreasing order by height. Let this ordering be represented by the integer array expected where expected[i] is the expected height of the ith student in line.
+
+        You are given an integer array heights representing the current order that the students are standing in. Each heights[i] is the height of the ith student in line (0-indexed).
+        
+        Return the number of indices where heights[i] != expected[i].`,
+        codeOutput: 
+        `var heightChecker = function(heights) {
+            let count = 0;
+            
+            //Duplicate array and sort.
+            let sorted = [...heights];
+            sorted.sort((a, b) => a - b);
+                
+            //Compare each index in sorted to each index in original.
+            heights.forEach((height, index) => {
+                if(height !== sorted[index]) count++;
+            });
+            
+            return count;
+        };`,
+        code: function heightChecker(heights) {
+            let count = 0;
+            
+            //Duplicate array and sort.
+            let sorted = [...heights];
+            sorted.sort((a, b) => a - b);
+                
+            //Compare each index in sorted to each index in original.
+            heights.forEach((height, index) => {
+                if(height !== sorted[index]) count++;
+            });
+            
+            return count;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (e.g. 3,2,3,5,1,6)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     higherVersion: {
         name: 'higherVersion',
         instructions: `Given two version strings composed of several non-negative decimal fields separated by periods ("."), both strings contain equal number of numeric fields. Return true if the first version is higher than the second version and false otherwise.

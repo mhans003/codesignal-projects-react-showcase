@@ -141,6 +141,7 @@ const Solutions = () => {
                         <option value="hammingDistance">Hamming Distance</option>
                         <option value="hammingWeight">Hamming Weight</option>
                         <option value="hasGroupsSizeX">Has Groups Size X</option>
+                        <option value="heightChecker">Height Checker</option>
                         <option value="higherVersion">Higher Version</option>
                         <option value="holiday">Holiday</option>
                         <option value="houseNumbersSum">House Numbers Sum</option>
