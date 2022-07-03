@@ -129,6 +129,7 @@ const Solutions = () => {
                         <option value="findLucky">Find Lucky</option>
                         <option value="findLUSlength">Find Longest Uncommon Subsequence I</option>
                         <option value="findMaxConsecutiveOnes">Find Max Consecutive Ones</option>
+                        <option value="findMedianSortedArrays">Find Median of Sorted Arrays</option>
                         <option value="findMiddleIndex">Find Middle Index</option>
                         <option value="findRestaurant">Find Restaurant</option>
                         <option value="findShortestSubArray">Find Shortest Sub Array</option>

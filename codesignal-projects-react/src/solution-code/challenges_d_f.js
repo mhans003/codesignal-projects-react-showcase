@@ -1908,6 +1908,45 @@ const challenges_d_f = {
             ]
         }
     },
+    findMedianSortedArrays: {
+        name: `findMedianSortedArrays`,
+        instructions: `Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.`,
+        codeOutput: 
+        `var findMedianSortedArrays = function(nums1, nums2) {
+            let full = nums1.concat(nums2).sort((a, b) => a - b);
+            
+            //If the full array has an odd number of elements:
+            if(full.length % 2 !== 0) {
+                return full[Math.floor(full.length / 2)];
+            }
+            
+            //Otherwise, find median of middle two numbers.
+            return (full[Math.floor(full.length / 2)] + full[Math.floor(full.length / 2) - 1]) / 2;
+        };`,
+        code: function findMedianSortedArrays(nums1, nums2) {
+            let full = nums1.concat(nums2).sort((a, b) => a - b);
+            
+            //If the full array has an odd number of elements:
+            if(full.length % 2 !== 0) {
+                return full[Math.floor(full.length / 2)];
+            }
+            
+            //Otherwise, find median of middle two numbers.
+            return (full[Math.floor(full.length / 2)] + full[Math.floor(full.length / 2) - 1]) / 2;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Sorted Array of Integers (e.g. 1,4,7)",
+                    type: "NumberArray"
+                },
+                {
+                    text: "Sorted Array of Integers (e.g. 2,5,11)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     findMiddleIndex: {
         name: `findMiddleIndex`,
         instructions: `Given a 0-indexed integer array nums, find the leftmost middleIndex (i.e., the smallest amongst all the possible ones).
