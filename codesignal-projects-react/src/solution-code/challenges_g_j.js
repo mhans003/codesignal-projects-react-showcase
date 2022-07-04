@@ -200,6 +200,47 @@ const challenges_g_j = {
             ]
         }
     },
+    hasAlternatingBits: {
+        name: `hasAlternatingBits`,
+        instructions: `Given a positive integer, check whether it has alternating bits: namely, if two adjacent bits will always have different values.`,
+        codeOutput: 
+        `var hasAlternatingBits = function(n) {
+            //Create binary representation as a string.
+            let binary = n.toString(2);
+            
+            //Check every bit to compare to last (if equal to last, return false).
+            let prev = binary[0];
+            for(let i = 1; i < binary.length; i++) {
+                if(binary[i] === prev) return false;
+                //Update bit.
+                prev = prev === "1" ? "0" : "1";
+            }
+            
+            return true;
+        };`,
+        code: function hasAlternatingBits(n) {
+            //Create binary representation as a string.
+            let binary = n.toString(2);
+            
+            //Check every bit to compare to last (if equal to last, return false).
+            let prev = binary[0];
+            for(let i = 1; i < binary.length; i++) {
+                if(binary[i] === prev) return false;
+                //Update bit.
+                prev = prev === "1" ? "0" : "1";
+            }
+            
+            return true;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Whole Number Integer",
+                    type: "Number"
+                }
+            ]
+        }
+    },
     hasGroupsSizeX: {
         name: `hasGroupsSizeX`,
         instructions: `In a deck of cards, each card has an integer written on it.
