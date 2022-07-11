@@ -1363,6 +1363,62 @@ const challenges_s = {
             ]
         }
     },
+    subsets: {
+        name: `subsets`,
+        instructions: `Given an integer array nums of unique elements, return all possible subsets (the power set).
+
+        The solution set must not contain duplicate subsets. Return the solution in any order. (NOTE: This solution will output number of subsets for simplicity in output)`,
+        codeOutput: 
+        `var subsets = function(nums) {
+            //Create an initial empty output (2D array format)
+            let output = [[]];
+            
+            //Only look at one number at a time in the original array.
+            nums.forEach(num => {
+                //Assume we are creating a new empty subset (this will eventually be incorporated into output)
+                let subset = [];
+                
+                //For each existing subset, add the next number from the original array into all existing subsets.
+                output.forEach(existingSubset => {
+                    subset.push([...existingSubset, num]);
+                });
+                
+                //Push in bulk all the new subsets with the new number added, ready for next iteration.
+                output.push(...subset);
+            });
+            
+            return output;
+        };`,
+        code: function subsets(nums) {
+            //Create an initial empty output (2D array format)
+            let output = [[]];
+            
+            //Only look at one number at a time in the original array.
+            nums.forEach(num => {
+                //Assume we are creating a new empty subset (this will eventually be incorporated into output)
+                let subset = [];
+                
+                //For each existing subset, add the next number from the original array into all existing subsets.
+                output.forEach(existingSubset => {
+                    subset.push([...existingSubset, num]);
+                });
+                
+                //Push in bulk all the new subsets with the new number added, ready for next iteration.
+                output.push(...subset);
+            });
+            
+            //Return number of subsets (including empty one)
+            return output.length;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Integer Array of Unique Values (e.g. 1,2,3)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     sudoku: {
         name: 'sudoku',
         instructions: `Sudoku is a number-placement puzzle. The objective is to fill a 9 × 9 grid with digits so that each column, each row, and each of the nine 3 × 3 sub-grids that compose the grid contains all of the digits from 1 to 9.
