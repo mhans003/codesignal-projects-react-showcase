@@ -218,6 +218,7 @@ const Solutions = () => {
                         <option value="nthNumber">Nth Number</option>
                         <option value="numberOfClans">Number of Clans</option>
                         <option value="numbersGrouping">Numbers Grouping</option>
+                        <option value="numDecodings">Num Decodings</option>
                         <option value="numJewelsInStones">Num Jewels in Stones</option>
                         <option value="numSpecial">Num Special</option>
                         <option value="pagesNumberingWithInk">Pages Numbering With Ink</option>
