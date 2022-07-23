@@ -554,6 +554,107 @@ const challenges_t_z = {
             ]
         }
     },
+    uncommonFromSentences: {
+        name: `uncommonFromSentences`,
+        instructions: `A sentence is a string of single-space separated words where each word consists only of lowercase letters.
+
+        A word is uncommon if it appears exactly once in one of the sentences, and does not appear in the other sentence.
+        
+        Given two sentences s1 and s2, return a list of all the uncommon words. You may return the answer in any order.`,
+        codeOutput: 
+        `var uncommonFromSentences = function(s1, s2) {
+            let s1_words = s1.split(" ");
+            let s2_words = s2.split(" ");
+            //Save words shared in each word (which are non-duplicated in a sentence) to prevent from being part of output.
+            let saved = [];
+            //Generate output of uncommon words.
+            let output = [];
+            //Save words that appear more than once in a sentence.
+            let duplicated = [];
+            
+            while(s1_words.length) {
+                let thisWord = s1_words.pop();
+                
+                //Make sure there is no other instance of this word in the current sentence.
+                if(!s1_words.includes(thisWord) && !duplicated.includes(thisWord)) {
+                    //Check if this word is in the other sentence.
+                    if(!s2_words.includes(thisWord)) {
+                        //If it is not in the other sentence, make sure it isn't already in the output array. If not, push it.
+                        if(!output.includes(thisWord)) output.push(thisWord);
+                    } else {
+                        //Save this word.
+                        saved.push(thisWord);
+                    }
+                } else {
+                    duplicated.push(thisWord);
+                }
+            }
+            
+            while(s2_words.length) {
+                let thisWord = s2_words.pop();
+                
+                if(!s2_words.includes(thisWord) && !duplicated.includes(thisWord)) {
+                    if(!saved.includes(thisWord) && !output.includes(thisWord)) output.push(thisWord);
+                } else {
+                    duplicated.push(thisWord);
+                } 
+            }
+            
+            return output;
+        };`,
+        code: function uncommonFromSentences(s1, s2) {
+            let s1_words = s1.split(" ");
+            let s2_words = s2.split(" ");
+            //Save words shared in each word (which are non-duplicated in a sentence) to prevent from being part of output.
+            let saved = [];
+            //Generate output of uncommon words.
+            let output = [];
+            //Save words that appear more than once in a sentence.
+            let duplicated = [];
+            
+            while(s1_words.length) {
+                let thisWord = s1_words.pop();
+                
+                //Make sure there is no other instance of this word in the current sentence.
+                if(!s1_words.includes(thisWord) && !duplicated.includes(thisWord)) {
+                    //Check if this word is in the other sentence.
+                    if(!s2_words.includes(thisWord)) {
+                        //If it is not in the other sentence, make sure it isn't already in the output array. If not, push it.
+                        if(!output.includes(thisWord)) output.push(thisWord);
+                    } else {
+                        //Save this word.
+                        saved.push(thisWord);
+                    }
+                } else {
+                    duplicated.push(thisWord);
+                }
+            }
+            
+            while(s2_words.length) {
+                let thisWord = s2_words.pop();
+                
+                if(!s2_words.includes(thisWord) && !duplicated.includes(thisWord)) {
+                    if(!saved.includes(thisWord) && !output.includes(thisWord)) output.push(thisWord);
+                } else {
+                    duplicated.push(thisWord);
+                } 
+            }
+            
+            return output;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Normal sentence 1 with characters and spaces",
+                    type: "String"
+                },
+                {
+                    text: "Normal sentence 2 with characters and spaces",
+                    type: "String"
+                }
+            ]
+        }
+    },
     uniqueDigitProducts: {
         name: 'uniqueDigitProducts',
         instructions: `Let's call product(x) the product of x's digits. Given an array of integers a, calculate product(x) for each x in a, and return the number of distinct results you get.`,

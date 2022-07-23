@@ -297,6 +297,7 @@ const Solutions = () => {
                         <option value="toLowerCase">To Lower Case</option>
                         <option value="twoSum">Two Sum</option>
                         <option value="twoSum2">Two Sum 2</option>
+                        <option value="uncommonFromSentences">Uncommon From Sentences</option>
                         <option value="uniqueDigitProducts">Unique Digit Products</option>
                         <option value="uniqueMorseRepresentations">Unique Morse Representations</option>
                         <option value="validMountainArray">Valid Mountain Array</option>
