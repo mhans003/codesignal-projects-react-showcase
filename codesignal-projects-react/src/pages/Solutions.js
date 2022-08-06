@@ -178,6 +178,7 @@ const Solutions = () => {
                         <option value="isSumOfConsecutive2">Is Sum of Consecutive 2</option>
                         <option value="isThree">Is Three</option>
                         <option value="isToeplitzMatrix">Is Toeplitz Matrix</option>
+                        <option value="isUgly">Is Ugly</option>
                         <option value="isUnstablePair">Is Unstable Pair</option>
                         <option value="isValidParentheses">Is Valid Parentheses</option>
                         <option value="killKthBit">Kill Kth Bit</option>
