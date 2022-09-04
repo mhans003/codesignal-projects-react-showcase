@@ -1344,6 +1344,77 @@ const challenges_k_n = {
             ]
         }
     },
+    maxNumberOfBalloons: {
+        name: `maxNumberOfBalloons`,
+        instructions: `Given a string text, you want to use the characters of text to form as many instances of the word "balloon" as possible.
+
+        You can use each character in text at most once. Return the maximum number of instances that can be formed.`,
+        codeOutput: 
+        `var maxNumberOfBalloons = function(text) {
+            const letters = {};
+            let iterations = 0;
+            
+            //Map out each letter
+            for(let i = 0; i < text.length; i++) {
+                //Skip letters that aren't b, a, l, o, or n.
+                if(!(text[i] === 'b' || text[i] === 'a' || text[i] === 'l' || text[i] === 'o' || text[i] === 'n')) continue;
+                if(letters[text[i]]) {
+                    letters[text[i]]++;
+                } else {
+                    letters[text[i]] = 1;
+                }
+            }
+            
+            //See how many iterations of the word exist.
+            while(letters['b'] >= 1 && letters['a'] >= 1 && letters['l'] >= 2 && letters['o'] >= 2 && letters['n'] >= 1) {
+                iterations++;
+                //Take this iteration out of the letters map.
+                letters['b']--;
+                letters['a']--;
+                letters['l'] -= 2;
+                letters['o'] -= 2;
+                letters['n']--;
+            }
+            
+            return iterations;
+        };`,
+        code: function maxNumberOfBalloons(text) {
+            const letters = {};
+            let iterations = 0;
+            
+            //Map out each letter
+            for(let i = 0; i < text.length; i++) {
+                //Skip letters that aren't b, a, l, o, or n.
+                if(!(text[i] === 'b' || text[i] === 'a' || text[i] === 'l' || text[i] === 'o' || text[i] === 'n')) continue;
+                if(letters[text[i]]) {
+                    letters[text[i]]++;
+                } else {
+                    letters[text[i]] = 1;
+                }
+            }
+            
+            //See how many iterations of the word exist.
+            while(letters['b'] >= 1 && letters['a'] >= 1 && letters['l'] >= 2 && letters['o'] >= 2 && letters['n'] >= 1) {
+                iterations++;
+                //Take this iteration out of the letters map.
+                letters['b']--;
+                letters['a']--;
+                letters['l'] -= 2;
+                letters['o'] -= 2;
+                letters['n']--;
+            }
+            
+            return iterations;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "String of Letters",
+                    type: "String"
+                }
+            ]
+        }
+    },
     maxScore: {
         name: `maxScore`,
         instructions: `Given a string s of zeros and ones, return the maximum score after splitting the string into two non-empty substrings (i.e. left substring and right substring).
