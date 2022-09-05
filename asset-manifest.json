@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/codesignal-projects-react-showcase/static/css/main.75f82274.chunk.css",
-    "main.js": "/codesignal-projects-react-showcase/static/js/main.2218d8e6.chunk.js",
-    "main.js.map": "/codesignal-projects-react-showcase/static/js/main.2218d8e6.chunk.js.map",
+    "main.css": "/codesignal-projects-react-showcase/static/css/main.d21bc877.chunk.css",
+    "main.js": "/codesignal-projects-react-showcase/static/js/main.4692d0a4.chunk.js",
+    "main.js.map": "/codesignal-projects-react-showcase/static/js/main.4692d0a4.chunk.js.map",
     "runtime-main.js": "/codesignal-projects-react-showcase/static/js/runtime-main.52a5ee5b.js",
     "runtime-main.js.map": "/codesignal-projects-react-showcase/static/js/runtime-main.52a5ee5b.js.map",
     "static/js/2.6e165888.chunk.js": "/codesignal-projects-react-showcase/static/js/2.6e165888.chunk.js",
     "static/js/2.6e165888.chunk.js.map": "/codesignal-projects-react-showcase/static/js/2.6e165888.chunk.js.map",
     "index.html": "/codesignal-projects-react-showcase/index.html",
-    "static/css/main.75f82274.chunk.css.map": "/codesignal-projects-react-showcase/static/css/main.75f82274.chunk.css.map",
+    "static/css/main.d21bc877.chunk.css.map": "/codesignal-projects-react-showcase/static/css/main.d21bc877.chunk.css.map",
     "static/js/2.6e165888.chunk.js.LICENSE.txt": "/codesignal-projects-react-showcase/static/js/2.6e165888.chunk.js.LICENSE.txt",
     "static/media/index.css": "/codesignal-projects-react-showcase/static/media/computer-bg.6da97ffc.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.52a5ee5b.js",
     "static/js/2.6e165888.chunk.js",
-    "static/css/main.75f82274.chunk.css",
-    "static/js/main.2218d8e6.chunk.js"
+    "static/css/main.d21bc877.chunk.css",
+    "static/js/main.4692d0a4.chunk.js"
   ]
 }
