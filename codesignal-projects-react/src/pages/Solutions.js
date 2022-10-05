@@ -131,6 +131,7 @@ const Solutions = () => {
                         <option value="findMaxConsecutiveOnes">Find Max Consecutive Ones</option>
                         <option value="findMedianSortedArrays">Find Median of Sorted Arrays</option>
                         <option value="findMiddleIndex">Find Middle Index</option>
+                        <option value="findOutlier">Find Outlier</option>
                         <option value="findRestaurant">Find Restaurant</option>
                         <option value="findShortestSubArray">Find Shortest Sub Array</option>
                         <option value="findTheDifference">Find the Difference</option>

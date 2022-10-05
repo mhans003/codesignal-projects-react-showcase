@@ -2004,6 +2004,47 @@ const challenges_d_f = {
             ]
         }
     },
+    findOutlier: {
+        name: `findOutlier`,
+        instructions: `You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.`,
+        codeOutput: 
+        `function findOutlier(integers){
+            let map = {"even":[],"odd":[]};
+           
+            for(let i = 0; i < integers.length; i++) {
+              if(integers[i] % 2 === 0) {
+                map["even"].push(integers[i]);
+              } else {
+                map["odd"].push(integers[i]);
+              }
+            }
+           
+            if(map["even"].length === 1) return map["even"][0];
+            return map["odd"][0];
+        }`,
+        code: function findOutlier(integers){
+            let map = {"even":[],"odd":[]};
+           
+            for(let i = 0; i < integers.length; i++) {
+              if(integers[i] % 2 === 0) {
+                map["even"].push(integers[i]);
+              } else {
+                map["odd"].push(integers[i]);
+              }
+            }
+           
+            if(map["even"].length === 1) return map["even"][0];
+            return map["odd"][0];
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers - At least 3 elements and with ONLY one odd element or ONLY one even element (e.g. 1,3,5,7,8)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     findRestaurant: {
         name: `findRestaurant`,
         instructions: `Suppose Andy and Doris want to choose a restaurant for dinner, and they both have a list of favorite restaurants represented by strings.
