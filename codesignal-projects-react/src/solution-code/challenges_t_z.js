@@ -782,6 +782,63 @@ const challenges_t_z = {
             ]
         }
     },
+    uniqueOccurrences: {
+        name: `uniqueOccurrences`,
+        instructions: `Given an array of integers arr, return true if the number of occurrences of each value in the array is unique, or false otherwise.`,
+        codeOutput: 
+        `var uniqueOccurrences = function(arr) {
+            //Record the number of occurrences of each item in the array.
+            let occurrences = {};
+            arr.forEach(item => {
+                if(occurrences[item]) {
+                    occurrences[item]++;
+                } else {
+                    occurrences[item] = 1;
+                }
+            });
+        
+            //Loop through each number of occurrences. 
+            let uniqueOccurrences = [];
+            for(let occurrencesOfItem in occurrences) {
+                //If this number of occurrences is already in the object map, return false.
+                if(uniqueOccurrences.includes(occurrences[occurrencesOfItem])) return false;
+                //Otherwise, store this as a unique occurrences.
+                uniqueOccurrences.push(occurrences[occurrencesOfItem]);
+            }
+            
+            return true;
+        };`,
+        code: function uniqueOccurrences(arr) {
+            //Record the number of occurrences of each item in the array.
+            let occurrences = {};
+            arr.forEach(item => {
+                if(occurrences[item]) {
+                    occurrences[item]++;
+                } else {
+                    occurrences[item] = 1;
+                }
+            });
+        
+            //Loop through each number of occurrences. 
+            let uniqueOccurrences = [];
+            for(let occurrencesOfItem in occurrences) {
+                //If this number of occurrences is already in the object map, return false.
+                if(uniqueOccurrences.includes(occurrences[occurrencesOfItem])) return false;
+                //Otherwise, store this as a unique occurrences.
+                uniqueOccurrences.push(occurrences[occurrencesOfItem]);
+            }
+            
+            return true;
+        },
+        arguments: {
+            descriptions: [
+                {
+                    text: "Array of Integers (e.g. 1,1,1,2,2,3)",
+                    type: "NumberArray"
+                }
+            ]
+        }
+    },
     validMountainArray: {
         name: `validMountainArray`,
         instructions: `Given an array of integers arr, return true if and only if it is a valid mountain array.

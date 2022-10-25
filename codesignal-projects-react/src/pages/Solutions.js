@@ -303,6 +303,7 @@ const Solutions = () => {
                         <option value="uncommonFromSentences">Uncommon From Sentences</option>
                         <option value="uniqueDigitProducts">Unique Digit Products</option>
                         <option value="uniqueMorseRepresentations">Unique Morse Representations</option>
+                        <option value="uniqueOccurrences">Unique Occurrences</option>
                         <option value="validMountainArray">Valid Mountain Array</option>
                         <option value="validTime">Valid Time</option>
                         <option value="variableName">Variable Name</option>
